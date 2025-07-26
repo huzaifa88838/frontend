@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sports Trading Platform">
+    <meta name="keyword" content="sports trading, bet, betfair">
+    <meta name="robots" content="noindex" />
+
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/dist/lo2.min.css?62000" />
+    <link rel="stylesheet" href="/css/tempusdominus-bootstrap-4.min.css" />
+    <link href="/css/BetPro-style.css?62000" rel="stylesheet" />
+
+    <title>Star Casino | BetPro</title>
+
+    <script>
+        const uwsUrl = "https://orders-ws2.mgs11.com/usershub";
+        const casinoUrl = "https://casino-ws.mgs11.com/signalr";
+    </script>
+    <script src="/js/vue.min.js"></script>
+    <script src="/js/site.min.js?62000"></script>
+    <script src="/js/vue.min.js"></script>
+    <script src="https://unpkg.com/vuex@3.1.3/dist/vuex.js"></script>
+
+    <style>
+        
+
+        .bodyheight {
+            height: 90vh;
+        }
+
+        @media screen and (max-width: 480px) {
+            .bodyheight{
+                height:90vh;
+            }
+        }
+
+        .bg-dream {
+            background-image: url(/img/dreambg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+
+
+        .iframetemplate {
+            display: block; /* iframes are inline by default */
+            background: #000;
+            border: none; /* Reset default border */
+            height: 100%; /* Viewport-relative units */
+            width: 100%;
+            margin: 0px;
+        }
+
+        .blink_me {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        .casinoimp {
+            animation: casinoimpblinker 1s linear infinite;
+        }
+
+        @Keyframes casinoimpblinker {
+            25% {
+                -webkit-transform: scale(1.10);
+                -ms-transform: scale(1.10);
+                transform: scale(1.10);
+            }
+
+            50% {
+                -webkit-transform: scale(1.15);
+                -ms-transform: scale(1.15);
+                transform: scale(1.15);
+            }
+
+            75% {
+                -webkit-transform: scale(1.10);
+                -ms-transform: scale(1.10);
+                transform: scale(1.10);
+            }
+        }
+            
+    </style>
+    
+</head>
+
+<body class="bg-dream d-flex flex-column">
+    <div class="main-page">
+        <div class="row no-gutters">
+            <div class="col-md">
+                <div class="header">
+                    <a href="/Common/Dashboard">
+                        <span class="green-logo-text">
+                            BetPro
+                        </span>
+                    </a>
+                   
+
+                </div>
+
+                <div class="bodyheight">
+                    
+
+<link rel="stylesheet" href="/css/casino.css" />
+<div style="height: 100vh;">
+    <iframe class="iframetemplate" id="casino" src=""></iframe>
+    <div class="modal fade modalCasinoToS" id="modalCasinoToS" tabindex="-1" role="dialog" aria-labelledby="modalCasinoToS" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">All Casino Rules</h5>
+                </div>
+                <div id="casino-tos-text" class="modal-body">
+                    <p>
+                        <center><h3 class="text-danger blink_me">Very Very Important !</h3></center>
+                    </p>    
+                    <p>
+                        <center><h5 class="text-danger casinoimp">All casino profitLoss will be 1 to 10 Ratio from now.</h5></center>
+                    </p>
+                    <p>
+                        <center>All casinos pay 10 times your win. For example, if you win 1000 in any casino, you will get 10,000 credits on our exchange. The same applies to Loss. For example, if you Loss 1000 in any casino, you will Loss 10,000 on our exchange. Thankyou</center>
+                    </p>
+
+                    <p>
+                        <center><h5 class="text-danger casinoimp">Tamam casino may jeet Har 1 ka 10 gunah ho ge.</h5></center>
+                    </p>
+                    
+                    <p> <center>Her Casino may Har Jeet 10 Gunah ho gee . Agr Casino mey 1000 Jeeto gey to aap k Exchange account mey 10,000 aye gey OR agr 1000 Lose kray gey to aap k exchange account sey 10,000 minus ho gey.</center></p>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-check">
+                        <input type="checkbox" id="myCheck" style="display: none;">
+                        <label class="form-check-label" for="exampleCheck1">I Agree</label>
+                    </div>
+                    <button type="button" class="btn btn-primary ml-3"  onclick="AcceptTos();">
+                        <strong>Confirm</strong>
+                    </button>
+                    <button type="button" class="btn btn-danger ml-3" onclick="DeclineTos();">
+                        <strong>Don't Agree</strong>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//wurfl.io/wurfl.js"></script>
+    <script src="/js/casino.js"></script>
+    <script>
+        
+        var wrfl = typeof WURFL === 'undefined' || WURFL === null ? WurflFallback() : WURFL;
+
+        var url = '';
+        if (wrfl.is_mobile) {
+            url = 'https://m.fawk.app/#/splash-screen/bd965ff9-a074-4ec1-8d6d-4f508280208b/9213';
+        } else {
+            url = 'https://d.fawk.app/#/splash-screen/bd965ff9-a074-4ec1-8d6d-4f508280208b/9213';
+        }
+
+        PreLaunch();
+
+        function PreLaunch() {
+            Launch();
+
+$('#modalCasinoToS').modal('show');        }
+
+        function Launch() {
+            document.getElementById("casino").src = url;
+        }
+
+        function AcceptTos() {
+            $(".modalCasinoToS").modal('hide');
+            $("#modalCasinoToS").modal('hide');
+        }
+
+        function DeclineTos() {
+            document.location.href = document.location.protocol + "//" + document.location.host;
+        }
+    </script>
+</div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market Rules -->
+    <div class="modal fade" id="modalMarketRules" tabindex="-1" role="dialog" aria-labelledby="modalMarketRules" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Market Rules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="market-rules-text" class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const token = getCookie('wexscktoken');
+        const sess = getCookie('wex3authtoken');
+        const reft = getCookie('wex3reftoken');
+        const CasSck = 1;
+    </script>
+
+    <script src="/js/signalr/dist/browser/signalr.js"></script>
+    
+    
+    
+        <script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+        <script src="/js/cwsck.min.js?62000"></script>
+    
+
+    
+    <!--<p>Logging into casino...</p>-->
+    <script type="text/javascript" src="//wurfl.io/wurfl.js"></script>
+    <script>
+        // setTimeout(launchNewTab, 1000);
+
+        function launchNewTab() {
+            var wrfl = typeof WURFL === 'undefined' || WURFL === null ? WurflFallback() : WURFL;
+
+            if (wrfl.is_mobile) {
+                document.location.href = "https://m.fawk.app/#/splash-screen/bd965ff9-a074-4ec1-8d6d-4f508280208b/9213";
+            } else {
+                document.location.href = "https://d.fawk.app/#/splash-screen/bd965ff9-a074-4ec1-8d6d-4f508280208b/9213";
+            }
+        }
+    </script>
+
+    
+    <script>
+        const signalRConnection = new UWS(uwsUrl, token, sess);
+        signalRConnection.connect();
+
+        $(document).ready(function () {
+            pollRefreshToken();
+        });
+    </script>
+</body>
+</html>

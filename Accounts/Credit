@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="BetPro Exchange">
+    <meta name="author" content="BetPro">
+    <meta name="keyword" content="BetPro,Exchange,BetFair,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+      <title>Credit | BetPro</title>
+    <!-- Icons-->
+     <link rel="stylesheet" href="/dist/lo2.min.css" />
+        <link href="/css/BetPro-style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+</head>
+<body class="app">
+    <div>
+        <main class="main">
+            <div class="container-fluid" style="padding:0px 15px;">
+                <div class="animated fadeIn">
+                    <style>
+    @media screen and (max-width: 635px) {
+        .editsbmtbtn {
+            margin: auto;
+            margin-top: -30px;
+            margin-right: 15px;
+            background: transparent;
+            border: none;
+        }
+    }
+</style>
+
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-body">
+                    <ul class="nav nav-pills nav-fill">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Accounts/Cash?id=5270018"><b>Cash</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/Accounts/Credit?id=5270018"><b>Credit</b></a>
+                        </li>
+                    </ul>
+                    <hr />
+
+                    <h5><strong>alsmaster</strong></h5>
+                    <table class="table table-sm table-bordered">
+                        <tr>
+                            <td>Credit limit</td>
+                            <td>alsmaster Credit</td>
+                            <td>alsmaster Available Balance</td>
+                        </tr>
+                        <tr>
+                            <th>0 Rs.</th>
+                            <th>0 Rs.</th>
+                            <th>0 Rs.</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <form method="post" onsubmit="$('.btn-submit').attr('disabled', '')">
+            <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <strong>Deposit Credit in alsmaster Account</strong>
+                </div>
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Description</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" value="Credit Issued to alsmaster" id="IssueDescription" name="IssueDescription" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="text-input">Amount</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        Rs.
+                                    </span>
+                                </div>
+                                <input class="form-control" type="text" data-val="true" data-val-number="The field CreditAmount must be a number." data-val-required="The CreditAmount field is required." id="CreditAmount" name="CreditAmount" value="0">
+                            </div>
+                            <span class="help-block field-validation-valid" data-valmsg-for="CreditAmount" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer editsbmtbtn">
+                    <input type="hidden" name="DId" class="bindDId" />
+                    <button class="btn btn-primary btn-submit" type="submit">
+                        <strong>Submit</strong>
+                    </button>
+                </div>
+            </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8GVcHGMfjbhImL432Db-Sfcyl93R1apJENysHpSziZSgFQlQ1UxtFcXI5eqTMdF0uW9uapk3xW0nIP-p0nMntRNwE_3kH85jtzaE0gXcagiDpjDzjejvPkgSyP6cEsIGKXaHG2PqwuPd3mRtsGDvuYkEkiDDmQlRMgVN8cUqIWB6fvxSxUpZkY8wfpym9LdWrw" /></form>
+    </div>
+    <div class="col-md-9">
+        <form method="post" onsubmit="$('.btn-submit').attr('disabled', '')">
+            <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+            <div class="card">
+                <div class="card-header bg-danger text-white">
+                    <strong>Withdraw Credit from alsmaster</strong>
+                </div>
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Description</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" value="Credit Withdrawn from alsmaster" id="IssueDescription" name="IssueDescription" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label" for="text-input">Amount</label>
+                        <div class="col-sm-9">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        Rs.
+                                    </span>
+                                </div>
+                                <input class="form-control" type="text" data-val="true" data-val-number="The field DebitAmount must be a number." data-val-required="The DebitAmount field is required." id="DebitAmount" name="DebitAmount" value="0">
+                            </div>
+                            <span class="help-block field-validation-valid" data-valmsg-for="DebitAmount" data-valmsg-replace="true"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer editsbmtbtn">
+                    <input type="hidden" name="DId" class="bindDId" />
+                    <button class="btn btn-danger btn-submit" type="submit">
+                        <strong>Submit</strong>
+                    </button>
+                </div>
+            </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8GVcHGMfjbhImL432Db-Sfcyl93R1apJENysHpSziZSgFQlQ1UxtFcXI5eqTMdF0uW9uapk3xW0nIP-p0nMntRNwE_3kH85jtzaE0gXcagiDpjDzjejvPkgSyP6cEsIGKXaHG2PqwuPd3mRtsGDvuYkEkiDDmQlRMgVN8cUqIWB6fvxSxUpZkY8wfpym9LdWrw" /></form>
+    </div>
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/js/vue.min.js"></script>
+    <script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+    <script src="/js/site.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="/js/src/client-locales.js"></script>
+    
+    <script>
+        $(".bindDId").val(GetDeviceIdentity());
+    </script>
+
+</body>
+</html>

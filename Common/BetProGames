@@ -1,0 +1,1103 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sports Trading Platform">
+    <meta name="keyword" content="sports trading, bet, betfair">
+    <meta name="robots" content="noindex" />
+
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/dist/lo2.min.css?62000" />
+    <link rel="stylesheet" href="/css/tempusdominus-bootstrap-4.min.css" />
+    <link href="/css/BetPro-style.css?62000" rel="stylesheet" />
+
+    <title>TeenPatti Studio | BetPro</title>
+
+    <script>
+        const uwsUrl = "https://orders-ws2.mgs11.com/usershub";
+        const casinoUrl = "https://casino-ws.mgs11.com/signalr";
+    </script>
+    <script src="/js/vue.min.js"></script>
+    <script src="/js/site.min.js?62000"></script>
+    <script src="/js/vue.min.js"></script>
+    <script src="https://unpkg.com/vuex@3.1.3/dist/vuex.js"></script>
+
+    <style>
+        
+
+        .bodyheight {
+            height: 90vh;
+        }
+
+        @media screen and (max-width: 480px) {
+            .bodyheight{
+                height:90vh;
+            }
+        }
+
+        .bg-dream {
+            background-image: url(/img/dreambg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+
+
+        .iframetemplate {
+            display: block; /* iframes are inline by default */
+            background: #000;
+            border: none; /* Reset default border */
+            height: 100%; /* Viewport-relative units */
+            width: 100%;
+            margin: 0px;
+        }
+
+        .blink_me {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        .casinoimp {
+            animation: casinoimpblinker 1s linear infinite;
+        }
+
+        @Keyframes casinoimpblinker {
+            25% {
+                -webkit-transform: scale(1.10);
+                -ms-transform: scale(1.10);
+                transform: scale(1.10);
+            }
+
+            50% {
+                -webkit-transform: scale(1.15);
+                -ms-transform: scale(1.15);
+                transform: scale(1.15);
+            }
+
+            75% {
+                -webkit-transform: scale(1.10);
+                -ms-transform: scale(1.10);
+                transform: scale(1.10);
+            }
+        }
+            
+    </style>
+    
+</head>
+
+<body class="bg-dream d-flex flex-column">
+    <div class="main-page">
+        <div class="row no-gutters">
+            <div class="col-md">
+                <div class="header">
+                    <a href="/Common/Dashboard">
+                        <span class="green-logo-text">
+                            BetPro
+                        </span>
+                    </a>
+                   
+
+                </div>
+
+                <div class="bodyheight">
+                    
+<script>
+    var exgameid = '';
+    var ControllerName = 'BetProGames';
+
+    const stake1 = parseInt('2000');
+    const stake2 = parseInt('5000');
+    const stake3 = parseInt('10000');
+    const stake4 = parseInt('25000');
+</script>
+
+<link type="text/css" href="/css/Betprogames.css?62000" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="/css/v3/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+<link type="text/css" href="/fonts/SEGOEUI.TTF" rel="stylesheet">
+
+<div class="wrapper">
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <ul>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9030">
+                            <span class="item">Auto Roulette</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9022">
+                            <span class="item">Aviator</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9040">
+                            <span class="item">AviatorX</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9023">
+                            <span class="item">BlastOff</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9035">
+                            <span class="item">Dream Catcher</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9001">
+                            <span class="item">TeenPatti T20</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9005">
+                            <span class="item">TeenPatti ODI</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9006">
+                            <span class="item">Muflis TeenPatti</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9021">
+                            <span class="item">Poker</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9015">
+                            <span class="item">Sic-Bo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9002">
+                            <span class="item">AndarBahar</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9003">
+                            <span class="item">HiLo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9004">
+                            <span class="item">DragonTiger</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9007">
+                            <span class="item">7UpDown</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9008">
+                            <span class="item">Ammar Akbar Anthony</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9009">
+                            <span class="item">Super Over OneDay</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9011">
+                            <span class="item">Super Over T20</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9010">
+                            <span class="item">32 Cards</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9012">
+                            <span class="item">Bollywood Casino</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9016">
+                            <span class="item">Race To 17</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9014">
+                            <span class="item">Race-20-20</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9017">
+                            <span class="item">High Card</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9018">
+                            <span class="item">Casino War</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9019">
+                            <span class="item">Lucky 7</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9020">
+                            <span class="item">Center Card</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9045">
+                            <span class="item">TRIO</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9050">
+                            <span class="item">TRAP</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9055">
+                            <span class="item">One Card 20-20</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9060">
+                            <span class="item">One Card Meter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9065">
+                            <span class="item">Queen Race</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9070">
+                            <span class="item">Dus Ka Dum</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9075">
+                            <span class="item">Side Bet city</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9080">
+                            <span class="item">Lottery</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="/Common/BetProGames?GameId=9085">
+                            <span class="item">Heads &amp; Tails</span>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<div class="card ExMainCardbundle lobby-ctn BPGmaindiv" id="ExgamesDiv">
+    <div class="title-section">
+        <div class="lobby-container">
+            <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+
+            <a class="nav-link" href="/Common/BetProGames" style="text-decoration: none;">
+                <button class="lobby-btn">
+                    <img src="/img/v2/lobby-icon.svg" alt="lobby-icon">
+                    <p class="lobby-name">Lobby</p>
+                </button>
+            </a>
+        </div>
+        <div class="btn-logo-ctn">
+            <img src="/img/tpslogo.png" alt="royal-logo" class="logo">
+        </div>
+        <div class="exposure-search-ctn">
+            <div class="exposure-balance-ctn">
+                <img src="/img/v2/exposure-icon.svg" alt="exposure-icon" class="exp-icon">
+                <div class="exp-bal">
+                    <div class="balance-ctn">
+                        <div class="designation">
+                            <span class="wallet-balance">B: -</span>
+                            <span class="wallet-exposure"> | L: - |</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="card-body lobby-content">
+            <div class="row" style="border-radius: 20px; background-color: rgb(59 52 52 / 70%); padding-top:10px; display:flex; flex-wrap:wrap; justify-content: space-evenly;">
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9030">
+                            <img src="/img/9030.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Auto Roulette</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9022">
+                            <img src="/img/9022.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Aviator</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9040">
+                            <img src="/img/9040.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">AviatorX</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9023">
+                            <img src="/img/9023.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">BlastOff</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9035">
+                            <img src="/img/9035.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Dream Catcher</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9001">
+                            <img src="/img/9001.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">TeenPatti T20</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9005">
+                            <img src="/img/9005.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">TeenPatti ODI</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9006">
+                            <img src="/img/9006.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Muflis TeenPatti</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9021">
+                            <img src="/img/9021.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Poker</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9015">
+                            <img src="/img/9015.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Sic-Bo</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9002">
+                            <img src="/img/9002.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">AndarBahar</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9003">
+                            <img src="/img/9003.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">HiLo</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9004">
+                            <img src="/img/9004.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">DragonTiger</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9007">
+                            <img src="/img/9007.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">7UpDown</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9008">
+                            <img src="/img/9008.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Ammar Akbar Anthony</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9009">
+                            <img src="/img/9009.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Super Over OneDay</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9011">
+                            <img src="/img/9011.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Super Over T20</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9010">
+                            <img src="/img/9010.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">32 Cards</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9012">
+                            <img src="/img/9012.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Bollywood Casino</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9016">
+                            <img src="/img/9016.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Race To 17</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9014">
+                            <img src="/img/9014.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Race-20-20</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9017">
+                            <img src="/img/9017.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">High Card</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9018">
+                            <img src="/img/9018.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Casino War</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9019">
+                            <img src="/img/9019.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Lucky 7</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9020">
+                            <img src="/img/9020.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Center Card</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9045">
+                            <img src="/img/9045.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">TRIO</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9050">
+                            <img src="/img/9050.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">TRAP</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9055">
+                            <img src="/img/9055.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">One Card 20-20</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9060">
+                            <img src="/img/9060.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">One Card Meter</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9065">
+                            <img src="/img/9065.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Queen Race</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9070">
+                            <img src="/img/9070.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Dus Ka Dum</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9075">
+                            <img src="/img/9075.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Side Bet city</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9080">
+                            <img src="/img/9080.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Lottery</p>
+                    </div>
+                    <div class="image-wrapper">
+                        <a href="/Common/BetProGames?GameId=9085">
+                            <img src="/img/9085.webp" alt="Image 1" class="responsive-image">
+                        </a>
+                        <p class="image-caption" style="color:white;">Heads &amp; Tails</p>
+                    </div>
+            </div>
+        </div>
+
+    <div class="card-body mainexcard" id="Excardbody" style="display:none;">
+        <div class="row">
+            <div class="col-lg-8 Exgamesbg" v-if="snapshot.channel !== undefined">
+                
+<div class="footer-divbpg border-gradient-footer border-gradient-purple-footer">
+    <div class="col-6  col-md-6 titlebarname">
+        <p style="margin-bottom:-6px; margin-top: 6px;"></p>
+    </div>
+    <div class="col-6 col-md-6 inline-block Gameidcol">
+        <div class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+            <button type="button" id="Alltab" style="background-color:black;" class="tablink btn btn-primary bbactive" v-on:click="MarketTab('All')">Game</button>
+            <button type="button" id="RESULTStab" class="tablink btn btn-primary bbactive" v-on:click="MarketTab('RESULTS')">Results</button>
+            <button type="button" class="tablink btn btn-primary bbactive" v-on:click="ShowMarketRules()">Rules</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+                <div id="All" class="tabcontent" style="display:contents;">
+                    <div class="left-content">
+                        <div class="cards-layout blackjack">
+
+                        </div>
+
+                        <center>
+                            <div class="footer-divbpg border-gradient-footer border-gradient-purple-footer">
+                                <div class="buttons-div">
+                                    <button class="video-button border-gradient-btn border-gradient-purple-btn" :class="getColorClass(result)" v-for="result in shortresults">
+                                        {{result}}
+                                    </button>
+                                </div>
+                                <div class="round-div">
+                                    <div class="label">Round ID:</div>
+                                    <div class="id">{{snapshot.channel.game.id}}</div>
+                                </div>
+                            </div>
+                        </center>
+                            
+<div class="section-blur" v-for="MMarket in snapshot.channel.game.markets.market">
+    <div class="market-titlebar">
+    <p class="market-name">
+        <span class="market-name-badge">
+            <i class="market-name-icon">
+                <img style="filter: invert(100%);margin-top:-8px;margin-left:-1px;" src="/img/time.png" />
+            </i>
+                <span>{{ MMarket.marketName }} </span>
+        </span>
+    </p>
+    <div class="market-overarround"><span></span><strong>Back</strong></div>
+    <div class="market-overarround market-overarround-lay" ><strong>Lay</strong></div>
+</div>
+
+    <div class="market-runners" v-for="Runner in MMarket.selections.selection">
+        <div class="runner-runner"
+             v-bind:class="{ 'winner': Runner.runnerStatus == 'WINNER' }">
+            <h3 class="runner-name">
+                <div class="runner-info">
+                    <span class="clippable runner-display-name">
+                        <h4 class="clippable-spacer"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            data-html="true">
+                            {{Runner.name}}
+                        </h4>
+                    </span>
+                </div>
+                <div class="runner-position">
+                    <span v-if="Runner.position >= 0">
+                        <span class="runner-position-pos">
+                            <strong>{{ Runner.position | format }}</strong>
+                        </span>
+                        <span class="position-minus" v-if="Runner.lose != null && Runner.lose != 0">
+                            <strong>/ {{ Runner.lose | format }}</strong>
+                        </span>
+                    </span>
+                    <span v-else>
+                        <span class="position-minus"><strong>{{ Runner.position | format }}</strong></span>
+                        <span class="runner-position-pos" v-if="Runner.lose != null && Runner.lose != 0">
+                            <strong>/ {{ Runner.lose | format }}</strong>
+                        </span>
+                    </span>
+                </div>
+            </h3>
+
+            <template v-if="Runner.status != 0">
+                <div class="runner-disabled">
+                    {{Runner.runnerStatus}}
+                </div>
+            </template>
+            <template v-else-if="MMarket.status == 2">
+                <div class="runner-disabled">
+                    Suspended !
+                </div>
+            </template>
+            <template v-else-if="MMarket.status == 3">
+                <div class="runner-disabled">
+                    Round Over !
+                </div>
+            </template>
+            <template v-else-if="MMarket.status == 4">
+                <div class="runner-disabled">
+                    Next Round !
+                </div>
+            </template>
+            <template v-else>
+                <a v-if="Runner.bestAvailableToBackPrices.length > 2 && Runner.bestAvailableToBackPrices[2].value != 0" class="price-price price-back" v-on:click="ShowBetSlip(Runner, 'B', snapshot.channel.game.id, 3 ,MMarket.id)">
+                    <span class="price-odd">{{Runner.bestAvailableToBackPrices[2].value}}</span>
+                    <span class="price-amount">{{Runner.bestAvailableToBackPrices[2].amountUnmatched | format}}</span>
+                </a>
+                <a v-else class="price-price price-back">
+                    <span class="price-odd"></span>
+                    <span class="price-amount"></span>
+                </a>
+
+
+                <a v-if="Runner.bestAvailableToBackPrices.length > 1 && Runner.bestAvailableToBackPrices[1].value != 0" class="price-price price-back" v-on:click="ShowBetSlip(Runner, 'B', snapshot.channel.game.id, 2 ,MMarket.id)">
+                    <span class="price-odd">{{Runner.bestAvailableToBackPrices[1].value}}</span>
+                    <span class="price-amount">{{Runner.bestAvailableToBackPrices[1].amountUnmatched | format}}</span>
+                </a>
+                <a v-else class="price-price price-back">
+                    <span class="price-odd"></span>
+                    <span class="price-amount"></span>
+                </a>
+
+
+
+                <a v-if="Runner.bestAvailableToBackPrices.length > 0 && Runner.bestAvailableToBackPrices[0].value != 0" class="price-price price-back mb-show" v-on:click="ShowBetSlip(Runner, 'B',snapshot.channel.game.id, 1 ,MMarket.id)">
+                    <span class="price-odd">{{Runner.bestAvailableToBackPrices[0].value}}</span>
+                    <span class="price-amount">{{Runner.bestAvailableToBackPrices[0].amountUnmatched | format}}</span>
+                </a>
+                <a v-else class="price-price price-back">
+                    <span class="price-odd"></span>
+                    <span class="price-amount"></span>
+                </a>
+
+
+                
+                    <a class="price-price price-lay mb-show" v-if="Runner.bestAvailableToLayPrices.length > 0 && Runner.bestAvailableToLayPrices[0].value != 0" v-on:click="ShowBetSlip(Runner, 'L', snapshot.channel.game.id, 1 ,MMarket.id)">
+                        <span class="price-odd">{{Runner.bestAvailableToLayPrices[0].value}}</span>
+                        <span class="price-amount">{{Runner.bestAvailableToLayPrices[0].amountUnmatched | format}}</span>
+                    </a>
+                    <a class="price-price price-lay mb-show" v-else>
+                        <span class="price-odd"></span>
+                        <span class="price-amount"></span>
+                    </a>
+                    <a class="price-price price-lay" v-if="Runner.bestAvailableToLayPrices.length > 1  && Runner.bestAvailableToLayPrices[1].value != 0" v-on:click="ShowBetSlip(Runner, 'L', snapshot.channel.game.id, 2 ,MMarket.id)">
+                        <span class="price-odd">{{Runner.bestAvailableToLayPrices[1].value}}</span>
+                        <span class="price-amount">{{Runner.bestAvailableToLayPrices[1].amountUnmatched | format}}</span>
+                    </a>
+                    <a class="price-price price-lay" v-else>
+                        <span class="price-odd"></span>
+                        <span class="price-amount"></span>
+                    </a>
+                    <a class="price-price price-lay" v-if="Runner.bestAvailableToLayPrices.length > 2  && Runner.bestAvailableToLayPrices[2].value != 0" v-on:click="ShowBetSlip(Runner, 'L', snapshot.channel.game.id, 3 ,MMarket.id)">
+                        <span class="price-odd">{{Runner.bestAvailableToLayPrices[2].value}}</span>
+                        <span class="price-amount">{{Runner.bestAvailableToLayPrices[2].amountUnmatched | format}}</span>
+                    </a>
+                    <a class="price-price price-lay" v-else>
+                        <span class="price-odd"></span>
+                        <span class="price-amount"></span>
+                    </a>
+                
+            </template>
+        </div>
+    </div>
+</div>
+                        
+                    </div>
+                </div>
+                <div id="RESULTS" class="tabcontent" style="display:none;">
+                        <div class="left-content" v-for="result in results" :key="result.id">
+        <div class="card" style="border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 5px; background: linear-gradient(180deg, #0f0f0f ,#fbfbfb); color:white;">
+            <div class="card-header" style="font-weight: bold; font-size: 16px; margin-bottom: 5px;">
+                {{ formatDate(result.startDate) }} - <b>ID= </b> {{ result.id }}
+            </div>
+            <div class="card-body" style="display: flex; justify-content: center; align-items: center; padding:0px;">
+
+                <div class="dicegame" v-if="result.gameId == 9015">
+                    <div class="container">
+                        <div class="diceofresults" v-for="player in result.players[0].cards">
+                            {{player}}
+                        </div>
+                    </div>
+                </div>
+
+                <div v-else class="players-table" style="text-align: center; width: 100%;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tbody>
+                            <tr style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+                                <td v-for="player in result.players" v-if="player.name == 'Community Cards' || player.name == 'Dealer' || player.name == 'Board'" class="TdResults" v-bind:class="{'TdResultsWin': player.status == 'WINNER'}">
+                                    <div class="player-cards" style="display: flex; flex-direction: column; align-items: center; word-wrap: break-word; overflow-wrap: break-word;">
+                                        <div class="player-name" style="font-weight: bold; text-align: center;">
+                                            {{ player.name }}
+                                        </div>
+                                        <div class="card-images" style="display: flex; justify-content: center; gap: 3px; flex-wrap: wrap;">
+                                            <img v-for="Img in player.cards" :src="ImageUrl('/img/Cards/card_simple_', Img)" loading="lazy" alt="Card Image" style="width: 40px; height: 60px; object-fit: cover; border-radius: 5px;">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+                                <td v-for="player in result.players" class="TdResults" v-bind:class="{'TdResultsWin': player.status == 'WINNER'}" v-if="player.name !== 'Community Cards' && player.name !== 'Dealer' && player.name !== 'Board' && player.name !== 'Cards'">
+                                    <div class="player-cards" style="display: flex; flex-direction: column; align-items: center; word-wrap: break-word; overflow-wrap: break-word;">
+                                        <div class="player-name" style="font-weight: bold; text-align: center; width:100%;">
+                                            {{ player.name }}
+                                        </div>
+                                        <div class="card-images" style="display: flex; justify-content: center; gap: 3px; flex-wrap: wrap;  width:100%;">
+                                            <img  v-for="Img in player.cards" :src="ImageUrl('/img/Cards/card_simple_', Img)" loading="lazy" alt="Card Image" style="width: 40px; height: 60px; object-fit: cover; border-radius: 5px;">
+                                        </div>
+                                        <div class="player-status" v-bind:class="{'bgwinner': player.status == 'WINNER'  , 'bgLoser': player.status !== 'WINNER'}" :style="{ color: player.status === 'STOOD' ? 'green' : '#000', marginTop: '5px', fontSize: '14px', fontWeight: 'bold', textAlign: 'center' ,  width: '100%'}">
+                                            {{ player.status }}
+                                        </div>
+                                    </div>
+                                </td>
+                                <td v-if="player.name !== 'Community Cards' && player.name !== 'Dealer' && player.name !== 'Board'" v-for="player in result.selections" class="TdResults" v-bind:class="{'TdResultsWin': player.status == 'WINNER'}">
+                                    <div class="player-cards" style="display: flex; flex-direction: column; align-items: center; word-wrap: break-word; overflow-wrap: break-word;">
+                                        <div class="player-name" style="font-weight: bold; text-align: center; width:100%;">
+                                            {{ player.name }}
+                                        </div>
+                                        <div class="card-images" style="display: flex; justify-content: center; gap: 3px; flex-wrap: wrap;  width:100%;">
+                                            <img :src="ImageUrl('/img/Cards/card_simple_', 'NOT AVAILABLE')" alt="Card Image" loading="lazy" style="width: 40px; height: 60px; object-fit: cover; border-radius: 5px;">
+                                        </div>
+                                        <div class="player-status" v-bind:class="{'bgwinner': player.status == 'WINNER' , 'bgLoser': player.status !== 'WINNER'}" :style="{ color: player.status === 'STOOD' ? 'green' : '#000', marginTop: '5px', fontSize: '14px', fontWeight: 'bold', textAlign: 'center' ,  width: '100%'}">
+                                            {{ player.status }}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="right-content">
+                    <div>
+                        <div class="table-box-body">
+                            <div class="bets" id="betSlip" v-show="Order.render">
+                                <strong>Bet Slip <a target="_blank" style="color:white; float:right" class="button" href="/Customer/Profile">Edit Bet Sizes</a></strong>
+
+                                <div class="betting-table">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Bet for</th>
+                                                <th>Odds</th>
+                                                <th>Stake</th>
+                                                <th>Profit</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr v-bind:class="{ 'back': Order.side.toLowerCase() == 'b', 'lay': Order.side.toLowerCase() == 'l' }">
+                                                <td>{{ Order.runnerName }}</td>
+                                                <td width="10%">
+                                                    <div class="quantity">
+                                                        <input type="text" id="bet-price"
+                                                               v-model="Order.price"
+                                                               v-on:keyup.enter="PlaceOrder()" />
+                                                        <div class="quantity-nav">
+                                                            <div class="quantity-button quantity-up" v-on:click="PriceUp()">
+                                                                <span class="fa fa-caret-up" />
+                                                            </div>
+                                                            <div class="quantity-button quantity-down" v-on:click="PriceDown()">
+                                                                <span class="fa fa-caret-down" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td width="10%">
+                                                    <div class="stake">
+                                                        <input type="text"
+                                                               id="bet-size"
+                                                               v-model="Order.size"
+                                                               v-on:change="CalcPL()"
+                                                               v-on:keyup.enter="PlaceOrder()" />
+                                                    </div>
+                                                </td>
+                                                <td>{{ Order.profit }} / -{{ Order.liable }}</td>
+                                            </tr>
+                                            <tr v-bind:class="{ 'back': Order.side.toLowerCase() == 'b', 'lay': Order.side.toLowerCase() == 'l' }">
+                                                <td colspan="5">
+                                                    <table class="table">
+                                                        <tbody>
+                                                            <tr class="checknow">
+                                                                <td><span class="points" data-amount="2000" v-on:click="SetOrderSize(2000)">2,000</span></td>
+                                                                <td><span class="points" v-on:click="SetOrderSize(5000)">5,000</span></td>
+                                                                <td><span class="points" v-on:click="SetOrderSize(10000)">10,000</span></td>
+                                                                <td><span class="points" v-on:click="SetOrderSize(25000)">25,000</span></td>
+                                                            </tr>
+                                                            <tr class="checknow">
+                                                                <td><span class="points" v-on:click="IncreaseOrderSize(1000)">+ 1,000</span></td>
+                                                                <td><span class="points" v-on:click="IncreaseOrderSize(5000)">+ 5,000</span></td>
+                                                                <td><span class="points" v-on:click="IncreaseOrderSize(10000)">+ 10,000</span></td>
+                                                                <td><span class="points" v-on:click="IncreaseOrderSize(25000)">+ 25,000</span></td>
+                                                            </tr>
+                                                            <tr v-if="Order.error != ''">
+                                                                <td class="alert-danger pr-5" colspan="4">{{ Order.error }}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <button class="align-left btn btn-danger" type="reset" v-on:click="CloseBetSlip()"><b>Close</b></button>
+                                                                </td>
+                                                                <td>
+                                                                    <button class="align-left btn btn-warning" type="reset" v-on:click="ClearBetSlip()"><b>Clear</b></button>
+                                                                </td>
+                                                                <td colspan="1"></td>
+                                                                <td>
+                                                                    <div class="btn btn-primary ld-over"
+                                                                         v-bind:class="{ 'running': Order.working }"
+                                                                         v-on:click="PlaceOrder()"
+                                                                         style="cursor: pointer;">
+                                                                        <b>Submit</b>
+                                                                        <div class="ld ld-ball ld-flip"></div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+
+                            <div class="modal fade" id="betSlipMobile" tabindex="-1" role="dialog" aria-labelledby="fancyPosition" aria-hidden="true">
+                                <div class="modal-dialog modal-md" role="document">
+                                    <div class="modal-content" v-bind:class="{ 'back': Order.side.toLowerCase() == 'b', 'lay': Order.side.toLowerCase() == 'l' }">
+                                        <div class="modal-body">
+                                            <table>
+                                                <tr>
+                                                    <td>&nbsp;</td>
+                                                    <th colspan="3">{{ Order.runnerName }}</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>ODDS</td>
+                                                    <td colspan="2">
+                                                        <div class="input-group mt-2">
+                                                            <div class="input-group-prepend">
+                                                                <button type="button" class="btn btn-outline-secondary" v-on:click="PriceDown()">
+                                                                    <strong>-</strong>
+                                                                </button>
+                                                            </div>
+                                                            <input type="number" id="bet-price"
+                                                                   class="form-control"
+                                                                   v-model="Order.price"
+                                                                   v-on:keyup.enter="PlaceOrder()"
+                                                                   v-on:keyup.up="PriceUp()"
+                                                                   v-on:keyup.down="PriceDown()"
+                                                                   step="0.01"
+                                                                   min="1.01"
+                                                                   max="1000" />
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-outline-secondary" type="button" v-on:click="PriceUp()">
+                                                                    <strong>+</strong>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Amount</td>
+                                                    <td colspan="2">
+                                                        <input type="number" id="bet-size-m" v-on:change="CalcPL()" class="form-control mt-2" v-model="Order.size">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 25%">
+                                                        <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" data-amount="2000" v-on:click="SetOrderSize(2000)">
+                                                            2,000
+                                                        </button>
+                                                    </td>
+                                                    <td style="width: 25%">
+                                                        <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" v-on:click="SetOrderSize(5000)">
+                                                            5,000
+                                                        </button>
+                                                    </td>
+                                                    <td style="width: 25%">
+                                                        <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" v-on:click="SetOrderSize(10000)">
+                                                            10,000
+                                                        </button>
+                                                    </td>
+                                                    <td style="width: 25%">
+                                                        <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" v-on:click="SetOrderSize(25000)">
+                                                            25,000
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" v-on:click="IncreaseOrderSize(1000)">
+                                                            +1,000
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" v-on:click="IncreaseOrderSize(5000)">
+                                                            +5,000
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" v-on:click="IncreaseOrderSize(10000)">
+                                                            +10,000
+                                                        </button>
+                                                    </td>
+                                                    <td>
+                                                        <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" v-on:click="IncreaseOrderSize(25000)">
+                                                            +25,000
+                                                        </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <button style="touch-action:manipulation;" type="button" data-dismiss="modal" class="btn btn-danger mt-2">
+                                                            Close
+                                                        </button>
+                                                    </td>
+                                                    <td colspan="2">
+                                                        <div class="btn btn-primary ld-over mt-2"
+                                                             v-bind:class="{ 'running': Order.working }"
+                                                             v-on:click="PlaceOrder()"
+                                                             style="cursor: pointer;">
+                                                            <b>Submit</b>
+                                                            <div class="ld ld-ball ld-flip"></div>
+                                                        </div>
+                                                        <span>{{ Order.profit }} / -{{ Order.liable }}</span>
+                                                    </td>
+                                                </tr>
+                                                <tr v-show="Order.error !== '' && Order.error !== undefined">
+                                                    <td class="alert-danger pr-5" colspan="4">{{ Order.error }}</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                        <div>
+                            <div class="bets">
+                                <strong>
+                                    Matched Bets ({{ ExMatched.length }})
+                                    <img class="rounded disconnected" src="/img/reconnecting.gif" alt="dc" v-show="!isConnected" />
+                                    <span v-if="!isConnected">DISCONNECTED</span>
+                                </strong>
+
+                                <div class="betting-table">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Runner</th>
+                                                <th>Price</th>
+                                                <th>Size</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr v-bind:class="{ 'back': order.side === 'back', 'lay' : order.side ==='lay' }" v-for="order in ExMatched">
+                                                <td>{{ order.runnerName }} - ({{order.roundId}})</td>
+                                                <td>{{ order.rate }}</td>
+                                                <td>{{ order.stake | format }}</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<input type="hidden" id="defaultBetSize" value="2000" />
+<input type="hidden" id="userCurrencyRate" value="1.0000" />
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market Rules -->
+    <div class="modal fade" id="modalMarketRules" tabindex="-1" role="dialog" aria-labelledby="modalMarketRules" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Market Rules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="market-rules-text" class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const token = getCookie('wexscktoken');
+        const sess = getCookie('wex3authtoken');
+        const reft = getCookie('wex3reftoken');
+        const CasSck = 1;
+    </script>
+
+    <script src="/js/signalr/dist/browser/signalr.js"></script>
+    
+    
+    
+        <script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+        <script src="/js/cwsck.min.js?62000"></script>
+    
+
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script>
+        List = [];
+        function toggleMenu() {
+            event.preventDefault(); // prevent the default behavior of the button
+            var menu = document.querySelector('.sidebar');
+            menu.style.left = (menu.style.left === "0px") ? "-250px" : "0px";
+            var menuBtn = document.querySelector('.menu-btn');
+            if (menuBtn.innerHTML === '☰') {
+                menuBtn.innerHTML = '✖';
+            } else {
+                menuBtn.innerHTML = '☰';
+            }
+        }
+    </script>
+
+    
+    <script>
+        const signalRConnection = new UWS(uwsUrl, token, sess);
+        signalRConnection.connect();
+
+        $(document).ready(function () {
+            pollRefreshToken();
+        });
+    </script>
+</body>
+</html>

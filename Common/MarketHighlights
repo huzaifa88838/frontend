@@ -1,0 +1,4182 @@
+
+<div class="Bl_NT_DB_LITE">
+    <div class="RaceCards__main___1LtHz Bl_NT_DB" style="background-color:#43444A;">
+        <div class="RaceCards__header___M-uFV Bl_NT_DB_LITE">
+            <span class="svg-horse svg-horse-dims svg-racing" role="img" aria-label="horse icon"></span> 
+            <b class="imghorseb"> Horse Race</b>
+        </div>
+
+        <div class="row" id="raceslider">
+            <section class="center" style="width:80vw;">
+
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245462863" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:10:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Kenilworth (ZA)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245481915" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:25:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Turffontein (ZA)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245456338" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:30:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Doncaster (GB)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245462896" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:45:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Kenilworth (ZA)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245455944" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:50:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Newmarket (GB)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245456345" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T13:00:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Doncaster (GB)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245481917" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T13:05:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Turffontein (ZA)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245456013" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T13:10:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Carlisle (GB)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245462988" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T13:20:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Kenilworth (ZA)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245455949" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T13:25:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Newmarket (GB)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245456352" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T13:35:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Doncaster (GB)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245481919" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T13:40:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Turffontein (ZA)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245456020" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T13:45:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Carlisle (GB)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245462990" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T13:55:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Kenilworth (ZA)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245455956" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T14:00:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Newmarket (GB)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245456359" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T14:10:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Doncaster (GB)
+            </span>
+        </b>
+    </a>
+</div>            </section>
+        </div>
+    </div>
+
+    <div class="RaceCards__main___1LtHz Bl_NT_DB" style="background-color:#43444A;">
+        <div class="RaceCards__header___M-uFV Bl_NT_DB_LITE">
+            <span class="svg-greyhound-racing svg-greyhound-racing-dims svg-racing" role="img" aria-label="greyhound icon"></span> 
+            <b class="imghorseb"> Grey Hound</b>
+        </div>
+
+        <div class="row" id="raceslider">
+            <section class="center" style="width:80vw;">
+
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245487616" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:08:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Nottingham (GB)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245474660" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:11:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Hobart (AU)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245472381" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:14:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Wentworth Park (AU)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245479058" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:17:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Mandurah (AU)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245490523" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:17:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Sheffield (GB)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245475133" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:20:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Angle Park (AU)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245471489" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:23:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Dapto (AU)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245475083" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:26:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Q1 Lakeside (AU)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245487618" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:26:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Nottingham (GB)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245472827" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:29:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Sandown Park (AU)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245474665" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:32:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Hobart (AU)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245490525" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:33:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Sheffield (GB)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245479063" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:36:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Mandurah (AU)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245475138" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:40:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Angle Park (AU)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245487620" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:42:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Nottingham (GB)
+            </span>
+        </b>
+    </a>
+</div>
+<div class="chk11" style="text-align:center; margin:2px;">
+    <a href="/Common/Market?id=1.245471494" style="color:white; width:auto;">
+        <b class="chkmobile">
+            <span class="slidedate market-time">
+            </span>
+            <span class="d-none utctime" data-format="h:mm A">
+                2025-07-10T12:44:00.0000000Z
+            </span>
+            <br>
+            <span class='slidename'>
+                Dapto (AU)
+            </span>
+        </b>
+    </a>
+</div>            </section>
+        </div>
+    </div>
+
+
+    <!--TABS SYSTEM FOR INPLAY AND OTHERS--->
+
+    <div class="row bbcustom" style="display: flex;flex-wrap: nowrap;overflow-x: scroll;overflow-y: hidden;">
+
+        <div class="tab-content active mobilewidth bg-primary" id="owlitemactive1" onclick="ActivateTab(0); highlightLink(this);">
+            <div style="min-width:80px; max-width:80px;">
+                <a href="javascript:void(0)" style="text-decoration : none; color:inherit;">
+                    <div id="owlitemactive1t">
+                        <div><i style="margin-left: 54px;">3</i></div>
+                        <i class="material-icons">timer</i>
+                        <div style="margin-top:-2px;">Inplay</div>
+                    </div>
+
+                </a>
+            </div>
+        </div>
+
+        <div class="tab-content mobilewidth" id="owlitemactive2" onclick="ActivateTab(1); highlightLink(this);">
+            <div style="min-width:80px; max-width:80px;">
+                <a href="#" style="text-decoration : none; color:inherit;">
+                    <div class="img-block" id="owlitemactive2t">
+                        <div><i style="margin-left: 54px;">8</i></div>
+                        <div class="tabsvgdiv">
+                            <div class="svg-cricket svg-cricket-dims" role="img" aria-label="cricket icon"></div>
+                        </div>
+                        <span>Cricket</span>
+                    </div>
+
+                </a>
+            </div>
+        </div>
+
+
+        <div class="tab-content mobilewidth" id="owlitemactive3" onclick="ActivateTab(2); highlightLink(this);">
+            <div style="min-width:80px; max-width:80px;">
+                <a href="#" style="text-decoration : none; color:inherit;">
+                    <div class="img-block" id="owlitemactive3t">
+                        <div><i style="margin-left: 54px;">7</i></div>
+                        <div class="tabsvgdiv">
+                            <div class="svg-tennis svg-tennis-dims" role="img" aria-label="tennis icon"></div>
+                        </div>
+                        <span>Tennis</span>
+                    </div>
+
+                </a>
+            </div>
+        </div>
+
+        <div class="tab-content mobilewidth" id="owlitemactive4" onclick="ActivateTab(3); highlightLink(this);">
+            <div style="min-width:80px; max-width:80px;">
+                <a href="#" style="text-decoration : none; color:inherit;">
+                    <div class="img-block" id="owlitemactive4t">
+                        <div><i style="margin-left: 54px;">20</i></div>
+                        <div class="tabsvgdiv">
+                            <div class="svg-soccer svg-soccer-dims sprite-transform-15" role="img" aria-label="soccer icon"></div>
+                        </div>
+                        <span>Soccer</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="tab-content mobilewidth" id="owlitemactive4">
+            <a href="/Common/sap" style="text-decoration: none;">
+                <div style="min-width:80px; max-width:80px;">
+                        <div class="img-block" id="owlitemactive4t">
+                        <div><i style="margin-left: 54px; color:white;">80</i></div>
+                            <div>
+                                <img src="/img/v2/SB_ico.png" alt="" style="max-width:60px; max-height:40px; margin-bottom:-4px;margin-top:-5px;">
+                            </div>
+                            <span style="color:white;">SportsBook</span>
+                        </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="tabcontent active">
+        <div class="high_lights">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="sport">
+                            <div class="sport">
+                                <svg id="baseball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.7 56.7" style="fill: #000;">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #fff;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>cricket</title>
+                                    <path class="cls-1" d="M47,8.9a.91.91,0,0,1,.7.3l.9.8a1.12,1.12,0,0,1,.1,1.6L39.8,21.9l1.7,1.4a2.09,2.09,0,0,1,.2,3L21,50.1a2,2,0,0,1-1.6.7,2.39,2.39,0,0,1-1.4-.5l-6-5.1a2.09,2.09,0,0,1-.2-3l2.1-2.4L23.2,29l9.3-10.6a2,2,0,0,1,1.6-.7,2.39,2.39,0,0,1,1.4.5l1.7,1.4L46.1,9.3a1.8,1.8,0,0,1,.9-.4" />
+                                    <circle class="cls-1" cx="40.7" cy="43.3" r="5.4" />
+                                    <polygon class="cls-1" points="27.2 56.7 31.5 56.7 31.5 43 27.2 47.9 27.2 56.7" />
+                                    <path class="cls-1" d="M17.4,53.8v2.9h4.3V53.6a5,5,0,0,1-2.4.6A16.25,16.25,0,0,1,17.4,53.8Z" />
+                                    <path class="cls-1" d="M8.1,44a5.26,5.26,0,0,1,1.3-4L12,37V4.6a1.71,1.71,0,0,0-1.7-1.8h1.5a.43.43,0,0,1,.4.4v.5a.43.43,0,0,0,.4.4h4.1a.43.43,0,0,0,.4-.4V3.2a.43.43,0,0,1,.4-.4h1.7a1.77,1.77,0,0,0-1.7,1.8V30.7l4.3-4.9V4.6a1.71,1.71,0,0,0-1.7-1.8h1.7a.43.43,0,0,1,.4.4v.5a.43.43,0,0,0,.4.4h4.1a.43.43,0,0,0,.4-.4V3.2a.43.43,0,0,1,.4-.4H29a1.77,1.77,0,0,0-1.7,1.8V19.5l2.8-3.2a4.43,4.43,0,0,1,1.5-1.2V4.6a1.71,1.71,0,0,0-1.7-1.8h-.6a.43.43,0,0,0,.4-.4V1.6a.43.43,0,0,0-.4-.4H27.5a.43.43,0,0,1-.4-.4V.4c-.1-.2-.2-.4-.4-.4H22.6a.43.43,0,0,0-.4.4V.9a.43.43,0,0,1-.4.4H20a.43.43,0,0,0-.4.4.43.43,0,0,0-.4-.4H17.4A.43.43,0,0,1,17,.9V.4a.43.43,0,0,0-.4-.4H12.5a.43.43,0,0,0-.4.4V.9a.43.43,0,0,1-.4.4H9.9a.43.43,0,0,0-.4.4v.8a.43.43,0,0,0,.4.4H9.3A1.77,1.77,0,0,0,7.6,4.7V56.8H12V49.6L9.9,47.8A5.9,5.9,0,0,1,8.1,44ZM19.6,2.5a.43.43,0,0,0,.4.4h-.8C19.4,2.8,19.6,2.7,19.6,2.5Z" />
+                                    <style xmlns="http://www.w3.org/1999/xhtml" type="text/css"></style>
+                                </svg>
+                                Cricket
+                            </div>
+                        </th>
+                        <th>Matched</th>
+                        <th colspan="2">1</th>
+                        <th colspan="2">X</th>
+                        <th colspan="2">2</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245405948" class="m_1_245405948 McomCustom">
+
+        <td class="sport-date bg-primary" style="color:rgb(255, 255, 255); ">
+            <div>
+                <span class="day">InPlay</span>
+                <span class="market-time">10:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T10:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245405948">
+                    England v India
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+                <span class="svg-DTV svg-DTV-dims svg-span" role="img" aria-label="tv"></span> 
+                <span class="svg-DBM svg-DBM-dims svg-span" role="img" aria-label="bm"></span> 
+                <span class="svg-DF svg-DF-dims svg-span" role="img" aria-label="fancy"></span>
+            <span class="TMFORDESK">63,097,044</span>
+        </div>
+        <span class="TMFORMOB">63,097,044</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.9</strong>
+            <span>31.64k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.91</strong>
+            <span>10.05k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 7.2 </strong>
+            <span>2.88M</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 7.4 </strong>
+            <span>713.1k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 2.94 </strong>
+            <span>35.53k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.96 </strong>
+            <span>9,616</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>                </tbody>
+            </table>
+        </div>
+        <div class="high_lights">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="sport">
+                            <div class="sport">
+                                <svg id="soccer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #fff;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>soccer</title>
+                                    <path class="cls-1" d="M12.5.3A11.34,11.34,0,0,0,10,0,11.34,11.34,0,0,0,7.5.3l2.5.9Z" />
+                                    <path class="cls-1" d="M14.3,19.1a9.83,9.83,0,0,0,3.7-3l-2.4.9Z" />
+                                    <path class="cls-1" d="M19.3,6.3a7.19,7.19,0,0,0-1.2-2.1V6.8L20,8.9A7.71,7.71,0,0,0,19.3,6.3Z" />
+                                    <path class="cls-1" d="M2,16.1a9.83,9.83,0,0,0,3.7,3l-1.3-2Z" />
+                                    <path class="cls-1" d="M1.8,4.2A11.78,11.78,0,0,0,.7,6.1,12.76,12.76,0,0,0,0,8.9L1.8,6.7Z" />
+                                    <polygon class="cls-1" points="7 9.4 8.2 12.9 11.8 12.9 13 9.4 10 7.3 7 9.4" />
+                                    <path class="cls-1" d="M14.1,16.6l-2-2.1H7.9l-2,2.1,2,3.2A14.92,14.92,0,0,0,10,20a14.92,14.92,0,0,0,2.1-.2Z" />
+                                    <path class="cls-1" d="M19.2,14a.1.1,0,0,1,.1-.1,9,9,0,0,0,.7-2.7L17.3,8,14.5,9.6l-1.3,3.8,2,2.1Z" />
+                                    <path class="cls-1" d="M.8,14a.1.1,0,0,0-.1-.1A13.43,13.43,0,0,1,0,11.2L2.7,8,5.5,9.6l1.3,3.8-2,2.1Z" />
+                                    <path class="cls-1" d="M5.5,1.1A16.44,16.44,0,0,0,3.3,2.5V6.6L6,8.2,9.2,5.9V2.5Z" />
+                                    <path class="cls-1" d="M14.5,1.1,10.7,2.5V5.9l3.2,2.3,2.7-1.6V2.5A11,11,0,0,0,14.5,1.1Z" />
+                                </svg>
+                                Football
+                            </div>
+                        </th>
+                        <th>Matched</th>
+                        <th colspan="2">1</th>
+                        <th colspan="2">X</th>
+                        <th colspan="2">2</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="high_lights">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th colspan="2" class="sport">
+                            <div class="sport">
+                                <svg id="baseball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.7 56.7">
+                                    <defs>
+                                        <style>
+                                            .cls-1 {
+                                                fill: #fff;
+                                            }
+                                        </style>
+                                    </defs>
+                                    <title>tennis</title>
+                                    <path class="cls-1" d="M56.7,49.7,44.2,37.2h0l-4.1-4.1a4.76,4.76,0,0,1-1.2-4.7h0a18.66,18.66,0,0,0,.4-2.5,9.28,9.28,0,0,1-2.4.3,4.87,4.87,0,0,1-1.2-.1h0L20.4,10.8l4.4-4.4a20,20,0,0,1,3.7,2.8,9.92,9.92,0,0,1,2.6-2.4A24,24,0,0,0,15.1,0,15.1,15.1,0,0,0,4.3,4.2C-2.5,10.9-1,23.3,7.5,31.8c4.9,4.9,11.1,7.5,16.8,7.5a16.11,16.11,0,0,0,4.4-.6A4.76,4.76,0,0,1,33,39.9L49.4,56.3h0l.2.2,5.6-5.6,1.5-1.2ZM26.2,20.5l-5.4,5.4L13,18.2l5.4-5.4ZM15.1,3.5a16.33,16.33,0,0,1,7.1,1.6L18.5,8.8,13.4,3.7A7.93,7.93,0,0,1,15.1,3.5Zm-5,.9,6.3,6.3L11,16.2,4.7,9.8a11,11,0,0,1,2-3.1A11.34,11.34,0,0,1,10.1,4.4ZM3.6,16.9a14,14,0,0,1,.1-4.1L9,18.2l-4,4A19.78,19.78,0,0,1,3.6,16.9Zm2.8,7.9L11,20.2,18.8,28l-4.7,4.7A24.72,24.72,0,0,1,10,29.4,26,26,0,0,1,6.4,24.8Zm10.3,9.3L20.8,30l5.7,5.7a15,15,0,0,1-2.2.2A19.19,19.19,0,0,1,16.7,34.1Zm16-1.4a10.29,10.29,0,0,1-3.1,2l-6.8-6.8,5.4-5.4,6.7,6.7A9.88,9.88,0,0,1,32.7,32.7Z" />
+                                    <circle class="cls-1" cx="36.9" cy="15.6" r="7.1" />
+                                </svg>
+                                Tennis
+                            </div>
+                        </th>
+                        <th>Matched</th>
+                        <th colspan="2">1</th>
+                        <th colspan="2">X</th>
+                        <th colspan="2">2</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245484745" class="m_1_245484745 McomCustom">
+
+        <td class="sport-date bg-primary" style="color:rgb(255, 255, 255); ">
+            <div>
+                <span class="day">InPlay</span>
+                <span class="market-time">10:10</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T10:10:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245484745">
+                    M Sherif v Dar Semenistaja
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+                <span class="svg-DTV svg-DTV-dims svg-span" role="img" aria-label="tv"></span> 
+            <span class="TMFORDESK">2,859,806</span>
+        </div>
+        <span class="TMFORMOB">2,859,806</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.14</strong>
+            <span>34.58k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.15</strong>
+            <span>166.6k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 7.8 </strong>
+            <span>1,275</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>8 </strong>
+            <span>2,106</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245486546" class="m_1_245486546 McomCustom">
+
+        <td class="sport-date bg-primary" style="color:rgb(255, 255, 255); ">
+            <div>
+                <span class="day">InPlay</span>
+                <span class="market-time">11:20</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T11:20:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245486546">
+                    Els Jacquemot v Kat von Deichmann
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+                <span class="svg-DTV svg-DTV-dims svg-span" role="img" aria-label="tv"></span> 
+            <span class="TMFORDESK">1,053,072</span>
+        </div>
+        <span class="TMFORMOB">1,053,072</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>2.14</strong>
+            <span>21</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.68</strong>
+            <span>2,934</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 1.6 </strong>
+            <span>4,914</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.87 </strong>
+            <span>11</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>                </tbody>
+            </table>
+        </div>
+    </div>
+
+   
+        <div class="tabcontent">
+            <div class="high_lights">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="sport">
+                                <div class="sport">
+                                    <svg id="baseball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.7 56.7" style="fill: #000;">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: #fff;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <title>cricket</title>
+                                        <path class="cls-1" d="M47,8.9a.91.91,0,0,1,.7.3l.9.8a1.12,1.12,0,0,1,.1,1.6L39.8,21.9l1.7,1.4a2.09,2.09,0,0,1,.2,3L21,50.1a2,2,0,0,1-1.6.7,2.39,2.39,0,0,1-1.4-.5l-6-5.1a2.09,2.09,0,0,1-.2-3l2.1-2.4L23.2,29l9.3-10.6a2,2,0,0,1,1.6-.7,2.39,2.39,0,0,1,1.4.5l1.7,1.4L46.1,9.3a1.8,1.8,0,0,1,.9-.4" />
+                                        <circle class="cls-1" cx="40.7" cy="43.3" r="5.4" />
+                                        <polygon class="cls-1" points="27.2 56.7 31.5 56.7 31.5 43 27.2 47.9 27.2 56.7" />
+                                        <path class="cls-1" d="M17.4,53.8v2.9h4.3V53.6a5,5,0,0,1-2.4.6A16.25,16.25,0,0,1,17.4,53.8Z" />
+                                        <path class="cls-1" d="M8.1,44a5.26,5.26,0,0,1,1.3-4L12,37V4.6a1.71,1.71,0,0,0-1.7-1.8h1.5a.43.43,0,0,1,.4.4v.5a.43.43,0,0,0,.4.4h4.1a.43.43,0,0,0,.4-.4V3.2a.43.43,0,0,1,.4-.4h1.7a1.77,1.77,0,0,0-1.7,1.8V30.7l4.3-4.9V4.6a1.71,1.71,0,0,0-1.7-1.8h1.7a.43.43,0,0,1,.4.4v.5a.43.43,0,0,0,.4.4h4.1a.43.43,0,0,0,.4-.4V3.2a.43.43,0,0,1,.4-.4H29a1.77,1.77,0,0,0-1.7,1.8V19.5l2.8-3.2a4.43,4.43,0,0,1,1.5-1.2V4.6a1.71,1.71,0,0,0-1.7-1.8h-.6a.43.43,0,0,0,.4-.4V1.6a.43.43,0,0,0-.4-.4H27.5a.43.43,0,0,1-.4-.4V.4c-.1-.2-.2-.4-.4-.4H22.6a.43.43,0,0,0-.4.4V.9a.43.43,0,0,1-.4.4H20a.43.43,0,0,0-.4.4.43.43,0,0,0-.4-.4H17.4A.43.43,0,0,1,17,.9V.4a.43.43,0,0,0-.4-.4H12.5a.43.43,0,0,0-.4.4V.9a.43.43,0,0,1-.4.4H9.9a.43.43,0,0,0-.4.4v.8a.43.43,0,0,0,.4.4H9.3A1.77,1.77,0,0,0,7.6,4.7V56.8H12V49.6L9.9,47.8A5.9,5.9,0,0,1,8.1,44ZM19.6,2.5a.43.43,0,0,0,.4.4h-.8C19.4,2.8,19.6,2.7,19.6,2.5Z" />
+                                        <style xmlns="http://www.w3.org/1999/xhtml" type="text/css"></style>
+                                    </svg>
+                                    Cricket
+                                </div>
+                            </th>
+                            <th>Matched</th>
+                            <th colspan="2">1</th>
+                            <th colspan="2">X</th>
+                            <th colspan="2">2</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245405948" class="m_1_245405948 McomCustom">
+
+        <td class="sport-date bg-primary" style="color:rgb(255, 255, 255); ">
+            <div>
+                <span class="day">InPlay</span>
+                <span class="market-time">10:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T10:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245405948">
+                    England v India
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+                <span class="svg-DTV svg-DTV-dims svg-span" role="img" aria-label="tv"></span> 
+                <span class="svg-DBM svg-DBM-dims svg-span" role="img" aria-label="bm"></span> 
+                <span class="svg-DF svg-DF-dims svg-span" role="img" aria-label="fancy"></span>
+            <span class="TMFORDESK">63,097,044</span>
+        </div>
+        <span class="TMFORMOB">63,097,044</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.9</strong>
+            <span>31.64k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.91</strong>
+            <span>10.05k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 7.2 </strong>
+            <span>2.88M</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 7.4 </strong>
+            <span>713.1k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 2.94 </strong>
+            <span>35.53k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.96 </strong>
+            <span>9,616</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245441832" class="m_1_245441832 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">13:30</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T13:30:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245441832">
+                    Sri Lanka v Bangladesh
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+                <span class="svg-DBM svg-DBM-dims svg-span" role="img" aria-label="bm"></span> 
+            <span class="TMFORDESK">552,205</span>
+        </div>
+        <span class="TMFORMOB">552,205</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.39</strong>
+            <span>105.7k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.4</strong>
+            <span>36.23k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 3.5 </strong>
+            <span>14.49k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>3.55 </strong>
+            <span>1,462</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245455737" class="m_1_245455737 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">14:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T14:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245455737">
+                    Central Stags v Dubai Capitals
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+                <span class="svg-DBM svg-DBM-dims svg-span" role="img" aria-label="bm"></span> 
+            <span class="TMFORDESK">1,980,038</span>
+        </div>
+        <span class="TMFORMOB">1,980,038</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.81</strong>
+            <span>442</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.82</strong>
+            <span>3,068</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 2.2 </strong>
+            <span>3,058</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.22 </strong>
+            <span>23</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245395588" class="m_1_245395588 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">17:30</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T17:30:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245395588">
+                    Leicestershire v Northamptonshire
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+                <span class="svg-DBM svg-DBM-dims svg-span" role="img" aria-label="bm"></span> 
+            <span class="TMFORDESK">22,694</span>
+        </div>
+        <span class="TMFORMOB">22,694</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>2.3</strong>
+            <span>26</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.36</strong>
+            <span>347</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 1.74 </strong>
+            <span>289</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.77 </strong>
+            <span>34</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245396066" class="m_1_245396066 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">18:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T18:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245396066">
+                    Derbyshire v Worcestershire
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+                <span class="svg-DBM svg-DBM-dims svg-span" role="img" aria-label="bm"></span> 
+            <span class="TMFORDESK">155,296</span>
+        </div>
+        <span class="TMFORMOB">155,296</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>2.12</strong>
+            <span>21</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.14</strong>
+            <span>103</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 1.87 </strong>
+            <span>624</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.9 </strong>
+            <span>24</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245466278" class="m_1_245466278 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">23:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T23:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245466278">
+                    Guyana Amazon Warriors v Rangpur Riders
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+                <span class="svg-DBM svg-DBM-dims svg-span" role="img" aria-label="bm"></span> 
+            <span class="TMFORDESK">2,869</span>
+        </div>
+        <span class="TMFORMOB">2,869</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.25</strong>
+            <span>18</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.65</strong>
+            <span>19</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 2.54 </strong>
+            <span>12</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>5.2 </strong>
+            <span>56</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245466351" class="m_1_245466351 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Tomorrow</span>
+                <span class="market-time">14:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-11T14:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245466351">
+                    Hobart Hurricanes v Dubai Capitals
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+                <span class="svg-DBM svg-DBM-dims svg-span" role="img" aria-label="bm"></span> 
+            <span class="TMFORDESK">1,608,807</span>
+        </div>
+        <span class="TMFORMOB">1,608,807</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.83</strong>
+            <span>303</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.38</strong>
+            <span>21</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 1.73 </strong>
+            <span>29</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.2 </strong>
+            <span>41</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245410884" class="m_1_245410884 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">12-7</span>
+                <span class="market-time">18:30</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-12T18:30:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245410884">
+                    West Indies v Australia
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">118,778</span>
+        </div>
+        <span class="TMFORMOB">118,778</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>7.2</strong>
+            <span>2,014</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>8</strong>
+            <span>132</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 13 </strong>
+            <span>38.01k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 14.5 </strong>
+            <span>3,731</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 1.25 </strong>
+            <span>98.19k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.28 </strong>
+            <span>12.16k</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+    
+
+    
+        <div class="tabcontent">
+            <div class="high_lights">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="sport">
+                                <div class="sport">
+                                    <svg id="baseball" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56.7 56.7">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: #fff;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <title>tennis</title>
+                                        <path class="cls-1" d="M56.7,49.7,44.2,37.2h0l-4.1-4.1a4.76,4.76,0,0,1-1.2-4.7h0a18.66,18.66,0,0,0,.4-2.5,9.28,9.28,0,0,1-2.4.3,4.87,4.87,0,0,1-1.2-.1h0L20.4,10.8l4.4-4.4a20,20,0,0,1,3.7,2.8,9.92,9.92,0,0,1,2.6-2.4A24,24,0,0,0,15.1,0,15.1,15.1,0,0,0,4.3,4.2C-2.5,10.9-1,23.3,7.5,31.8c4.9,4.9,11.1,7.5,16.8,7.5a16.11,16.11,0,0,0,4.4-.6A4.76,4.76,0,0,1,33,39.9L49.4,56.3h0l.2.2,5.6-5.6,1.5-1.2ZM26.2,20.5l-5.4,5.4L13,18.2l5.4-5.4ZM15.1,3.5a16.33,16.33,0,0,1,7.1,1.6L18.5,8.8,13.4,3.7A7.93,7.93,0,0,1,15.1,3.5Zm-5,.9,6.3,6.3L11,16.2,4.7,9.8a11,11,0,0,1,2-3.1A11.34,11.34,0,0,1,10.1,4.4ZM3.6,16.9a14,14,0,0,1,.1-4.1L9,18.2l-4,4A19.78,19.78,0,0,1,3.6,16.9Zm2.8,7.9L11,20.2,18.8,28l-4.7,4.7A24.72,24.72,0,0,1,10,29.4,26,26,0,0,1,6.4,24.8Zm10.3,9.3L20.8,30l5.7,5.7a15,15,0,0,1-2.2.2A19.19,19.19,0,0,1,16.7,34.1Zm16-1.4a10.29,10.29,0,0,1-3.1,2l-6.8-6.8,5.4-5.4,6.7,6.7A9.88,9.88,0,0,1,32.7,32.7Z" />
+                                        <circle class="cls-1" cx="36.9" cy="15.6" r="7.1" />
+                                    </svg>
+                                    Tennis
+                                </div>
+                            </th>
+                            <th>Matched</th>
+                            <th colspan="2">1</th>
+                            <th colspan="2">X</th>
+                            <th colspan="2">2</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245484745" class="m_1_245484745 McomCustom">
+
+        <td class="sport-date bg-primary" style="color:rgb(255, 255, 255); ">
+            <div>
+                <span class="day">InPlay</span>
+                <span class="market-time">10:10</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T10:10:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245484745">
+                    M Sherif v Dar Semenistaja
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+                <span class="svg-DTV svg-DTV-dims svg-span" role="img" aria-label="tv"></span> 
+            <span class="TMFORDESK">2,859,806</span>
+        </div>
+        <span class="TMFORMOB">2,859,806</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.14</strong>
+            <span>34.58k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.15</strong>
+            <span>166.6k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 7.8 </strong>
+            <span>1,275</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>8 </strong>
+            <span>2,106</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245486546" class="m_1_245486546 McomCustom">
+
+        <td class="sport-date bg-primary" style="color:rgb(255, 255, 255); ">
+            <div>
+                <span class="day">InPlay</span>
+                <span class="market-time">11:20</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T11:20:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245486546">
+                    Els Jacquemot v Kat von Deichmann
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+                <span class="svg-DTV svg-DTV-dims svg-span" role="img" aria-label="tv"></span> 
+            <span class="TMFORDESK">1,053,072</span>
+        </div>
+        <span class="TMFORMOB">1,053,072</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>2.14</strong>
+            <span>21</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.68</strong>
+            <span>2,934</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 1.6 </strong>
+            <span>4,914</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.87 </strong>
+            <span>11</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245487476" class="m_1_245487476 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">12:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T12:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245487476">
+                    L Bronzetti v Ruzic
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">171,935</span>
+        </div>
+        <span class="TMFORMOB">171,935</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.71</strong>
+            <span>47</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.73</strong>
+            <span>1,095</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 2.38 </strong>
+            <span>718</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.42 </strong>
+            <span>619</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245466739" class="m_1_245466739 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">12:30</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T12:30:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245466739">
+                    Kazionova v Oks Selekhmeteva
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">16,516</span>
+        </div>
+        <span class="TMFORMOB">16,516</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>5.9</strong>
+            <span>319</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>6.2</strong>
+            <span>23</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 1.19 </strong>
+            <span>5,071</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.21 </strong>
+            <span>1,748</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245467047" class="m_1_245467047 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">12:30</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T12:30:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245467047">
+                    A Sabalenka v A Anisimova
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">3,720,026</span>
+        </div>
+        <span class="TMFORMOB">3,720,026</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.39</strong>
+            <span>6,313</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.4</strong>
+            <span>211.2k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 3.55 </strong>
+            <span>15.99k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>3.6 </strong>
+            <span>17.55k</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245487638" class="m_1_245487638 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">13:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T13:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245487638">
+                    Chirico v El Cocciaretto
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">12,310</span>
+        </div>
+        <span class="TMFORMOB">12,310</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>3.6</strong>
+            <span>73</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>3.8</strong>
+            <span>494</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 1.36 </strong>
+            <span>1,359</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.38 </strong>
+            <span>26</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245488067" class="m_1_245488067 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">14:30</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T14:30:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245488067">
+                    Bencic v Iga Swiatek
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">1,271,704</span>
+        </div>
+        <span class="TMFORMOB">1,271,704</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>3.9</strong>
+            <span>14k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>3.95</strong>
+            <span>85.53k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left -empty_blue">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right -empty_pink">
+            <strong>  </strong>
+            <span>-</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 1.34 </strong>
+            <span>222.6k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.35 </strong>
+            <span>165.4k</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+    
+      <div class="tabcontent">
+            <div class="high_lights">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="sport">
+                                <div class="sport">
+                                    <svg id="soccer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                        <defs>
+                                            <style>
+                                                .cls-1 {
+                                                    fill: #fff;
+                                                }
+                                            </style>
+                                        </defs>
+                                        <title>soccer</title>
+                                        <path class="cls-1" d="M12.5.3A11.34,11.34,0,0,0,10,0,11.34,11.34,0,0,0,7.5.3l2.5.9Z" />
+                                        <path class="cls-1" d="M14.3,19.1a9.83,9.83,0,0,0,3.7-3l-2.4.9Z" />
+                                        <path class="cls-1" d="M19.3,6.3a7.19,7.19,0,0,0-1.2-2.1V6.8L20,8.9A7.71,7.71,0,0,0,19.3,6.3Z" />
+                                        <path class="cls-1" d="M2,16.1a9.83,9.83,0,0,0,3.7,3l-1.3-2Z" />
+                                        <path class="cls-1" d="M1.8,4.2A11.78,11.78,0,0,0,.7,6.1,12.76,12.76,0,0,0,0,8.9L1.8,6.7Z" />
+                                        <polygon class="cls-1" points="7 9.4 8.2 12.9 11.8 12.9 13 9.4 10 7.3 7 9.4" />
+                                        <path class="cls-1" d="M14.1,16.6l-2-2.1H7.9l-2,2.1,2,3.2A14.92,14.92,0,0,0,10,20a14.92,14.92,0,0,0,2.1-.2Z" />
+                                        <path class="cls-1" d="M19.2,14a.1.1,0,0,1,.1-.1,9,9,0,0,0,.7-2.7L17.3,8,14.5,9.6l-1.3,3.8,2,2.1Z" />
+                                        <path class="cls-1" d="M.8,14a.1.1,0,0,0-.1-.1A13.43,13.43,0,0,1,0,11.2L2.7,8,5.5,9.6l1.3,3.8-2,2.1Z" />
+                                        <path class="cls-1" d="M5.5,1.1A16.44,16.44,0,0,0,3.3,2.5V6.6L6,8.2,9.2,5.9V2.5Z" />
+                                        <path class="cls-1" d="M14.5,1.1,10.7,2.5V5.9l3.2,2.3,2.7-1.6V2.5A11,11,0,0,0,14.5,1.1Z" />
+                                    </svg>
+                                    Football
+                                </div>
+                            </th>
+                            <th>Matched</th>
+                            <th colspan="2">1</th>
+                            <th colspan="2">X</th>
+                            <th colspan="2">2</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245399631" class="m_1_245399631 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">14:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T14:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245399631">
+                    Atletic Club Escaldes v F91 Dudelange
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">69,809</span>
+        </div>
+        <span class="TMFORMOB">69,809</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>2.98</strong>
+            <span>183</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>3.1</strong>
+            <span>53</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.4 </strong>
+            <span>128.9k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 3.5 </strong>
+            <span>171.4k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 2.6 </strong>
+            <span>155</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.68 </strong>
+            <span>226</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245422479" class="m_1_245422479 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">15:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T15:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245422479">
+                    FCB Magpies v Paide Linnameeskond
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">147,288</span>
+        </div>
+        <span class="TMFORMOB">147,288</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>6</strong>
+            <span>384</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>6.2</strong>
+            <span>75</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 4.1 </strong>
+            <span>23.13k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 4.2 </strong>
+            <span>5,171</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 1.68 </strong>
+            <span>149</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.69 </strong>
+            <span>85</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245292766" class="m_1_245292766 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">16:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T16:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245292766">
+                    FC Sabah v NK Celje
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">21,232</span>
+        </div>
+        <span class="TMFORMOB">21,232</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>2.32</strong>
+            <span>27</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.36</strong>
+            <span>373</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.4 </strong>
+            <span>37.59k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 3.55 </strong>
+            <span>16.82k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 3.45 </strong>
+            <span>64</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>3.55 </strong>
+            <span>14</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245374669" class="m_1_245374669 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">16:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T16:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245374669">
+                    Torpedo Kutaisi v FC Ordabasy
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">94,351</span>
+        </div>
+        <span class="TMFORMOB">94,351</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>2.02</strong>
+            <span>327</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.1</strong>
+            <span>2,211</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.6 </strong>
+            <span>3,353</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 3.65 </strong>
+            <span>15.97k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 4.1 </strong>
+            <span>53</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>4.4 </strong>
+            <span>336</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245422569" class="m_1_245422569 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">16:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T16:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245422569">
+                    FK Kauno Zalgiris v Penybont FC
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">85,332</span>
+        </div>
+        <span class="TMFORMOB">85,332</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.19</strong>
+            <span>27.43k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.21</strong>
+            <span>15.07k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 7.6 </strong>
+            <span>12.69k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 8.2 </strong>
+            <span>4,608</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 20 </strong>
+            <span>73</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>24 </strong>
+            <span>402</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245425994" class="m_1_245425994 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">16:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T16:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245425994">
+                    SJK v Klaksvikar Itrottarfelag
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">27,980</span>
+        </div>
+        <span class="TMFORMOB">27,980</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>2.06</strong>
+            <span>62</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.12</strong>
+            <span>43</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.6 </strong>
+            <span>3,395</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 3.75 </strong>
+            <span>10.52k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 3.95 </strong>
+            <span>114</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>4.1 </strong>
+            <span>46</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245243942" class="m_1_245243942 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">16:30</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T16:30:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245243942">
+                    AEK Larnaca v Partizan Belgrade
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">213,589</span>
+        </div>
+        <span class="TMFORMOB">213,589</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.74</strong>
+            <span>1,125</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.75</strong>
+            <span>314</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.8 </strong>
+            <span>19.22k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 3.9 </strong>
+            <span>20.49k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 6 </strong>
+            <span>500</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>6.2 </strong>
+            <span>316</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245374457" class="m_1_245374457 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">16:30</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T16:30:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245374457">
+                    FC Urartu v Neman Grodno
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">89,516</span>
+        </div>
+        <span class="TMFORMOB">89,516</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>2.44</strong>
+            <span>187</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.56</strong>
+            <span>20</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.35 </strong>
+            <span>746</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 3.4 </strong>
+            <span>166.6k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 3.2 </strong>
+            <span>11</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>3.35 </strong>
+            <span>12</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245422659" class="m_1_245422659 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">16:30</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T16:30:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245422659">
+                    Racing FC Union Luxembourg v Dila Gori
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">8,344</span>
+        </div>
+        <span class="TMFORMOB">8,344</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>5.1</strong>
+            <span>21</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>5.3</strong>
+            <span>64</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.85 </strong>
+            <span>1,481</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 4.2 </strong>
+            <span>2,399</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 1.77 </strong>
+            <span>128</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.84 </strong>
+            <span>186</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245406249" class="m_1_245406249 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">16:45</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T16:45:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245406249">
+                    Nomme Kalju v Partizani Tirana
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">35,527</span>
+        </div>
+        <span class="TMFORMOB">35,527</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>2.9</strong>
+            <span>10</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.98</strong>
+            <span>64</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.4 </strong>
+            <span>24.47k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 3.45 </strong>
+            <span>62.61k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 2.66 </strong>
+            <span>261</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.74 </strong>
+            <span>11</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245244050" class="m_1_245244050 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">17:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T17:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245244050">
+                    Paks v CFR Cluj
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">409,818</span>
+        </div>
+        <span class="TMFORMOB">409,818</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>4.7</strong>
+            <span>252</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>4.9</strong>
+            <span>26</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.7 </strong>
+            <span>13.37k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 3.8 </strong>
+            <span>16.81k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 1.9 </strong>
+            <span>18</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.92 </strong>
+            <span>37</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245292948" class="m_1_245292948 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">17:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T17:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245292948">
+                    Sheriff Tiraspol v Prishtina
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">53,887</span>
+        </div>
+        <span class="TMFORMOB">53,887</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.4</strong>
+            <span>925</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.42</strong>
+            <span>2,087</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 5.2 </strong>
+            <span>2,966</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 5.4 </strong>
+            <span>8,398</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 10 </strong>
+            <span>154</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>10.5 </strong>
+            <span>29</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245244160" class="m_1_245244160 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">17:30</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T17:30:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245244160">
+                    PFC Levski Sofia v Hapoel Beer Sheva
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">38,126</span>
+        </div>
+        <span class="TMFORMOB">38,126</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>2.54</strong>
+            <span>615</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.56</strong>
+            <span>75</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.4 </strong>
+            <span>2,671</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 3.45 </strong>
+            <span>44.55k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 3.15 </strong>
+            <span>128</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>3.25 </strong>
+            <span>480</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245292856" class="m_1_245292856 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">18:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T18:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245292856">
+                    Shakhtar v Ilves
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">211,110</span>
+        </div>
+        <span class="TMFORMOB">211,110</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.24</strong>
+            <span>4,429</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.25</strong>
+            <span>18.57k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 6.6 </strong>
+            <span>29.56k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 7 </strong>
+            <span>38.22k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 19 </strong>
+            <span>55</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>20 </strong>
+            <span>150</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245374841" class="m_1_245374841 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">18:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T18:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245374841">
+                    Torpedo BelAZ v Rabotnicki
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">8,157</span>
+        </div>
+        <span class="TMFORMOB">8,157</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.89</strong>
+            <span>50</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.94</strong>
+            <span>11</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.65 </strong>
+            <span>17.44k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 3.8 </strong>
+            <span>492</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 4.7 </strong>
+            <span>14</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>4.9 </strong>
+            <span>11</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245402344" class="m_1_245402344 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">18:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T18:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245402344">
+                    Vllaznia Shkoder v BFC Daugavpils
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">28,441</span>
+        </div>
+        <span class="TMFORMOB">28,441</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>1.57</strong>
+            <span>70</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>1.61</strong>
+            <span>134</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 4 </strong>
+            <span>3,147</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 4.3 </strong>
+            <span>29.11k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 7.4 </strong>
+            <span>33</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>8.6 </strong>
+            <span>331</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245292676" class="m_1_245292676 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">18:15</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T18:15:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245292676">
+                    Spartak Trnava v Hacken
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">47,431</span>
+        </div>
+        <span class="TMFORMOB">47,431</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>3.55</strong>
+            <span>25</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>3.75</strong>
+            <span>27</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.6 </strong>
+            <span>6,403</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 3.65 </strong>
+            <span>209.2k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 2.18 </strong>
+            <span>63</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.26 </strong>
+            <span>66</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245403068" class="m_1_245403068 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">19:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T19:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245403068">
+                    Larne v FK Auda
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">7,019</span>
+        </div>
+        <span class="TMFORMOB">7,019</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>2.92</strong>
+            <span>21</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.96</strong>
+            <span>53</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.35 </strong>
+            <span>12.47k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 3.55 </strong>
+            <span>22.99k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 2.66 </strong>
+            <span>42</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.76 </strong>
+            <span>11</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245422446" class="m_1_245422446 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">19:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T19:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245422446">
+                    Finland (W) v Switzerland (W)
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">196,079</span>
+        </div>
+        <span class="TMFORMOB">196,079</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>4</strong>
+            <span>8,395</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>4.1</strong>
+            <span>1,152</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.25 </strong>
+            <span>492.3k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 3.35 </strong>
+            <span>168.1k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 2.2 </strong>
+            <span>1,931</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.22 </strong>
+            <span>1,148</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>
+
+<style>
+    #containersccr {
+  display: flex;                  /* establish flex container */
+  flex-direction: row;            /* default value; can be omitted */
+  flex-wrap: nowrap;              /* default value; can be omitted */
+  justify-content: space-between;
+  max-width:100%;
+  min-width: 63px;
+}
+#containersccr > div {
+  width:50%;
+}
+</style>
+
+<tr id="m_1_245422338" class="m_1_245422338 McomCustom">
+
+        <td class="sport-date">
+            <div>
+                <span class="day">Today</span>
+                <span class="market-time">19:00</span>
+                <span class="d-none utctime" data-format="H:mm" data-target="time">
+                    2025-07-10T19:00:00.0000000Z
+                </span>
+            </div>
+        </td>
+
+    <td>
+        <div class="teams">
+            <strong class="team-1">
+                <a href="/Common/Market?id=1.245422338">
+                    Norway (W) v Iceland (W)
+                </a>
+            </strong>
+            <strong class="team-2"><a href=""></a></strong>
+        </div>
+    </td>
+    
+    <td>
+        <div class="matched">
+            <span class="TMFORDESK">181,859</span>
+        </div>
+        <span class="TMFORMOB">181,859</span>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong>2.24</strong>
+            <span>502</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>2.28</strong>
+            <span>2,802</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue m-left ">
+            <strong> 3.6 </strong>
+            <span>16.85k</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink m-right ">
+            <strong> 3.65 </strong>
+            <span>15.54k</span>
+        </div>
+    </td>
+
+    <td>
+        <div class="box -blue ">
+            <strong> 3.55 </strong>
+            <span>558</span>
+        </div>
+    </td>
+    <td>
+        <div class="box -pink ">
+            <strong>3.65 </strong>
+            <span>1,712</span>
+        </div>
+    </td>
+
+    <td class="action">
+        <a href="#"><i class="fa fa-info-circle"></i></a>
+    </td>
+</tr>                    </tbody>
+                </table>
+            </div>
+        </div>
+    
+    
+</div>

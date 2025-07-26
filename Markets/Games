@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Sports Trading Platform">
+    <meta name="keyword" content="sports trading, bet, betfair">
+    <title>Live Gameing | BetPro</title>
+    <!-- Icons-->
+    <link rel="shortcut icon" href="/img/favicon/BetPro.ico">
+    <link rel="stylesheet" href="/css/all.css" />
+    <link href="/css/style.css?61900" rel="stylesheet" />
+    <link href="/css/site.min.css?61900" rel="stylesheet" />
+    <link href="/css/BetPro-style.css?61900" rel="stylesheet" />
+    <script>
+        var pricesUrl = "https://prices9.mgs11.com/api";
+        var ordersUrl = "https://orders.mgs11.com/api";
+        const SsocketUrl = "https://orders-ws.mgs11.com/signalr";
+        const LiquidityRate = 35;
+        let dealerSck = 1;
+    </script>
+</head>
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <header class="app-header navbar">
+        <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="logo-bar">
+            <a href="/index">
+                <span class="green-logo-text d-sm-down-none">
+                    BetPro
+                </span>
+            </a>
+        </div>
+
+        <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+
+<ul class="nav navbar-nav d-md-down-none">
+        <li class="nav-item px-3">
+            <a class="nav-link" href="/index">Dashboard</a>
+        </li>
+        <li class="nav-item px-3">
+            <a class="nav-link" href="/Accounts/Chart">Users</a>
+        </li>
+        <li class="nav-item px-3">
+            <a class="nav-link" href="/Reports/BookDetail">Reports</a>
+        </li>
+</ul>
+
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item px-2">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Chek10 (Admin) <i class="fas fa-caret-down"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="/Common/Profile">
+                        <i class="fa fa-user"></i> Profile
+                    </a>
+                    <a class="dropdown-item" id="btn-logout" href="/Common/Logout">
+                        <i class="fa fa-sign-out"></i> Logout
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/" role="button" aria-haspopup="true" aria-expanded="false">
+                    <strong>B:</strong> <span class="wallet-balance"> </span>
+                    <strong>Exp:</strong> <span class="wallet-exposure"></span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="app-body">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                
+
+<ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/index">
+                <i class="nav-icon fas fa-tachometer-alt fa-inverse"></i> Dashboard
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Accounts/Chart">
+                <i class="nav-icon fas fa-users fa-inverse"></i> Users
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/Liables">
+                <i class="nav-icon fas fa-funnel-dollar fa-inverse"></i> Current Position
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Reports/BookDetail">
+                <i class="nav-icon fas fa-money-check fa-inverse"></i> Reports
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/BetLocker">
+                <i class="nav-icon fas fa-unlock-alt fa-inverse"></i> Bet Lock
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/Games">
+                <i class="nav-icon fas fa-star fa-inverse"></i> Star Casino
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/WorldCasino">
+                <i class="nav-icon fas fa-globe fa-inverse"></i> World Casino
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/ExGames">
+                <i class="nav-icon fas fa-globe fa-inverse"></i> BetFair Games
+            </a>
+        </li>
+
+
+
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/soccer.svg" alt="C">
+            Soccer
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244777097">
+Seattle Sounders v Atletico Madrid                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244776977">
+Paris St-G v Botafogo FR                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244865523">
+America de Cali S.A v Ind Medellin                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244773440">
+Saudi Arabia v USA                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244929288">
+Norway U19 v Germany U19                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244923094">
+Leeds v Everton                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244643527">
+Galway Utd v St Patricks                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/tennis.svg" alt="C">
+            Tennis
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244936773">
+Nakashima v Ja Draper                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244936176">
+Sramkova v L Noskova                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244936972">
+L Fernandez v D Yastremska                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244937402">
+Hol Rune v Bautista Agut                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/cricket.svg" alt="C">
+            Cricket
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244792514">
+England v India                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244867013">
+Sri Lanka v Bangladesh                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244904335">
+West Indies W v South Africa W                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244896900">
+Texas Super Kings v San Francisco Unicorns                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244924578">
+Warwickshire v Worcestershire                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244955465">
+Surrey v Middlesex                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244951813">
+MI New York v Washington Freedom                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244952103">
+Seattle Orcas v Los Angeles Knight Riders                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/horse.svg" alt="C">
+            Horse Race
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935892">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-19T23:30:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Charles Town (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935888">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-19T23:41:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Penn National (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935934">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-19T23:51:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Evangeline Downs (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935876">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-19T23:54:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Churchill Downs (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935893">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-19T23:57:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Charles Town (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935889">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T00:10:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Penn National (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935935">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T00:18:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Evangeline Downs (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935879">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T00:23:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Churchill Downs (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935894">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T00:25:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Charles Town (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935890">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T00:39:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Penn National (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935936">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T00:46:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Evangeline Downs (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935895">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T00:53:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Charles Town (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935937">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T01:13:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Evangeline Downs (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935896">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T01:21:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Charles Town (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935938">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T01:40:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Evangeline Downs (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935897">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T01:49:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Charles Town (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244914074">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T01:55:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Geelong (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244913126">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:10:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Coffs Harbour (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244912069">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:17:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Rockhampton (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244935898">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:17:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Charles Town (US)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244940862">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:20:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Wagga (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244914082">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:25:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Geelong (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244913902">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:30:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Canberra (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244941428">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:37:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Mildura (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244913131">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:45:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Coffs Harbour (AU)
+                                </span>
+                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/greyhound-racing.svg" alt="C">
+            Greyhound
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244944964">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T01:07:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Healesville (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244944969">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T01:28:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Healesville (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244944974">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T01:44:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Healesville (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244944979">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T01:59:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Healesville (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244944984">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:14:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Healesville (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244945024">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:19:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Goulburn (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244944989">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:34:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Healesville (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244945232">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:38:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Townsville (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244945029">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:42:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Goulburn (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244944994">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:49:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Healesville (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244945237">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T02:57:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Townsville (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244945034">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T03:09:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Goulburn (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244945242">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T03:14:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Townsville (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244944999">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T03:17:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Healesville (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244945039">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T03:24:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Goulburn (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244945247">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T03:34:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Townsville (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244945004">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T03:37:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Healesville (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244945044">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T03:44:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Goulburn (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244945252">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T03:49:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Townsville (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.244945009">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T03:52:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Healesville (AU)
+                                </span>
+                        </a>
+                    </li>
+        </ul>
+    </li>
+</ul>
+            </nav>
+
+            <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+        </div>
+        <main class="main">
+            <div class="container-fluid">
+                <div class="animated fadeIn">
+                    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="container-fluid ">
+    <div class="row">
+        <div class="col-md-8">
+            <div id="livegamecasinom">
+            </div>
+            <div id="livegamecasinofp">
+            </div>
+        </div>
+
+        <div class="col-md-4" id="Pnl-Orders">
+            <div class="card card-accent-primary">
+                <div class="card-header">
+                    <strong>Open Bets ({{ UnMatched.length }})</strong>
+                </div>
+
+                <div class="card-body  Orders-Widget">
+                    <div class="row">
+                        <div class="col-4 no-pad"><strong>Runner</strong></div>
+                        <div class="col-2 no-pad"><strong>Price</strong></div>
+                        <div class="col-2 no-pad"><strong>Size</strong></div>
+                        <div class="col-2 no-pad"><strong>Better</strong></div>
+                        <div class="col-2 no-pad"><strong>Master</strong></div>
+                    </div>
+                    <div :id="order.orderId" class="row" v-for="order in UnMatched" v-bind:class="{ 'order-b': order.IsBack, 'order-l': order.IsLay }">
+                        <div class="col-4">{{ order.rn }}</div>
+                        <div class="col-2 no-pad">{{ order.up }}</div>
+                        <div class="col-2 no-pad">{{ order.us | format }}</div>
+                        <div class="col-2 no-pad">{{ order.bn }}</div>
+                        <div class="col-2 no-pad">{{ order.mn }}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card card-accent-primary">
+                <div class="card-header">
+                    <strong>Matched Bets ({{ Matched.length }})</strong>
+                    <button v-on:click="ShowAllOrders()" class="btn btn-sm btn-primary">Full Bet List</button>
+                </div>
+
+                <div class="card-body Orders-Widget">
+                    <div class="row">
+                        <div class="col-4 no-pad"><strong>Runner</strong></div>
+                        <div class="col-2 no-pad"><strong>Price</strong></div>
+                        <div class="col-2 no-pad"><strong>Size</strong></div>
+                        <div class="col-2 no-pad"><strong>Better</strong></div>
+                        <div class="col-2 no-pad"><strong>Master</strong></div>
+                    </div>
+                    <div class="row" v-for="order in Matched" v-bind:class="{ 'order-b': order.IsBack, 'order-l': order.IsLay }">
+                        <div class="col-4 no-pad">{{ order.rn }}</div>
+                        <div class="col-2 no-pad">{{ order.mp }}</div>
+                        <div class="col-2 no-pad">{{ order.ms | format }}</div>
+                        <div class="col-2 no-pad">{{ order.bn }}</div>
+                        <div class="col-2 no-pad">{{ order.mn }}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+     <div class="modal fade" id="modalMarketRules" tabindex="-1" role="dialog" aria-labelledby="modalMarketRules" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Market Rules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="market-rules-text" class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="app-footer">
+    <ul id="news-ticker-foot">
+        <li data-update="item1">Welcome to BetPro</li>
+    </ul>
+</footer>
+<!-- CoreUI and necessary plugins-->
+
+<script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+<script src="/js/signalr/dist/browser/signalr.js"></script>
+
+
+    <script src="/js/vue.min.js"></script>
+    <script src="https://unpkg.com/vuex@3.1.3/dist/vuex.min.js"></script>
+    <script src="/js/site.min.js?61900"></script>
+    <script src="/js/bof.js?61900"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1WVLP1K0K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('set', { 'user_id': 'Chek10' });
+        gtag('config', 'G-C1WVLP1K0K');
+    </script>
+
+
+<script type="text/javascript" src="/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="/js/src/client-locales.js?61900"></script>
+
+    
+    <script type="text/javascript">
+        marketStore.state.userId = 5202744;
+    </script>
+
+    <script type="text/javascript" src="//wurfl.io/wurfl.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                type: 'GET',
+                url: "/Markets/Games/?handler=Market",
+                success: function (result) {
+
+                    document.getElementById('livegamecasinom').innerHTML = result;
+
+                },
+                error: function (exception) {
+                }
+            });
+
+            myFunction2();
+            myFunction();
+            
+            marketStore.state.eventId = 2;
+            marketStore.state.marketType = 'casino';
+            OrderIntervalId = setInterval(OrderVue.ListOrders, 3000);
+        });
+
+        var url = '';
+
+        url = '';
+
+        document.getElementById("casino").src = url;
+
+        function myFunction2() {
+             $.ajax({
+                 type: 'GET',
+                 url: "/Markets/Games/?handler=Market",
+                 success: function (result) {
+
+                     document.getElementById('livegamecasinom').innerHTML = result;
+
+                 },
+                 error: function (exception) {
+                 }
+             });
+        };
+
+        function myFunction() {
+            setInterval(myFunction2, 15000);
+        }
+    </script>
+
+
+    <script>
+        const token = getCookie('wexscktoken');
+        const sess = getCookie('wex3authtoken');
+        const reft = getCookie('wex3reftoken');
+
+        $(document).ready(function () {
+            pollUserData();
+
+            pollRefreshToken();
+        });
+    </script>
+</body>
+</html>

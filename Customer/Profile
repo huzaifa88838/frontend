@@ -1,0 +1,997 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google" content="notranslate" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sports Trading Platform">
+    <meta name="keyword" content="sports trading, bet, betfair">
+    <meta name="robots" content="noindex" />
+
+    <link rel="shortcut icon" href="/img/favicon/BetPro.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/img/sprites/css/sprite.css" />
+    <link rel="stylesheet" href="/dist/site.css?62000" />
+    <link href="/css/BetPro-style.css?62000" rel="stylesheet" />
+
+    <title>Profile | BetPro</title>
+    <style>
+        .body {
+            min-height: 91.7vh;
+        }
+
+        center a {
+            color: white;
+        }
+
+        center a {
+            font-size: 13px;
+        }
+    </style>
+
+    <script>
+        const pricesUrl = "https://prices9.mgs11.com/api";
+        const ordersUrl = "https://orders.mgs11.com/api";
+        const LiquidityRate = 35;
+        const SsocketUrl = "https://orders-ws2.mgs11.com/signalr";
+        const uwsUrl = "https://orders-ws2.mgs11.com/usershub";
+        const genSck = 1;
+        const CasSck = 1;
+        const casinoUrl = "https://casino-ws.mgs11.com/signalr";
+        // var SsocketEnable = 0;
+    </script>
+</head>
+<body class="bg-gray d-flex flex-column">
+    <div class="main-page">
+        <div class="row no-gutters">
+            <div class="col-md-3 col-lg-2" id="sidebar">
+                <div class="logo-bar">
+                    <a href="/Common/Dashboard">
+                        <span class="green-logo-text">BetPro</span>
+                    </a>
+                </div>
+                <div class="divider"></div>
+                <div class="sidebar-menu" style="height:100%;">
+                    <ul>
+                        
+
+<ul class="nav">
+
+
+
+<style>
+
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+            moz-transform: rotateY(0deg);
+            ms-transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+            moz-transform: rotateY(360deg);
+            ms-transform: rotateY(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotateY(0deg);
+        }
+
+        to {
+            -webkit-transform: rotateY(360deg);
+        }
+    }
+
+    .imageSpin {
+        transition-delay: 5s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: inherit;
+        -webkit-animation-name: spin;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: initial;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-delay: 2s;
+    }
+
+    .imageSpin2 {
+        transition-delay: 3s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: inherit;
+        -webkit-animation-name: spin;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: initial;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-delay: 2s;
+    }
+   
+
+    /*for spin2*/
+    #spinning-circle {
+        animation-name: spinning-circle;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes spinning-circle {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    #invertcolor {
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        animation-name: spinning-circle;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    #invertcolor2{
+         filter: invert(100%);
+        -webkit-filter: invert(100%);
+       animation-name: spin;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        max-height:30px;
+    }
+
+    #invertcolor3 {
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        animation-name: spin;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        max-height: 30px;
+    }
+
+
+ .exgameblinker{
+   animation: animate 8s linear infinite;
+ } 
+  
+ @keyframes animate{
+   0%{
+     background-color:red;
+   }
+   25%{
+     background-color:inherit;
+   }
+   50%{
+     background-color:inherit;
+   }
+   75%{
+     background-color:inherit;
+   }
+   100%{
+     background-color:red;
+   }
+ }
+
+    .Galaxyblinker {
+        position: relative;
+        z-index: 0;
+    }
+
+        .Galaxyblinker::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(90deg, #8a47ff 0%, #c36eff 100%);
+            opacity: 1;
+            animation: animateGradient 12s linear infinite;
+            transition: opacity 0.5s ease;
+        }
+
+    @keyframes animateGradient {
+        0%, 100%
+
+    {
+        opacity: 1;
+    }
+
+    25%, 50%, 75% {
+        opacity: 0;
+    }
+
+    }
+
+
+</style>
+
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-soccer svg-soccer-dims svg-span" role="img"></span>
+                <span>Soccer</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Soccer</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244845708">
+America MG v Criciuma                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-tennis svg-tennis-dims svg-span" role="img"></span>
+                <span>Tennis</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Tennis</strong></a></li>
+                    <li class="divider"></li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-cricket svg-cricket-dims svg-span" role="img"></span>
+                <span>Cricket</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Cricket</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244792514">
+England v India                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-horse svg-horse-dims svg-span" role="img"></span>
+                <span>Horse Race</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Horse Race</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959810">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T20:55:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Churchill Downs (US)</span>
+                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-greyhound-racing svg-greyhound-racing-dims svg-span" role="img"></span>
+                <span>Greyhound</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Greyhound</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244958552">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T21:04:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Sunderland (GB)</span>
+                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+
+
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/sap" class="dropdown-toggle" role="button">
+                <span class="svg-Casino svg-Casino-dims imageSpin2" role="img"></span>
+                <span>Sports Book</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/RSC" class="dropdown-toggle" role="button">
+                <i style="font-size:17px;" class='fas fa-star fa-2x fa-spin fa-lg'></i>
+                <span>RoyalStar Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/Games" class="dropdown-toggle" role="button">
+                <img id="spinning-circle" src="/img/v2/livegameing.png" onerror="this.onerror = null; this.src= null" alt="G">
+                <span>Star Casino</span>
+            </a>
+
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/WorldCasino">
+                <img id="invertcolor" style="background:invert(100%)" src="/img/v2/worldcasinosvg.png" alt="WC" />
+                <span>World Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/Dream">
+                <span class="svg-Casino svg-Casino-dims imageSpin2" role="img"></span>
+                <span>Royal Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/ExGames">
+                <img id="invertcolor2" src="/img/v2/BLogo.png" />
+                <span>BetFairGames</span>
+            </a>
+         </li>
+        <li class="nav-item exgameblinker" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/BetProGames">
+                <img id="invertcolor3" src="/img/v2/TPS.png" />
+                <span>TeenPatti Studio</span>
+            </a>
+        </li>
+        <li class="nav-item Galaxyblinker" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/Galaxy">
+                <img src="/img/v2/Glogo.png" />
+                <span>Galaxy Casino</span>
+            </a>
+        </li>
+
+    <li class="divider"></li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Customer/Liable">
+                <span class="svg-colossus svg-colossus-dims svg-span" role="img"></span> 
+                Current Position
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Common/Dashboard">
+                <span class="svg-soccer svg-soccer-dims svg-span" role="img"></span> 
+                All Sports
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Common/Result">
+                <span class="svg-clipboard svg-clipboard-dims svg-span" role="img"></span> 
+                Results
+            </a>
+        </li>
+    <li class="nav-item" style="width:100%;">
+        <a class="nav-link" href="#" onclick="ShowExchangeRules(); return false;">
+            <i class="fa fa-info-circle"></i>Market Rules
+        </a>
+    </li>
+    <li class="nav-item" style="width:100%;">
+        <a class="nav-link" href="#" onclick="ShowTos(); return false;">
+            <i class="fa fa-info-circle"></i>Terms &amp; Conditions
+        </a>
+    </li>
+</ul>
+<script>
+    function ShowExchangeRules() {
+        $("#modalMarketRules").modal('show');
+
+        $.get("/rules.html", function (data) {
+            $("#modalMarketRules .modal-body").html(data);
+        });
+    }
+
+    function ShowTos() {
+        $("#modalTos").modal('show');
+        $.get("/tos.html", function (data) {
+            $("#modalTos .modal-body").html(data);
+        });
+    }
+</script>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md" id="main-wrap">
+                <div class="header">
+                    <button class="burger-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <ul class="top-nav">
+                        <li><a href="/Common/Dashboard">Dashboard</a></li>
+                    </ul>
+
+                    <div id="sticky-footer" style="width:50vw; padding:0px; margin:0px; float:left; " class="py-1 bg-black text-white">
+                        <div class="container text-center" style="padding:0px; margin:0px;">
+                            <ul id="news-ticker-foot" style="padding:0px; margin:0px;">
+                                <li data-update="item1" style="padding:0px; margin:0px;">Welcome to BetPro</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown-wrap">
+                        <div class="dropdown">
+
+                            <div class="designation">
+                                <span class="wallet-balance">B: -</span>
+                                <span class="wallet-exposure"> | L: - |</span>
+                            </div>
+
+                            <button class="btn profile-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    alsBettor
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="/Customer/Ledger/">Statement</a>
+                                <a class="dropdown-item" href="/Common/Result/">Result</a>
+                                <a class="dropdown-item" href="/Customer/ProfitLoss/">Profit Loss</a>
+                                <a class="dropdown-item" href="/Customer/Bets">Bet History</a>
+                                <a class="dropdown-item" href="/Customer/Profile">Profile</a>
+                                <a class="dropdown-item" id="btn-logout" href="/Common/Logout">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-wrap body">
+                    <style>
+    .field-validation-error{
+        display:inline-block;
+        width:33vw;
+    }
+
+    /* Styles for the container */
+    .switch-container {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    /* Add Bootstrap-inspired styles to the switch */
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 55px;
+        height: 25px;
+        margin-left: 10px;
+    }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+    /* Bootstrap-inspired styles for the slider */
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: red; /* Bootstrap's secondary color */
+        -webkit-transition: .4s;
+        transition: .4s;
+        border-radius: 34px;
+    }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 20px;
+            left: 4px;
+            bottom: 4px;
+            background-color: #ffffff;
+            -webkit-transition: .4s;
+            transition: .4s;
+            border-radius: 50%;
+        }
+
+    input:checked + .slider {
+        background-color: #3ed300; /* Bootstrap's primary color */
+    }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+    .switch-container p{
+        font-size:20px;
+        color:black;
+        font-family:none;
+    }
+
+    .fa-key {
+        margin-top: -13px;
+        padding-right: 5px;
+    }
+
+    @media screen and (max-width: 635px) {
+        .field-validation-error {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .switch-container p {
+            font-size: 15px;
+        }
+    }
+
+
+</style>
+
+
+<div class="table-wrap ">
+    <div class="col-12 col-md-12">
+        <div class="modal fade modalCasinoToS" id="modalRedirectToLogout" tabindex="-11" role="dialog" aria-labelledby="modalPasswordChange" aria-hidden="true" data-backdrop="static">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Password Changed Successfully</h5>
+                    </div>
+                    <div id="casino-tos-text" class="modal-body">
+                        <p>
+                            <center>
+                                <h3 class="text-danger blink_me">
+                                        Password Changed Successfully
+                                        <i class="fa fa-check" style="font-size:48px;color:forestgreen"></i>
+                                </h3>
+                            </center>
+                        </p>
+                        <p>Your password is changed successfully. <b>Kindly Login Again </b>.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger ml-4" onclick="ReLogin();">
+                            <strong>Login Again</strong>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="table-wrap ">
+        <div class="col-12 col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <strong>Profile</strong>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="UserProfile_Stake1">Stake1</label>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="number" data-val="true" data-val-required="The Stake1 field is required." id="UserProfile_Stake1" name="UserProfile.Stake1" value="2000" /><input name="__Invariant" type="hidden" value="UserProfile.Stake1" />
+                                        <span class="field-validation-valid" data-valmsg-for="UserProfile.Stake1" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="UserProfile_Stake2">Stake2</label>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="number" data-val="true" data-val-required="The Stake2 field is required." id="UserProfile_Stake2" name="UserProfile.Stake2" value="5000" /><input name="__Invariant" type="hidden" value="UserProfile.Stake2" />
+                                        <span class="field-validation-valid" data-valmsg-for="UserProfile.Stake2" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="UserProfile_Stake3">Stake3</label>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="number" data-val="true" data-val-required="The Stake3 field is required." id="UserProfile_Stake3" name="UserProfile.Stake3" value="10000" /><input name="__Invariant" type="hidden" value="UserProfile.Stake3" />
+                                        <span class="field-validation-valid" data-valmsg-for="UserProfile.Stake3" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="UserProfile_Stake4">Stake4</label>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="number" data-val="true" data-val-required="The Stake4 field is required." id="UserProfile_Stake4" name="UserProfile.Stake4" value="25000" /><input name="__Invariant" type="hidden" value="UserProfile.Stake4" />
+                                        <span class="field-validation-valid" data-valmsg-for="UserProfile.Stake4" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+                                <div style="display: none;">
+                                    <div class="form-group row">
+                                        <label class="col-md-3 col-form-label" for="UserProfile_Stake5">Stake5</label>
+                                        <div class="col-md-6">
+                                            <input class="form-control" type="number" data-val="true" data-val-required="The Stake5 field is required." id="UserProfile_Stake5" name="UserProfile.Stake5" value="50000" /><input name="__Invariant" type="hidden" value="UserProfile.Stake5" />
+                                            <span class="field-validation-valid" data-valmsg-for="UserProfile.Stake5" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3 col-form-label" for="UserProfile_Stake6">Stake6</label>
+                                        <div class="col-md-6">
+                                            <input class="form-control" type="number" data-val="true" data-val-required="The Stake6 field is required." id="UserProfile_Stake6" name="UserProfile.Stake6" value="100000" /><input name="__Invariant" type="hidden" value="UserProfile.Stake6" />
+                                            <span class="field-validation-valid" data-valmsg-for="UserProfile.Stake6" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="UserProfile_Plus1">Plus1</label>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="number" data-val="true" data-val-required="The Plus1 field is required." id="UserProfile_Plus1" name="UserProfile.Plus1" value="1000" /><input name="__Invariant" type="hidden" value="UserProfile.Plus1" />
+                                        <span class="field-validation-valid" data-valmsg-for="UserProfile.Plus1" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="UserProfile_Plus2">Plus2</label>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="number" data-val="true" data-val-required="The Plus2 field is required." id="UserProfile_Plus2" name="UserProfile.Plus2" value="5000" /><input name="__Invariant" type="hidden" value="UserProfile.Plus2" />
+                                        <span class="field-validation-valid" data-valmsg-for="UserProfile.Plus2" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="UserProfile_Plus3">Plus3</label>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="number" data-val="true" data-val-required="The Plus3 field is required." id="UserProfile_Plus3" name="UserProfile.Plus3" value="10000" /><input name="__Invariant" type="hidden" value="UserProfile.Plus3" />
+                                        <span class="field-validation-valid" data-valmsg-for="UserProfile.Plus3" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-md-3 col-form-label" for="UserProfile_Plus4">Plus4</label>
+                                    <div class="col-md-6">
+                                        <input class="form-control" type="number" data-val="true" data-val-required="The Plus4 field is required." id="UserProfile_Plus4" name="UserProfile.Plus4" value="25000" /><input name="__Invariant" type="hidden" value="UserProfile.Plus4" />
+                                        <span class="field-validation-valid" data-valmsg-for="UserProfile.Plus4" data-valmsg-replace="true"></span>
+                                    </div>
+                                </div>
+
+                                <div style="display: none;">
+                                    <div class="form-group row">
+                                        <label class="col-md-3 col-form-label" for="UserProfile_Plus5">Plus5</label>
+                                        <div class="col-md-6">
+                                            <input class="form-control" type="number" data-val="true" data-val-required="The Plus5 field is required." id="UserProfile_Plus5" name="UserProfile.Plus5" value="50000" /><input name="__Invariant" type="hidden" value="UserProfile.Plus5" />
+                                            <span class="field-validation-valid" data-valmsg-for="UserProfile.Plus5" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-md-3 col-form-label" for="UserProfile_Plus6">Plus6</label>
+                                        <div class="col-md-6">
+                                            <input class="form-control" type="number" data-val="true" data-val-required="The Plus6 field is required." id="UserProfile_Plus6" name="UserProfile.Plus6" value="100000" /><input name="__Invariant" type="hidden" value="UserProfile.Plus6" />
+                                            <span class="field-validation-valid" data-valmsg-for="UserProfile.Plus6" data-valmsg-replace="true"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <input type="hidden" data-val="true" data-val-required="The UserId field is required." id="UserProfile_UserId" name="UserProfile.UserId" value="5270033" />
+                                <div class="form-actions">
+                                    <button class="btn btn-primary" type="submit">Save changes</button>
+                                    <button class="btn btn-danger" type="button">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8GVcHGMfjbhImL432Db-SfcXne7mv3jy39UttpdIWaHqTlxFrJBuFJ10GBXXzvhjgm-WZO8T3HlQVy3RVFPGMFeklc3GJHM214-Oz2nNd9QIwXGS5gjW2Ihy9Cn9CU5yO3JHFBaLPpbr93OJfXeAvf4X0rtqpFwCLQDNO1ZrQMxUZeVhJOK2336Pdtw1jpZYMw" /></form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="table-wrap">
+    <div class="col-12 col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <strong>Change Password</strong>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="form-group row">
+                                <label class="col-md-3 col-form-label" for="NewPassword">NewPassword</label>
+                                <div class="col-md-6">
+                                    <input value="" class="form-control" required type="text" data-val="true" data-val-length="Kam Sey kam 8 lafaz ka password rekhay jis mey number(123) or alphabets(abc) dono aye . Password must contains alphabets and numbers only." data-val-length-max="30" data-val-length-min="8" data-val-regex="Kam Sey kam 8 lafaz ka password rekhay jis mey number(123) or alphabets(abc) dono aye . Password must contains alphabets and numbers only." data-val-regex-pattern="^(?=.*\d)(?=.*[a-zA-Z]).{6,20}$" id="NewPassword" maxlength="30" name="NewPassword" />
+                                    <span class="field-validation-valid" data-valmsg-for="NewPassword" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            <input type="hidden" data-val="true" data-val-required="The UserId field is required." id="UserProfile_UserId" name="UserProfile.UserId" value="5270033" />
+                            <div class="form-actions">
+                                <button class="btn btn-primary" type="submit">Update</button>
+                            </div>
+                        </div>
+                    </div>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8GVcHGMfjbhImL432Db-SfcXne7mv3jy39UttpdIWaHqTlxFrJBuFJ10GBXXzvhjgm-WZO8T3HlQVy3RVFPGMFeklc3GJHM214-Oz2nNd9QIwXGS5gjW2Ihy9Cn9CU5yO3JHFBaLPpbr93OJfXeAvf4X0rtqpFwCLQDNO1ZrQMxUZeVhJOK2336Pdtw1jpZYMw" /></form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="table-wrap">
+    <div class="table-wrap col-12 col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <strong>Two Factor Authentication</strong>
+            </div>
+            <div class="card-body">
+                    <div class="switch-container">
+                        <i class="fa fa-key" aria-hidden="true"></i><p>Two factor authentication (2FA) is <strong> DISABLED </strong> for this account:</p>
+                    </div>
+                    <div style="display:none;" class="switch-container" id="switchbtndiv">
+                        <p>Enable two factor authentication</p>
+                        <label class="switch">
+                            <input onclick="Mainswitch()" type="checkbox" id="mySwitch">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                    <div id="RenderQRModal"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/lib/kjua/kjua.min.js"></script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market Rules -->
+    <div class="modal fade" id="modalMarketRules" tabindex="-1" role="dialog" aria-labelledby="modalMarketRules" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Market Rules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="market-rules-text" class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ToS -->
+    <div class="modal fade" id="
+         " tabindex="-1" role="dialog" aria-labelledby="modalTos" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Terms and conditions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <b>Protection of minors</b>
+                    <br />
+                    <p> It is illegal for anybody under the age of 18 to gamble. </p>
+                    <br />
+                    <p>Our site has strict policies and verification measures to prevent access to minors.</p>
+                    <br />
+                    <p>We encourage parents consider the use of internet use protection tools. You may find the following links useful. </p>
+                    <br />
+                    <a href="https://www.cyberpatrol.com/" target="_blank" style="color:mediumspringgreen">  Cyberpatrol</a>
+                    <br />
+                    <a href="https://www.cybersitter.com/" target="_blank" style="color:mediumspringgreen">  Cybersitter </a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="sticky-footer" class="py-1 bg-dark text-white-50 Bl_NT_SF">
+        <div class="col-12 container" style="background-color:#4dbd74; height:6px; margin-top:-4px;">
+        </div>
+        <div class="container text-center">
+            <center>
+                    
+<style>
+    p{
+        font-size:12px;
+        color:white;
+    }
+    .caoimg{
+        max-width:60px;
+    }
+    .bffooter{
+                    width: 135px;
+                    height: 30px;
+            }
+            .curasaoLinks {
+               pointer-events: none;
+               cursor: default;
+               margin-top:10px;
+            }
+@media screen and (max-width: 635px) {
+            .caoimg {
+                max-width:40px;
+            }
+            .bffooter{
+                    width: 100px;
+                    height: 30px;
+            }
+        }
+</style>
+
+
+<div class="curasaoLinks row" style="display:inline-flex;" id="curacaodiv">
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelector('#curacaodiv').insertAdjacentHTML(
+            'afterbegin',
+            `<hr>
+                <div class="col-sm-12 col-md-4"></div>
+                <div class="col-md-4"></div>`);
+    });
+</script>
+
+            </center>
+           
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+    <script type="text/javascript" src="/dist/bundle0a.js?62000"></script>
+
+    <script>
+        const token = getCookie('wexscktoken');
+        const sess = getCookie('wex3authtoken');
+        const reft = getCookie('wex3reftoken');
+    </script>
+
+    
+    <script type="text/javascript" src="/lib/kjua/kjua.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#switchbtndiv").show();
+        });
+
+        function ReLogin() {
+            location.href = "/Common/Logout";
+        }
+
+        function validateForm() {
+            isValid = false;
+            pwd = $("#NewPassword").val()
+            isValid = IsPasswordStrong(pwd);
+
+            if (!isValid) {
+                $("#NewPassword").next().html('Please choose min 8 character password with alphabets and numerals.');
+                $("#NewPassword").next().html('Kam Sey kam 8 lafaz ka password rekhay jis mey number(123) or alphabets(abc) dono aye.');
+                $("#NewPassword").next().addClass('text-danger');
+            }
+            return isValid;
+        }
+
+        function Mainswitch() {
+            const btn = document.getElementById("mySwitch");
+            if (btn.checked) {
+                var Divavailable = document.getElementById('RenderQRModal');
+                if (Divavailable == undefined || Divavailable == null) {
+                    return;
+                }
+                $.ajax({
+                    type: "GET",
+                    url: "/Customer/Profile/?handler=ImgOtp",
+                    success: function (result) {
+                        RevealQr(result);
+                    },
+                    error: function (exception) {
+
+                    }
+                });
+               
+            } else
+            {
+                
+                $('#resetmodal').modal('show');
+                var oldhtml = document.getElementById('qrcodediv');
+                var Divavailable = document.getElementById('qrcodediv');
+                if (Divavailable != undefined || Divavailable != null) {
+                    document.getElementById('qrcodediv').innerHTML = "";
+                }
+            }
+        }
+        function RevealQr(result) {
+            document.getElementById('RenderQRModal').innerHTML = result;
+            $('#QrcodeModal').modal('show');
+            var value = document.getElementById('personqrc').value;
+            var Qrcode = kjua({ text: value });
+            document.querySelector('#qrcodeimagediv').appendChild(Qrcode);
+        }
+        function VerifyOTP() {
+            var secretKey = "";
+            var Otp = document.getElementById('otpverify').value;
+            if(Otp == ""){
+                alert("OTP Code is required");
+                return;
+            }
+            var otpsec = document.getElementById('personsec').value;
+            $.ajax({
+                type: "GET",
+                url: "/Customer/Profile/?handler=Verifyotp&secret=" + otpsec + "&otp=" + Otp,
+                success: function (result) {
+                    if (result.status) {
+                        location.reload();
+                    } else {
+                        alert("Retry! Incorrect/Expired OTP.");
+                    }
+                },
+                error: function (exception) {
+
+                }
+            });
+        }
+        function ResetOtp() {
+            var Otp = document.getElementById('resetotpcode').value;
+            if(Otp == ""){
+                alert("OTP Code is required");
+                return;
+            }
+            var otpsec = '';
+            $.ajax({
+                type: "GET",
+                url: "/Customer/Profile/?handler=ResetOtp&secret=" + otpsec + "&otp=" + Otp,
+                success: function (result) {
+                    if (result.status) {
+                        location.reload();
+                    }else{
+                        alert("Retry with new OTP");
+                    }
+                },
+                error: function (exception) {
+
+                }
+            });
+        }
+        
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            pollRefreshToken();
+        });
+
+        if (genSck === 1) {
+            const signalRConnection = new UWS(uwsUrl, token, sess);
+            signalRConnection.connect();
+        }
+        else {
+            pollUserData();
+        }
+    </script>  
+</body>
+</html>

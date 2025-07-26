@@ -1,0 +1,1226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Sports Trading Platform">
+    <meta name="keyword" content="sports trading, bet, betfair">
+    <title>Dashboard | BetPro</title>
+    <!-- Icons-->
+    <link rel="shortcut icon" href="/img/favicon/BetPro.ico">
+    <link rel="stylesheet" href="/css/all.css" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/site.min.css" rel="stylesheet" />
+    <link href="/css/BetPro-style.css" rel="stylesheet" />
+    <script>
+        var pricesUrl = "https://prices9.bfexch.com/api";
+        var ordersUrl = "https://orders.bfexch.com/api";
+        const SsocketUrl = "https://orders-ws.bfexch.com/signalr";
+        const LiquidityRate = 35;
+        let dealerSck = 1;
+    </script>
+</head>
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <header class="app-header navbar">
+        <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="logo-bar">
+            <a href="/index">
+                <span class="green-logo-text d-sm-down-none">
+                    BetPro
+                </span>
+            </a>
+        </div>
+
+        <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+
+<ul class="nav navbar-nav d-md-down-none">
+        <li class="nav-item px-3">
+            <a class="nav-link" href="/index">Dashboard</a>
+        </li>
+        <li class="nav-item px-3">
+            <a class="nav-link" href="/Accounts/Chart">Users</a>
+        </li>
+        <li class="nav-item px-3">
+            <a class="nav-link" href="/Reports/BookDetail">Reports</a>
+        </li>
+</ul>
+
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item px-2">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Chek10 (Admin) <i class="fas fa-caret-down"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="/Common/Profile">
+                        <i class="fa fa-user"></i> Profile
+                    </a>
+                    <a class="dropdown-item" id="btn-logout" href="/Common/Logout">
+                        <i class="fa fa-sign-out"></i> Logout
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/" role="button" aria-haspopup="true" aria-expanded="false">
+                    <strong>B:</strong> <span class="wallet-balance"> </span>
+                    <strong>Exp:</strong> <span class="wallet-exposure"></span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="app-body">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                
+
+<ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/index">
+                <i class="nav-icon fas fa-tachometer-alt fa-inverse"></i> Dashboard
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Accounts/Chart">
+                <i class="nav-icon fas fa-users fa-inverse"></i> Users
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/Liables">
+                <i class="nav-icon fas fa-funnel-dollar fa-inverse"></i> Current Position
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Reports/BookDetail">
+                <i class="nav-icon fas fa-money-check fa-inverse"></i> Reports
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/BetLocker">
+                <i class="nav-icon fas fa-unlock-alt fa-inverse"></i> Bet Lock
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/Games">
+                <i class="nav-icon fas fa-star fa-inverse"></i> Star Casino
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/WorldCasino">
+                <i class="nav-icon fas fa-globe fa-inverse"></i> World Casino
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/ExGames">
+                <i class="nav-icon fas fa-globe fa-inverse"></i> BetFair Games
+            </a>
+        </li>
+
+
+
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/soccer.svg" alt="C">
+            Soccer
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245243942">
+AEK Larnaca v Partizan Belgrade                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245244050">
+Paks v CFR Cluj                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245244160">
+PFC Levski Sofia v Hapoel Beer Sheva                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245292948">
+Sheriff Tiraspol v Prishtina                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245292856">
+Shakhtar v Ilves                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245292766">
+FC Sabah v NK Celje                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245292676">
+Spartak Trnava v Hacken                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245374841">
+Torpedo BelAZ v Rabotnicki                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245374669">
+Torpedo Kutaisi v FC Ordabasy                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245374457">
+FC Urartu v Neman Grodno                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245399631">
+Atletic Club Escaldes v F91 Dudelange                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245402344">
+Vllaznia Shkoder v BFC Daugavpils                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245403068">
+Larne v FK Auda                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245406249">
+Nomme Kalju v Partizani Tirana                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245422446">
+Finland (W) v Switzerland (W)                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245422338">
+Norway (W) v Iceland (W)                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245422569">
+FK Kauno Zalgiris v Penybont FC                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245422479">
+FCB Magpies v Paide Linnameeskond                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245422659">
+Racing FC Union Luxembourg v Dila Gori                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245425994">
+SJK v Klaksvikar Itrottarfelag                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/tennis.svg" alt="C">
+            Tennis
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245467047">
+A Sabalenka v A Anisimova                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245484745">
+M Sherif v Dar Semenistaja                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245486546">
+Els Jacquemot v Kat von Deichmann                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245487476">
+L Bronzetti v Ruzic                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245487638">
+Chirico v El Cocciaretto                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245488067">
+Bencic v Iga Swiatek                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/cricket.svg" alt="C">
+            Cricket
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455737">
+Central Stags v Dubai Capitals                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245405948">
+England v India                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245395588">
+Leicestershire v Northamptonshire                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245396066">
+Derbyshire v Worcestershire                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245410884">
+West Indies v Australia                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245466278">
+Guyana Amazon Warriors v Rangpur Riders                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245466351">
+Hobart Hurricanes v Dubai Capitals                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245441832">
+Sri Lanka v Bangladesh                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/horse.svg" alt="C">
+            Horse Race
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245481913">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T11:50:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Turffontein (ZA)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245462863">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:10:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Kenilworth (ZA)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245481915">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:25:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Turffontein (ZA)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456338">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:30:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Doncaster (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456340">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:30:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Doncaster (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245462896">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:45:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Kenilworth (ZA)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455944">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:50:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newmarket (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455946">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:50:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newmarket (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456345">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T13:00:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Doncaster (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456346">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T13:00:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Doncaster (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245481917">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T13:05:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Turffontein (ZA)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456013">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T13:10:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Carlisle (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456014">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T13:10:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Carlisle (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245462988">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T13:20:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Kenilworth (ZA)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455949">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T13:25:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newmarket (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455951">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T13:25:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newmarket (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456352">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T13:35:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Doncaster (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456354">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T13:35:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Doncaster (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245481919">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T13:40:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Turffontein (ZA)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456020">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T13:45:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Carlisle (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456021">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T13:45:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Carlisle (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245462990">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T13:55:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Kenilworth (ZA)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455956">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:00:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newmarket (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455958">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:00:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newmarket (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456359">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:10:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Doncaster (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456360">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:10:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Doncaster (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/greyhound-racing.svg" alt="C">
+            Greyhound
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245487608">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T11:01:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Nottingham (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245487614">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T11:51:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Nottingham (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245479053">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T11:56:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Mandurah (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245475128">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T11:59:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Angle Park (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245490521">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T11:59:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Sheffield (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245471484">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:02:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Dapto (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245487462">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:03:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Oxford (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245475078">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:05:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Q1 Lakeside (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245472822">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:08:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Sandown Park (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245487616">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:08:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Nottingham (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245474660">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:11:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Hobart (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245472381">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:14:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Wentworth Park (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245479058">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:17:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Mandurah (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245490523">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:17:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Sheffield (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245475133">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:20:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Angle Park (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245471489">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:23:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Dapto (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245475083">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:26:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Q1 Lakeside (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245487618">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:26:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Nottingham (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245472827">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:29:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Sandown Park (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245474665">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T12:32:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Hobart (AU)
+                                </span>
+                        </a>
+                    </li>
+        </ul>
+    </li>
+</ul>
+
+
+            </nav>
+
+            <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+        </div>
+        <main class="main">
+            <div class="container-fluid">
+                <div class="animated fadeIn">
+                    <style>
+    .rightMenu {
+        position:absolute;
+        float:right;
+        top: 0;
+        left: 160px;
+    }
+    .bcicustom {
+        float: left;
+        margin: auto 0px;
+    }
+    .bccustom2 {
+        margin-top: -6px;
+    }
+    @media screen and (max-width: 635px) {
+        #breadcrumbcustom{
+            margin-top:-16px;
+        }
+    }
+    .blink_me {
+      animation: blinker 1s linear infinite;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0.3;
+      }
+    }
+</style>
+
+<div>
+    <div class="modal fade modalCasinoToS" data-backdrop="static" data-keyboard="false" id="modalPasswordChange" tabindex="-10" role="dialog" aria-labelledby="modalPasswordChange" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Change Your Password</h5>
+                </div>
+                <div id="casino-tos-text" class="modal-body">
+                    <p>
+                        <center>
+                            <h3 class="text-danger blink_me">
+                                Change Your Password
+                                <i class='fa fa-warning'></i>
+                            </h3>
+                        </center>
+                    </p>
+                    <p>Password Checkup Detected that your password is no longer <b>safe!</b>.</p>
+                    <p>You should change your password now to use the Exchange .</p>
+                </div>
+
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                        <input type="email" id="Newpasswordmodal" class="form-control validate">
+                        <label for="defaultForm-email">Enter Your New Password Here!</label>
+                    </div>
+                </div>
+                <h5 id="alertmodaltitle" style="color: red;background-color: black;" class="modal-title"></h5>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger ml-4" onclick="AcceptPassword();">
+                        <strong>Change Now</strong>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade modalCasinoToS" data-backdrop="static" data-keyboard="false" id="modalRedirectToLogout" tabindex="-11" role="dialog" aria-labelledby="modalPasswordChange" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Password Changed Successfully</h5>
+                </div>
+                <div id="casino-tos-text" class="modal-body">
+                    <p>
+                        <center>
+                            <h3 class="text-danger blink_me">
+                                Password Changed Successfully
+                                <i class="fa fa-check" style="font-size:48px;color:forestgreen"></i>
+                            </h3>
+                        </center>
+                    </p>
+                    <p>Your password is changed successfully. <b>Kindly Login Again </b>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger ml-4" onclick="ReLogin();">
+                        <strong>Login Again</strong>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="/lib/ckeditor/ckeditor5.css">
+<style>
+    #news-flash p {
+        color: black;
+    }
+    .ck-content p {
+        font-size: 16px;
+    }
+</style>
+<div class="modal fade bd-example-modal-lg" id="news-flash" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content ck-content">
+            <!--<div class="modal-header" style="padding:0px 15px;">
+                <button type="button" class="close btn-sm" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>-->
+            <div class="modal-body">
+                <p><span style="color:rgb(230,77,77);">Attention Dealers</span></p><ul><li>Apne settlements her month ke 5th&nbsp;tak clear kar lein. Jin accounts ka settlement pending hoga, unhe 5th k baad&nbsp; block kar diya jayega.</li><li>Please clear your settlements by&nbsp;5th of each month&nbsp;to avoid any issues. Accounts with pending settlement will be blocked on night of&nbsp;5th&nbsp;. Thank you for your cooperation</li></ul>
+            </div>
+            <div class="modal-footer" style="padding:5px 15px;">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function showNewsFlash()
+    {
+        let isFlash = localStorage.getItem('news-flash');
+
+        let hasContent = document.querySelector("#news-flash .modal-body").innerText.trim() !== '';
+
+        if (isFlash && hasContent) {
+            $('#news-flash').modal('show');
+        }
+
+        localStorage.removeItem('news-flash');
+    }
+</script>
+
+    <div class="card col-12" id="Usersearchcustom">
+        <div class="card-header">
+            <i class="fa fa-filter"></i>
+            <strong>Search-Users</strong>
+        </div>
+        <div class="card-body" style="padding-bottom:0px; margin:0px;">
+            <div class="row" id="searchUsers">
+                <div class="col-md-6 col-12">
+                    <form class="form-horizontal" v-on:submit.prevent="search" autocomplete="off">
+                    <div class="form-group row">
+                        <div class="col-12 autocomplete">
+                            <div class="input-group">
+                                <div class="inputWithIcon" style="width:30vw;">
+                                    <input class="form-control" type="search" placeholder="Username" v-model="query" id="myInput">
+                                </div>
+                                <span class="input-group-prepend">
+                                    <button id="myBtn" class="btn btn-primary" type="button" v-on:click="search">
+                                        <i class="fa fa-search"></i> Search
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </div>
+                
+                <div class="col-md-6 col-12" style="padding: 0px; height: 65px;">
+                    <img src="/img/preloader.gif" v-show="isLoading" style="height:20px;" />
+                    <nav aria-label="breadcrumb" class="col-12 bccustom2" id="breadcrumbcustom" v-show="!isLoading && users.length > 0">
+                        <ol class="breadcrumb" style="max-height:40px;">
+                            <li class="breadcrumb-item bcicustom" v-for="(user, index) in users">
+                                
+                                    <a target="_blank" :href="'/Accounts?MID=' + user.id" v-if="user.type !== 4">{{ user.username }}</a>
+                                    <a target="_blank" :href="'/Users/Edit?id=' + user.id" v-if="user.type === 4">{{ user.username }}</a>
+                                
+                                
+                                <div class="btn-group" v-if="index == Object.keys(users).length - 1">
+                                    <a onclick="POPUPWINDOW('/Accounts/Cash?id=' ,user.id)" v-on:click="POPUPWINDOW('/Accounts/Cash?id=' ,user.id)" v-if="index == Object.keys(users).length - 1"  class="btn btn-warning"><strong>C</strong></a>
+                                    <a v-if="index == Object.keys(users).length - 1" target="_blank" :href="'/Users/Edit?id='+user.id" class="btn btn-primary"><i class="fas fa-pencil-alt"></i></a>
+                                    <a onclick="POPUPWINDOW('/accounts/L2?id=' ,user.id)" v-on:click="POPUPWINDOW('/accounts/L2?id=' ,user.id)" v-if="index == Object.keys(users).length - 1" class="btn btn-info"> <strong>L</strong></a>
+                                </div>
+                            </li>
+                        
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Bookmarkets"></div>
+
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+     <div class="modal fade" id="modalMarketRules" tabindex="-1" role="dialog" aria-labelledby="modalMarketRules" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Market Rules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="market-rules-text" class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="app-footer">
+    <ul id="news-ticker-foot">
+        <li data-update="item1">Welcome to BetPro</li>
+    </ul>
+</footer>
+<!-- CoreUI and necessary plugins-->
+
+<script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+<script src="/js/signalr/dist/browser/signalr.js"></script>
+
+
+    <script src="/js/vue.min.js"></script>
+    <script src="https://unpkg.com/vuex@3.1.3/dist/vuex.min.js"></script>
+    <script src="/js/site.min.js"></script>
+    <script src="/js/bof.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1WVLP1K0K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('set', { 'user_id': 'Check10' });
+        gtag('config', 'G-C1WVLP1K0K');
+    </script>
+
+
+<script type="text/javascript" src="/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="/js/src/client-locales.js"></script>
+
+    
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+
+            showNewsFlash();
+
+            myFunction2();
+            setInterval(myFunction2, 60000);
+        });
+
+        function myFunction2() {
+            $.ajax({
+                type: "GET",
+                url: "/Index?handler=Markets",
+                success: function (result) {
+                    document.getElementById("Bookmarkets").innerHTML = result;
+                    convertAllToClientTime();
+                },
+                error: function (jqXhr, textStatus, errorThrown) {
+                    if (errorThrown == "Unauthorized") {
+                        document.location.href = "/Users/Login2";
+                    }
+                }
+            });
+        };
+
+        function AcceptPassword()
+        {
+            var newpass = document.getElementById("Newpasswordmodal").value;
+            $.ajax({
+                type: "GET",
+                url: "/Common/Profile?handler=UpdatePassword&NewPassword=" + newpass,
+                success: function (result) {
+                    if (result == 'PCS') {
+                    $('#modalPasswordChange').modal('hide');;
+                    $('#modalRedirectToLogout').modal('show');;
+                    } else {
+                        $('#alertmodaltitle').html(result);
+                    }
+                },
+                error: function (exception) {
+                    location.reload();
+                }
+            });
+        }
+
+        function ReLogin() {
+            location.href = "/Common/Logout";
+        }
+
+         $(function () {
+            $("#myInput")
+                .on("keydown", function (event) {
+                    if (event.keyCode != 13 && event.keyCode != 8) {
+                        // document.getElementById('smloading').style.display = 'block';
+                        if (event.keyCode === $.ui.keyCode.TAB &&
+                            $(this).autocomplete("instance").menu.active) {
+                            event.preventDefault();
+                        }
+                    } else {
+                        // document.getElementById('smloading').style.display = 'none';
+                    }
+                    var ib = document.getElementById("myInput").value;
+                    if (ib.length == 0) {
+                        //  document.getElementById('smloading').style.display = 'none';
+                    }
+
+                })
+                .autocomplete({
+                    source: function (request, response) {
+                        // /api/users/searchUsers
+                        $.getJSON("/api/v2/users", {
+                            q: request.term
+                        }, response);
+
+                    },
+                    search: function () {
+                        // custom minLength
+                        var term = this.value;
+                        if (term.length < 3) {
+                            return false;
+                        }
+                    },
+                    focus: function () {
+                        // document.getElementById('smloading').style.display = 'none';
+                        // prevent value inserted on focus
+                        // return false;
+                    },
+                    select: function (event, ui) {
+                        if (searchVM != "undefined") {
+                            searchVM.query = ui.item.value;
+                            //  document.getElementById('smloading').style.display = 'none';
+                        }
+                    }
+
+                });
+
+
+        });
+    </script>
+
+
+    <script>
+        const token = getCookie('wexscktoken');
+        const sess = getCookie('wex3authtoken');
+        const reft = getCookie('wex3reftoken');
+
+        $(document).ready(function () {
+            pollUserData();
+
+            pollRefreshToken();
+        });
+    </script>
+</body>
+</html>

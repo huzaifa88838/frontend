@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - NX Exchange</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+      color: white;
+      min-height: 100vh;
+    }
+
+    .backs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+      background: radial-gradient(circle at center, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+    }
+
+    .gop {
+      padding: 2.5rem;
+      background: rgba(30, 41, 59, 0.7);
+      border-radius: 20px;
+      box-shadow: 
+        0 4px 30px rgba(0, 0, 0, 0.3),
+        inset 0 1px 1px rgba(255, 255, 255, 0.1);
+      width: 420px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .circle-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .outer-ring {
+      width: 144px;
+      height: 144px;
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      padding: 5px;
+      border-radius: 50%;
+      position: relative;
+      box-shadow: 
+        0 0 20px rgba(59, 130, 246, 0.4),
+        0 0 60px rgba(59, 130, 246, 0.1);
+      animation: pulse 3s infinite;
+    }
+
+    .inner-ring {
+      background: rgba(15, 23, 42, 0.9);
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .spin-ring {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 4px dashed rgba(59, 130, 246, 0.3);
+      animation: spin 8s linear infinite;
+    }
+
+    .text-big {
+      font-size: 2.5rem;
+      font-weight: 900;
+      background: linear-gradient(135deg, #60a5fa, #3b82f6);
+      -webkit-background-clip: text;
+      color: transparent;
+      z-index: 10;
+      letter-spacing: 1px;
+    }
+
+    .text-small {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #94a3b8;
+      z-index: 10;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+
+    .separator {
+      width: 40px;
+      height: 2px;
+      background: linear-gradient(to right, transparent, #3b82f6, transparent);
+      margin: 8px 0;
+    }
+
+    .dot {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #60a5fa, #3b82f6);
+      animation: ping 2s infinite;
+    }
+
+    .dot-bottom {
+      bottom: 1.5rem;
+      right: 1.5rem;
+    }
+
+    .dot-top {
+      top: 1.5rem;
+      left: 1.5rem;
+    }
+
+    .input-field {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .input-field input {
+      width: 100%;
+      padding: 1rem 1rem 1rem 3rem;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      color: white;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-field input:focus {
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+      outline: none;
+    }
+
+    .input-field input::placeholder {
+      color: #64748b;
+    }
+
+    .input-field i {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+      color: #64748b;
+      transition: all 0.3s ease;
+    }
+
+    .input-field input:focus + i {
+      color: #3b82f6;
+    }
+
+    .button-container {
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+      border: none;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      letter-spacing: 0.5px;
+    }
+
+    .login-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(59, 130, 246, 0.4);
+    }
+
+    .login-btn:active {
+      transform: translateY(0);
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.8; }
+    }
+
+    @keyframes ping {
+      0% { transform: scale(1); opacity: 0.8; }
+      75%, 100% { transform: scale(2); opacity: 0; }
+    }
+
+    /* Add a subtle hover effect to inputs */
+    .input-field input:hover {
+      background: rgba(15, 23, 42, 0.7);
+    }
+
+    /* Add floating labels */
+    .input-label {
+      position: absolute;
+      top: -0.5rem;
+      left: 0.5rem;
+      padding: 0 0.5rem;
+      font-size: 0.75rem;
+      color: #64748b;
+      background: rgba(30, 41, 59, 0.7);
+      border-radius: 4px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+
+    .input-field input:focus ~ .input-label,
+    .input-field input:not(:placeholder-shown) ~ .input-label {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="backs">
+    <div class="gop">
+      <div class="circle-container">
+        <div class="outer-ring">
+          <div class="inner-ring">
+            <div class="spin-ring"></div>
+            <div class="text-big">BF</div>
+            <div class="separator"></div>
+            <div class="text-small">Bfexch</div>
+            <div class="dot dot-top"></div>
+            <div class="dot dot-bottom"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-field">
+        <input type="text" id="username" placeholder="Username" />
+        <i class="fas fa-user"></i>
+        <div class="input-label">Username</div>
+      </div>
+
+      <div class="input-field">
+        <input type="password" id="password" placeholder="Password" />
+        <i class="fas fa-lock"></i>
+        <div class="input-label">Password</div>
+      </div>
+
+      <div class="button-container">
+        <button class="login-btn" onclick="login()">
+          <i class="fas fa-sign-in-alt"></i> Sign In
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+  function login() {
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value.trim();
+
+    if (username === "huzaifa" && password === "12345678") {
+      window.location.href = "/Common/Dashboard.html";
+    } else if (username === "hamza" && password === "12345678") {
+      window.location.href = "/index";
+    } else {
+      alert("❌ Invalid username or password");
+    }
+  }
+</script>
+
+        
+</body>
+</html>

@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Sports Trading Platform">
+    <meta name="keyword" content="sports trading, bet, betfair">
+    <title>Edit Client | BetPro</title>
+    <!-- Icons-->
+    <link rel="shortcut icon" href="/BetPro.ico">
+    <link rel="stylesheet" href="/all.css" />
+    <link href="/style.css" rel="stylesheet" />
+    <link href="/site.min.css" rel="stylesheet" />
+    <link href="/BetPro-style.css" rel="stylesheet" />
+    <script>
+        var pricesUrl = "https://api.bfexch.com/api";
+        var ordersUrl = "https://api.bfexch.com/api";
+        const SsocketUrl = "https://orders-ws.mgs11.com/signalr";
+        const LiquidityRate = 35;
+        let dealerSck = 1;
+    </script>
+</head>
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <header class="app-header navbar">
+        <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="logo-bar">
+            <a href="/index.html">
+                <span class="green-logo-text d-sm-down-none">
+                    BetPro
+                </span>
+            </a>
+        </div>
+
+        <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+
+<ul class="nav navbar-nav d-md-down-none">
+        <li class="nav-item px-3">
+            <a class="nav-link" href="/index.html">Dashboard</a>
+        </li>
+        <li class="nav-item px-3">
+            <a class="nav-link" href="/Accounts/Chart.html">Users</a>
+        </li>
+        <li class="nav-item px-3">
+            <a class="nav-link" href="/Reports/BookDetail.html">Reports</a>
+        </li>
+</ul>
+
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item px-2">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Chek10 (Admin) <i class="fas fa-caret-down"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="/Common/Profile.html">
+                        <i class="fa fa-user"></i> Profile
+                    </a>
+                    <a class="dropdown-item" id="btn-logout" href="/Common/Logout.html">
+                        <i class="fa fa-sign-out"></i> Logout
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/" role="button" aria-haspopup="true" aria-expanded="false">
+                    <strong>B:</strong> <span class="wallet-balance"> </span>
+                    <strong>Exp:</strong> <span class="wallet-exposure"></span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="app-body">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                
+
+<ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/index.html">
+                <i class="nav-icon fas fa-tachometer-alt fa-inverse"></i> Dashboard
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Accounts/Chart.html">
+                <i class="nav-icon fas fa-users fa-inverse"></i> Users
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/Liables.html">
+                <i class="nav-icon fas fa-funnel-dollar fa-inverse"></i> Current Position
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Reports/BookDetail.html">
+                <i class="nav-icon fas fa-money-check fa-inverse"></i> Reports
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/BetLocker.html">
+                <i class="nav-icon fas fa-unlock-alt fa-inverse"></i> Bet Lock
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/Games.html">
+                <i class="nav-icon fas fa-star fa-inverse"></i> Star Casino
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/WorldCasino.html">
+                <i class="nav-icon fas fa-globe fa-inverse"></i> World Casino
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/ExGames.html">
+                <i class="nav-icon fas fa-globe fa-inverse"></i> BetFair Games
+            </a>
+        </li>
+
+
+
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/../img/v2/soccer.svg" alt="C">
+            Soccer
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244793536">
+Los Angeles FC v Sportive De Tunis                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244793428">
+Flamengo v Chelsea                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244793291">
+Benfica v Auckland City                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244792967">
+Bayern Munich v Boca Juniors                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244804582">
+Guatemala v Panama                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244804786">
+Jamaica v Guadeloupe                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244840577">
+Union La Calera v Univ Catolica (Chile)                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244840487">
+Racing Louisville FC (W) v Orlando Pride SC (W)                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244840397">
+Kansas City (W) v Angel City FC (W)                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244845708">
+America MG v Criciuma                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244848349">
+Botafogo SP v Chapecoense                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244857727">
+Universitario de Deport v Asociacion Deportiva Ta                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244905569">
+Fylkir v HK Kopavogur                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244905474">
+Leiknir R v Njardvik                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244939610">
+USM Khenchela v MC El Bayadh                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/../img/v2/tennis.svg" alt="C">
+            Tennis
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244936176">
+Sramkova v L Noskova                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244936773">
+Nakashima v Ja Draper                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244937402">
+Hol Rune v Bautista Agut                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244956583">
+To Etcheverry v Khachanov                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244957088">
+McCartn Kessler v Boulter                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244957634">
+A Sabalenka v E Rybakina                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244959625">
+Mag Linette v C Tauson                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244960042">
+Cobolli v A Zverev                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244960307">
+A Anisimova v L Samsonova                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244960858">
+Bublik v Machac                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244960988">
+Carlos Alcaraz v Rinderknech                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/../img/v2/cricket.svg" alt="C">
+            Cricket
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244867013">
+Sri Lanka v Bangladesh                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244792514">
+England v India                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244896900">
+Texas Super Kings v San Francisco Unicorns                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244904335">
+West Indies W v South Africa W                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244924578">
+Warwickshire v Worcestershire                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244951813">
+MI New York v Washington Freedom                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244952103">
+Seattle Orcas v Los Angeles Knight Riders                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244955465">
+Surrey v Middlesex                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/../img/v2/horse.svg" alt="C">
+            Horse Race
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244952806">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T12:45:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Fairview (ZA)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244945161">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T12:50:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Gloucester Park (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244921012">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:05:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Market Rasen (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244921014">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:05:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Market Rasen (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244920972">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:15:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Redcar (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244920974">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:15:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Redcar (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244945164">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:19:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Gloucester Park (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244952808">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:20:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Fairview (ZA)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244921800">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:30:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Royal Ascot (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244921801">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:30:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Royal Ascot (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244921017">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:40:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Market Rasen (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244921019">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:40:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Market Rasen (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244945167">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:44:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Gloucester Park (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244920979">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:50:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Redcar (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244920981">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:50:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Redcar (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244952810">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:55:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Fairview (ZA)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244921948">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T14:05:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Royal Ascot (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244921949">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T14:05:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Royal Ascot (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244921136">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T14:13:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Market Rasen (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244921144">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T14:13:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Market Rasen (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244945170">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T14:16:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Gloucester Park (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244920986">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T14:23:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Redcar (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244920988">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T14:23:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Redcar (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244952812">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T14:30:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Fairview (ZA)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244921962">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T14:40:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Royal Ascot (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244921964">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T14:40:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Royal Ascot (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/../img/v2/greyhound-racing.svg" alt="C">
+            Greyhound
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244955372">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T12:51:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Hove (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244947484">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T12:55:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Mandurah (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244956369">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T12:57:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Towcester (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244947433">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T12:58:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Richmond (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244955560">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T12:59:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Central Park (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244955374">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:07:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Hove (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244947489">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:12:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Mandurah (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244955562">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:14:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Central Park (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244956371">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:16:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Towcester (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244956081">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:29:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Kinsley (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244956373">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:33:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Towcester (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244956845">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:36:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newcastle (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244947494">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:38:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Mandurah (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244956083">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:48:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Kinsley (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244956375">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:52:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Towcester (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244956847">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T13:54:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newcastle (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244956085">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T14:07:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Kinsley (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244956377">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T14:11:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Towcester (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244956849">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T14:13:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newcastle (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#!1.244956087">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-06-20T14:26:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Kinsley (GB)
+                                </span>
+                        </a>
+                    </li>
+        </ul>
+    </li>
+</ul>
+            </nav>
+
+            <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+        </div>
+        <main class="main">
+            <div class="container-fluid">
+                <div class="animated fadeIn">
+                    <style>
+    @media screen and (max-width: 635px) {
+    .editsbmtbtn {
+    margin: auto;
+    margin-top: 5px;
+    margin-right: 15px;
+    background:transparent;
+    border:none;
+    }
+    .editsbmtbtnin{
+    margin-top:-60px;
+    }
+    }
+</style>
+
+<div class="row">
+    <div class="col-12">
+        <div class="card" >
+            <div class="card-body">
+                <a id="EditBtn" class="btn btn-primary" onclick="showhide()">
+                    Edit User
+                </a>
+
+                <a id="LedgerBtn" class="btn btn-primary" href="/Ledger?accountId=5810529" target="checkiframe">
+                    Ledger
+                </a>
+
+                <a id="BetsBtn" class="btn btn-primary" href="/Bets?ClientId=5270018" target="checkiframe">
+                    Bets
+                </a>
+
+                <a id="ProfitlossBtn" class="btn btn-primary" href="/ProfitLoss?ClientId=5270018" target="checkiframe" >
+                    Profit Loss
+                </a>
+
+                <a id="CPBtn" class="btn btn-primary" href="/MarketsListN?id=5270018" target="checkiframe">
+                    Current Position
+                </a>
+
+                <strong style="float:right; font-size:20px">alsmaster</strong>
+
+            </div>
+        </div>
+    </div>
+    <div id="iframesection" class="col-md-12 col-12 iframesection">
+
+    </div>
+    <div class="col-12 col-md-6" id="editsection1">
+        <form method="post" onsubmit="return validateForm()">
+            <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+            <input type="hidden" data-val="true" data-val-required="The ID field is required." id="user_ID" name="user.ID" value="5270018" />
+            <div class="card">
+                <div class="card-header">
+                    Edit Client - <strong>alsmaster</strong>
+                </div>
+                <div class="card-body">
+                    <div class="col-12">
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">ID</label>
+                            <div class="col-8 col-md-6">
+                                <p class="form-control-static">5270018</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">Username</label>
+                            <div class="col-8 col-md-6">
+                                <p class="form-control-static">alsmaster</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">Type</label>
+                            <div class="col-8 col-md-6">
+                                <p class="form-control-static">Master</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">Currency</label>
+                            <div class="col-8 col-md-6">
+                                <p class="form-control-static">Rs.</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">Password</label>
+                            <div class="col-8 col-md-6">
+                                <input class="form-control" type="text" id="user_Password" name="user.Password" value="" />
+                                <span class="field-validation-valid" data-valmsg-for="user.Password" data-valmsg-replace="true"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label" for="user_IsActive">IsActive</label>
+                            <div class="col-8 col-md-6 col-form-label">
+                                <div class="form-check checkbox">
+                                    <input class="form-check-input" type="checkbox" checked="checked" data-val="true" data-val-required="The IsActive field is required." id="user_IsActive" name="user.IsActive" value="true" />
+                                    <span class="field-validation-valid" data-valmsg-for="user.IsActive" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label" for="user_CanBet">Betting Allowed</label>
+                            <div class="col-8 col-md-6 col-form-label">
+                                <div class="form-check checkbox">
+                                    <input class="form-check-input" type="checkbox" checked="checked" data-val="true" data-val-required="The CanBet field is required." id="user_CanBet" name="user.CanBet" value="true" />
+                                    <span class="field-validation-valid" data-valmsg-for="user.CanBet" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="form-group row">
+                                <label class="col-4 col-md-3 col-form-label" for="user_CanSettlePL">Can Settle PL</label>
+                                <div class="col-8 col-md-6 col-form-label">
+                                    <div class="form-check checkbox">
+                                        <input class="form-check-input" type="checkbox" data-val="true" data-val-required="The CanSettlePL field is required." id="user_CanSettlePL" name="user.CanSettlePL" value="true" />
+                                        <label class="form-check-label" for="user_CanSettlePL">Enable S button</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label" for="user_Phone">Phone</label>
+                            <div class="col-8 col-md-6">
+                                <input class="form-control" type="text" id="user_Phone" name="user.Phone" value="0123456789" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label" for="user_Reference">Reference</label>
+                            <div class="col-8 col-md-6">
+                                <input class="form-control" type="text" id="user_Reference" name="user.Reference" value="khan" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label" for="user_Notes">Notes</label>
+                            <div class="col-8 col-md-6">
+                                <textarea class="form-control" id="user_Notes" name="user.Notes">
+This is a test ID</textarea>
+                            </div>
+                        </div>
+
+                            <div class="form-group row">
+                                <label class="col-4 col-md-3 col-form-label" for="user_Commission">Commission</label>
+                                <div class="col-8 col-md-6">
+                                    <input type="number" step="0.01" class="form-control" min="2.00" readonly data-val="true" data-val-number="The field Commission must be a number." data-val-required="The Commission field is required." id="user_Commission" name="user.Commission" value="2.00" /><input name="__Invariant" type="hidden" value="user.Commission" />
+                                    <span class="help-block">Min commission is 2.00 %</span>
+                                    <span class="field-validation-valid" data-valmsg-for="user.Commission" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">UserDomain</label>
+                            <div class="col-8 col-md-6">
+                                <input value="1  ( betproexch.com )" disabled class="form-control" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer editsbmtbtn">
+                    <button class="btn btn-primary editsbmtbtnin" type="submit">
+                        <strong>Submit</strong>
+                    </button>
+                </div>
+            </div>
+            <input type="hidden" id="DId" name="DId" value="" />
+            <input type="hidden" value="1" data-val="true" data-val-required="The FormId field is required." id="FormId" name="FormId" />
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8GVcHGMfjbhImL432Db-SfdudMBGL0AckLd-iW-P_8w0qODPwDXZ4KclccRXLu4-BZaWGNRdQPhOBtq66tZZ6ojImjcaNM07RiW00LTgcVLD6QPAX6ZjkgGwCHdSVo8zxoClnOE8Nac-Aayw1NaWfvNmWbj9OQCGi1pCGr8-llVeg1dlp3NbBN-HOFNXa49xMg" /><input name="user.IsActive" type="hidden" value="false" /><input name="user.CanBet" type="hidden" value="false" /><input name="user.CanSettlePL" type="hidden" value="false" /></form>
+    </div>
+    <div class="col-12 col-md-6" id="editsection2">
+        <div>
+            <form method="post">
+                <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+                <input type="hidden" data-val="true" data-val-required="The ID field is required." id="user_ID" name="user.ID" value="5270018" />
+                <div class="card">
+                    <div class="card-header">
+                        <strong>Max Bet Sizes</strong>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">Soccer</label>
+                            <div class="col-8 col-md-6">
+                                <input class="form-control" type="text" data-val="true" data-val-number="The field Soccer must be a number." data-val-required="The Soccer field is required." id="betSizes_Soccer" name="betSizes.Soccer" value="1000000.00" />
+                                <span class="field-validation-valid" data-valmsg-for="betSizes.Soccer" data-valmsg-replace="false">Max: 1,000,000</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">Tennis</label>
+                            <div class="col-8 col-ms-6">
+                                <input class="form-control" type="text" data-val="true" data-val-number="The field Tennis must be a number." data-val-required="The Tennis field is required." id="betSizes_Tennis" name="betSizes.Tennis" value="250000.00" />
+                                <span class="field-validation-valid" data-valmsg-for="betSizes.Tennis" data-valmsg-replace="false">Max: 250,000</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">Cricket</label>
+                            <div class="col-8 col-md-6">
+                                <input class="form-control" type="text" data-val="true" data-val-number="The field Cricket must be a number." data-val-required="The Cricket field is required." id="betSizes_Cricket" name="betSizes.Cricket" value="5000000.00" />
+                                <span class="field-validation-valid" data-valmsg-for="betSizes.Cricket" data-valmsg-replace="false">Max: 5,000,000</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">Fancy</label>
+                            <div class="col-8 col-md-6">
+                                <input class="form-control" type="text" data-val="true" data-val-number="The field Fancy must be a number." data-val-required="The Fancy field is required." id="betSizes_Fancy" name="betSizes.Fancy" value="200000.00" />
+                                <span class="field-validation-valid" data-valmsg-for="betSizes.Fancy" data-valmsg-replace="false">Max: 200,000</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">Races</label>
+                            <div class="col-8 col-md-6">
+                                <input class="form-control" type="text" data-val="true" data-val-number="The field Race must be a number." data-val-required="The Race field is required." id="betSizes_Race" name="betSizes.Race" value="200000.00" />
+                                <span class="field-validation-valid" data-valmsg-for="betSizes.Race" data-valmsg-replace="false">Max: 200,000</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">Casino</label>
+                            <div class="col-8 col-md-6">
+                                <input class="form-control" type="text" data-val="true" data-val-number="The field Casino must be a number." data-val-required="The Casino field is required." id="betSizes_Casino" name="betSizes.Casino" value="50000.00" />
+                                <span class="field-validation-valid" data-valmsg-for="betSizes.Casino" data-valmsg-replace="false">Max: 50,000</span>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">Greyhound</label>
+                            <div class="col-8 col-md-6">
+                                <input class="form-control" type="text" data-val="true" data-val-number="The field Greyhound must be a number." data-val-required="The Greyhound field is required." id="betSizes_Greyhound" name="betSizes.Greyhound" value="50000.00" />
+                                <span class="field-validation-valid" data-valmsg-for="betSizes.Greyhound" data-valmsg-replace="false">Max: 50,000</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">BookMaker</label>
+                            <div class="col-8 col-md-6">
+                                <input class="form-control" type="text" data-val="true" data-val-number="The field BookMaker must be a number." data-val-required="The BookMaker field is required." id="betSizes_BookMaker" name="betSizes.BookMaker" value="2000000.00" />
+                                <span class="field-validation-valid" data-valmsg-for="betSizes.BookMaker" data-valmsg-replace="false">Max: 2,000,000</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-4 col-md-3 col-form-label">T-PIN</label>
+                            <div class="col-8 col-md-6">
+                                <input class="form-control" type="number" id="betSizes_Tpin" name="betSizes.Tpin" value="" /><input name="__Invariant" type="hidden" value="betSizes.Tpin" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer editsbmtbtn">
+                        <button class="btn btn-primary editsbmtbtnin" type="submit">
+                            <strong>Submit</strong>
+                        </button>
+                    </div>
+                </div>
+                <input type="hidden" data-val="true" data-val-required="The pkid field is required." id="betSizes_pkid" name="betSizes.pkid" value="5269213" />
+                <input type="hidden" value="2" data-val="true" data-val-required="The FormId field is required." id="FormId" name="FormId" />
+            <input name="__RequestVerificationToken" type="hidden" value="CfDJ8GVcHGMfjbhImL432Db-SfdudMBGL0AckLd-iW-P_8w0qODPwDXZ4KclccRXLu4-BZaWGNRdQPhOBtq66tZZ6ojImjcaNM07RiW00LTgcVLD6QPAX6ZjkgGwCHdSVo8zxoClnOE8Nac-Aayw1NaWfvNmWbj9OQCGi1pCGr8-llVeg1dlp3NbBN-HOFNXa49xMg" /></form>
+        </div>
+
+    </div>
+</div>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+     <div class="modal fade" id="modalMarketRules" tabindex="-1" role="dialog" aria-labelledby="modalMarketRules" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Market Rules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="market-rules-text" class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="app-footer">
+    <ul id="news-ticker-foot">
+        <li data-update="item1">Welcome to BetPro</li>
+    </ul>
+</footer>
+<!-- CoreUI and necessary plugins-->
+
+<script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+<script src="/../js/signalr/dist/browser/signalr.js"></script>
+
+
+    <script src="/../js/vue.min.js"></script>
+    <script src="https://unpkg.com/vuex@3.1.3/dist/vuex.min.js"></script>
+    <script src="/../js/site.min.js"></script>
+    <script src="/../js/bof.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1WVLP1K0K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('set', { 'user_id': 'Chek10' });
+        gtag('config', 'G-C1WVLP1K0K');
+    </script>
+
+
+<script type="text/javascript" src="/../js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="/../js/src/client-locales.js"></script>
+
+    
+    <script>
+        function validateForm() {
+            isValid = false;
+            pwd = $("#user_Password").val()
+
+            if (pwd === null || pwd === '') {
+                return true;
+            }
+
+            isValid = IsPasswordStrong(pwd);
+
+            if (!isValid) {
+                $("#user_Password").next().text('Min length is 8 characters and password must contain alphabets and numerics.');
+                $("#user_Password").next().addClass('text-danger');
+            }
+            return isValid;
+        }
+
+        $("#DId").val(GetDeviceIdentity());
+        $(document).ready(function () {
+            document.getElementById("iframesection").style.display = 'none';
+            document.getElementById("editsection1").style.display = 'block';
+            document.getElementById("editsection2").style.display = 'block';
+
+
+            $('#LedgerBtn').on("click", function (e) {
+                e.preventDefault();
+                var href = $(this).attr('href');
+                $("#iframesection").html('<object data="' + href + '"style="width:100%; height: 90vh;"/>');
+
+                document.getElementById("iframesection").style.display = 'block';
+                document.getElementById("editsection1").style.display = 'none';
+                document.getElementById("editsection2").style.display = 'none';
+            });
+
+
+            $('#BetsBtn').on("click", function (e) {
+                e.preventDefault();
+                var href = $(this).attr('href');
+                $("#iframesection").html('<object data="' + href + '"style="width:100%; height: 90vh;"/>');
+
+                document.getElementById("iframesection").style.display = 'block';
+                document.getElementById("editsection1").style.display = 'none';
+                document.getElementById("editsection2").style.display = 'none';
+            });
+
+
+            $('#ProfitlossBtn').on("click", function (e) {
+                e.preventDefault();
+                var href = $(this).attr('href');
+                $("#iframesection").html('<object data="' + href + '"style="width:100%; height: 90vh;"/>');
+
+                document.getElementById("iframesection").style.display = 'block';
+                document.getElementById("editsection1").style.display = 'none';
+                document.getElementById("editsection2").style.display = 'none';
+            });
+
+            $('#CPBtn').on("click", function (e) {
+                e.preventDefault();
+                var href = $(this).attr('href');
+                $("#iframesection").html('<object data="' + href + '"style="width:100%; height: 90vh;"/>');
+
+                document.getElementById("iframesection").style.display = 'block';
+                document.getElementById("editsection1").style.display = 'none';
+                document.getElementById("editsection2").style.display = 'none';
+            });
+
+            $('#EditBtn').on("click", function (e) {
+                e.preventDefault();
+                var href = $(this).attr('href');
+                $("#iframesection").html('<object data="' + href + '"style="width:100%; height: 90vh;"/>');
+                document.getElementById("iframesection").style.display = 'none';
+                document.getElementById("editsection1").style.display = 'block';
+                document.getElementById("editsection2").style.display = 'block';
+            });
+
+
+
+        });
+
+        function popup_ChDomain(Url, ClientId) {
+            var url = Url + "?ID=" + ClientId;
+            newwindow = window.open(url, "Change Domain", 'height=400,width=650,titlebar=0,menubar=0');
+            if (window.focus) { newwindow.focus() }
+            return false;
+        }
+
+        function popup_report(vid) {
+            // var url = "/Customer/Statements?VID=" + vid + "&AID=" + aid;
+            newwindow = window.open(vid, "Market Repo", 'height=500,width=700,titlebar=0,menubar=0');
+            if (window.focus) { newwindow.focus() }
+            return false;
+        }
+
+        function Getotp(){
+            var secode = document.getElementById('otpuserue').value;
+            $.ajax({
+                type: "GET",
+                url: "/Users/Edit/?handler=OtpCode&otp=" + secode,
+                success: function (result) {
+                    alert("Use this OTP to login = " + result.status);
+                },
+                error: function (exception) {
+
+                }
+            });
+        }
+    </script>
+
+
+    <script>
+        const token = getCookie('wexscktoken');
+        const sess = getCookie('wex3authtoken');
+        const reft = getCookie('wex3reftoken');
+
+        $(document).ready(function () {
+            pollUserData();
+
+            pollRefreshToken();
+        });
+    </script>
+</body>
+</html>

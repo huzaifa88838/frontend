@@ -1,0 +1,323 @@
+.HeaderContent--2QfCy {
+    background-image: linear-gradient( 180deg,transparent 10%,rgba(0,0,0,.9) 98%);
+    /*padding-top: 3.4vw;*/
+    position: relative;
+}
+
+.square {
+    margin: 12px;
+    width: 22%;
+    text-align: left;
+    display: inline-block;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+.bg-dream {
+    background-image: url(/img/Newstar2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.center {
+    text-align: center;
+}
+
+.zoom {
+    transition: transform .2s;
+}
+
+    .zoom:hover {
+        transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    }
+
+
+
+.CategoryMenu--3haZ2:not(.fixed--1Zx7y).visible--3inF8 {
+    opacity: 1;
+}
+
+.CategoryMenu--3haZ2:not(.fixed--1Zx7y).desktop--34snD {
+    background: none;
+}
+
+.CategoryMenu--3haZ2:not(.fixed--1Zx7y) {
+    background: rgba(26,26,26,.5);
+    opacity: 0;
+}
+
+.desktop--34snD.CategoryMenu--3haZ2 {
+    bottom: 0;
+    font-size: .675em;
+    left: 0;
+    position: relative;
+    right: 0;
+}
+
+.Menu--15nYK.desktop--1fFFO {
+    bottom: 6px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.Menu--15nYK {
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.desktop--1fFFO .MenuItem--UoREs:first-child {
+    margin-left: auto;
+}
+
+.desktop--1fFFO .MenuItem--UoREs.active--26kNu, .desktop--1fFFO .MenuItem--UoREs:hover {
+    opacity: 1;
+}
+
+.desktop--1fFFO .MenuItem--UoREs {
+    max-width: 11vw;
+    min-width: calc(8vw + 1.5em - 6px);
+    padding: 0 0 4px;
+}
+
+.MenuItem--UoREs.active--26kNu {
+    color: #96ffff;
+}
+
+.MenuItem--UoREs {
+    color: #fff;
+    display: inline-block;
+    min-width: 16em;
+    opacity: .8;
+    padding: 8px 0;
+    position: relative;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+}
+
+.MenuIcon--Ix_pm.desktop--3f0Dt {
+    flex: 1 0 0%;
+    height: 5.5vw;
+    max-height: 75px;
+    min-height: 40px;
+    min-width: 40px;
+    width: 5.5vw;
+}
+
+.MenuIcon--Ix_pm {
+    -webkit-tap-highlight-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    display: flex;
+    font-size: 1.2vmin;
+    height: 7.8em;
+    margin: auto;
+    width: 7.8em;
+}
+
+.Ribbon--PPbhT.new--Pg-ZR {
+    background: #e81e45;
+}
+
+.Ribbon--PPbhT.desktop--3mSjb {
+    height: auto;
+    left: 60%;
+    top: .5em;
+}
+
+.Ribbon--PPbhT {
+    border-radius: 2px;
+    height: 1rem;
+    left: 65%;
+    padding: .3rem .6rem;
+    position: absolute;
+    top: .75em;
+    z-index: 1;
+}
+
+.Category--2B0NG {
+    flex: 1 1 0%;
+    position: relative;
+}
+
+.CategoryIcon--3E0_R {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    transition: opacity 1s ease-in;
+    width: 100%;
+}
+
+.AllTabImg {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    transition: opacity 1s ease-in;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.ezugiimg {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    transition: opacity 1s ease-in;
+    width: 100%;
+}
+
+.OneTouchimg {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    transition: opacity 1s ease-in;
+    width: 100%;
+}
+
+.betgameevo {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    transition: opacity 1s ease-in;
+    width: 100%;
+    padding-top: 35px;
+}
+
+
+.desktop--1fFFO .MenuItem--UoREs.active--26kNu img, .desktop--1fFFO .MenuItem--UoREs.active--26kNu svg, .desktop--1fFFO .MenuItem--UoREs:hover img, .desktop--1fFFO .MenuItem--UoREs:hover svg {
+    transform: scale(1);
+}
+
+.MenuItem--UoREs.active--26kNu .IconFillActive, .MenuItem--UoREs.active--26kNu .IconFillActive--gnWuk {
+    opacity: 1;
+}
+
+.MenuIcon--Ix_pm.desktop--3f0Dt img, .MenuIcon--Ix_pm.desktop--3f0Dt svg {
+    transform: scale(.8);
+    transition: transform .25s ease-in-out;
+}
+
+.desktop--1fFFO .IconFillActive, .desktop--1fFFO .IconFillActive--gnWuk, .desktop--1fFFO .IconFillPassive, .desktop--1fFFO .IconFillPassive--3VxN0 {
+    transition: opacity .4s;
+}
+
+.Menu--15nYK .IconFillActive, .Menu--15nYK .IconFillActive--gnWuk {
+    fill: #fff;
+    opacity: 0;
+}
+
+.MenuIcon--Ix_pm img, .MenuIcon--Ix_pm svg {
+    position: absolute;
+    width: 100%;
+}
+
+.desktop--1fFFO .MenuItem--UoREs.active--26kNu img, .desktop--1fFFO .MenuItem--UoREs.active--26kNu svg, .desktop--1fFFO .MenuItem--UoREs:hover img, .desktop--1fFFO .MenuItem--UoREs:hover svg {
+    transform: scale(1);
+}
+
+.MenuItem--UoREs.active--26kNu .IconFillPassive, .MenuItem--UoREs.active--26kNu .IconFillPassive--3VxN0 {
+    opacity: 0;
+}
+
+.MenuIcon--Ix_pm.desktop--3f0Dt img, .MenuIcon--Ix_pm.desktop--3f0Dt svg {
+    transform: scale(.8);
+    transition: transform .25s ease-in-out;
+}
+
+.desktop--1fFFO .IconFillActive, .desktop--1fFFO .IconFillActive--gnWuk, .desktop--1fFFO .IconFillPassive, .desktop--1fFFO .IconFillPassive--3VxN0 {
+    transition: opacity .4s;
+}
+
+.Menu--15nYK .IconFillPassive, .Menu--15nYK .IconFillPassive--3VxN0 {
+    fill: #fff;
+}
+
+.MenuIcon--Ix_pm img, .MenuIcon--Ix_pm svg {
+    position: absolute;
+    width: 100%;
+}
+
+
+.left {
+    width: 14vw;
+    float: left;
+    margin: 10px;
+}
+
+.mainblock {
+    padding-left: 26vw;
+}
+
+@media screen and (max-width: 850px) {
+    .left {
+        width: 34vw;
+        float: left;
+    }
+}
+
+.card-img-top {
+    max-height: 140px;
+    min-height: 133px;
+}
+
+@media screen and (min-width: 1200px) {
+    .card-img-top {
+        max-height: 140px;
+        min-height: 124px;
+    }
+}
+
+
+@media screen and (max-width: 350px) {
+    .card-img-top {
+        max-height: 94px;
+    }
+    .square {
+        margin: 4px;
+        width: 45%;
+        text-align: left;
+        display: inline-block;
+    }
+}
+
+
+@media screen and (max-width: 635px) {
+    .mobiletabs {
+        margin-right: 14px;
+        padding-left: 5vw;
+    }
+
+    .square {
+        margin: 4px;
+        width: 45%;
+        text-align: left;
+        display: inline-block;
+    }
+
+    .mainblock {
+        padding-left: 1vw;
+    }
+
+}
+
+.card-body {
+    /*padding: 0px;*/
+    text-align: center;
+    max-height: 22px;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+.mobiletabs :hover {
+    cursor: pointer;
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up - NX Exchange</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #3b82f6;
+      --primary-dark: #2563eb;
+      --secondary: #64748b;
+      --background: #0f172a;
+      --card-bg: rgba(30, 41, 59, 0.7);
+      --success: #10b981;
+      --error: #ef4444;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, var(--background) 0%, #1e293b 100%);
+      color: white;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .backs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+      background: 
+        radial-gradient(circle at 20% 20%, rgba(59, 130, 246, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(37, 99, 235, 0.15) 0%, transparent 40%);
+    }
+
+    .gop {
+      padding: 2.5rem;
+      background: var(--card-bg);
+      border-radius: 24px;
+      box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 1px rgba(255, 255, 255, 0.1);
+      width: 100%;
+      max-width: 480px;
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .form-title {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #60a5fa, #3b82f6);
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: 0.5px;
+    }
+
+    .input-group {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .input-group input,
+    .input-group select {
+      width: 100%;
+      padding: 1rem 1rem 1rem 3rem;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      color: white;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .input-group select {
+      padding-left: 1rem;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23ffffff' viewBox='0 0 16 16'%3E%3Cpath d='M8 10L4 6h8l-4 4z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+    }
+
+    .input-group input:focus,
+    .input-group select:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+      outline: none;
+    }
+
+    .input-group input::placeholder {
+      color: var(--secondary);
+    }
+
+    .input-group i {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+      color: var(--secondary);
+      transition: all 0.3s ease;
+    }
+
+    .input-group input:focus + i {
+      color: var(--primary);
+    }
+
+    .input-group select option {
+      background: var(--background);
+      color: white;
+      padding: 1rem;
+    }
+
+    .signup-btn {
+      width: 100%;
+      padding: 1rem;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+      border: none;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      letter-spacing: 0.5px;
+      margin-top: 1.5rem;
+    }
+
+    .signup-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(59, 130, 246, 0.4);
+    }
+
+    .signup-btn:active {
+      transform: translateY(0);
+    }
+
+    .signup-btn:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 1.5rem;
+      color: var(--secondary);
+    }
+
+    .login-link a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .login-link a:hover {
+      color: var(--primary-dark);
+    }
+
+    /* Loading animation */
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .loading {
+      display: inline-block;
+      width: 1.5rem;
+      height: 1.5rem;
+      border: 3px solid rgba(255,255,255,0.3);
+      border-radius: 50%;
+      border-top-color: white;
+      animation: spin 1s ease-in-out infinite;
+      margin-right: 0.5rem;
+    }
+
+    /* Input animations */
+    .input-group input:not(:placeholder-shown) {
+      border-color: rgba(59, 130, 246, 0.5);
+    }
+
+    /* Error handling */
+    .error-message {
+      color: var(--error);
+      font-size: 0.875rem;
+      margin-top: 0.5rem;
+      display: none;
+    }
+
+    .input-group.error input {
+      border-color: var(--error);
+    }
+
+    .input-group.error .error-message {
+      display: block;
+    }
+
+    /* Success animation */
+    @keyframes checkmark {
+      0% { transform: scale(0); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    .success-icon {
+      color: var(--success);
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      display: none;
+    }
+
+    .input-group.success .success-icon {
+      display: block;
+      animation: checkmark 0.4s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="backs">
+    <div class="gop">
+      <h1 class="form-title">Create Account</h1>
+      
+      <div class="input-group">
+        <input type="email" id="email" placeholder="Email" />
+        <i class="fas fa-envelope"></i>
+        <i class="fas fa-check success-icon"></i>
+        <div class="error-message">Please enter a valid email address</div>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="username" placeholder="Username" />
+        <i class="fas fa-user"></i>
+        <i class="fas fa-check success-icon"></i>
+        <div class="error-message">Username must be at least 3 characters</div>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="fullname" placeholder="Full Name" />
+        <i class="fas fa-id-card"></i>
+        <i class="fas fa-check success-icon"></i>
+        <div class="error-message">Please enter your full name</div>
+      </div>
+
+      <div class="input-group">
+        <input type="tel" id="phonenumber" placeholder="Phone Number" />
+        <i class="fas fa-phone"></i>
+        <i class="fas fa-check success-icon"></i>
+        <div class="error-message">Please enter a valid phone number</div>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Password" />
+        <i class="fas fa-lock"></i>
+        <i class="fas fa-check success-icon"></i>
+        <div class="error-message">Password must be at least 8 characters</div>
+      </div>
+
+      <div class="input-group">
+        <select id="role">
+          <option value="user">User</option>
+          <option value="agent">Agent</option>
+          <option value="master">Master</option>
+        </select>
+      </div>
+
+      <button id="signup-btn" class="signup-btn" onclick="handleSignup()">
+        Sign Up
+      </button>
+
+      <div class="login-link">
+        Already have an account? <a href="/login">Login</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let loading = false;
+    const inputs = document.querySelectorAll('input');
+
+    inputs.forEach(input => {
+      input.addEventListener('input', validateInput);
+    });
+
+    function validateInput(e) {
+      const input = e.target;
+      const inputGroup = input.parentElement;
+      
+      switch(input.id) {
+        case 'email':
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          toggleError(inputGroup, emailRegex.test(input.value));
+          break;
+        case 'username':
+          toggleError(inputGroup, input.value.length >= 3);
+          break;
+        case 'password':
+          toggleError(inputGroup, input.value.length >= 8);
+          break;
+        default:
+          toggleError(inputGroup, input.value.length > 0);
+      }
+    }
+
+    function toggleError(inputGroup, isValid) {
+      if (isValid) {
+        inputGroup.classList.remove('error');
+        inputGroup.classList.add('success');
+      } else {
+        inputGroup.classList.add('error');
+        inputGroup.classList.remove('success');
+      }
+    }
+
+    async function handleSignup() {
+      if (loading) return;
+
+      const btn = document.getElementById('signup-btn');
+      const email = document.getElementById('email').value;
+      const username = document.getElementById('username').value;
+      const fullname = document.getElementById('fullname').value;
+      const password = document.getElementById('password').value;
+      const phonenumber = document.getElementById('phonenumber').value;
+      const role = document.getElementById('role').value;
+
+      // Basic validation
+      if (!email || !username || !fullname || !password || !phonenumber) {
+        alert('Please fill in all fields');
+        return;
+      }
+
+      loading = true;
+      btn.innerHTML = '<span class="loading"></span>Signing Up...';
+      btn.disabled = true;
+
+      try {
+        const response = await fetch('https://casinobackend-production.up.railway.app/api/auth/signup', {
+          method: 'POST',
+          credentials: 'include',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email,
+            username,
+            fullname,
+            password,
+            phonenumber,
+            role
+          })
+        });
+
+        const data = await response.json();
+
+        if (response.status === 201) {
+          console.log('Signup successful:', data.data.user);
+          window.location.href = '/login';
+        } else {
+          throw new Error(data.message || 'Signup failed');
+        }
+      } catch (error) {
+        console.error('Error during signup:', error);
+        alert(error.message || 'An error occurred during signup');
+      } finally {
+        loading = false;
+        btn.innerHTML = 'Sign Up';
+        btn.disabled = false;
+      }
+    }
+  </script>
+</body>
+</html>

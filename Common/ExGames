@@ -1,0 +1,1976 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google" content="notranslate" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sports Trading Platform">
+    <meta name="keyword" content="sports trading, bet, betfair">
+    <meta name="robots" content="noindex" />
+
+    <link rel="shortcut icon" href="/img/favicon/BetPro.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/img/sprites/css/sprite.css" />
+    <link rel="stylesheet" href="/dist/site.css?62000" />
+    <link href="/css/BetPro-style.css?62000" rel="stylesheet" />
+
+    <title> | BetPro</title>
+    <style>
+        .body {
+            min-height: 91.7vh;
+        }
+
+        center a {
+            color: white;
+        }
+
+        center a {
+            font-size: 13px;
+        }
+    </style>
+
+    <script>
+        const pricesUrl = "https://prices9.mgs11.com/api";
+        const ordersUrl = "https://orders.mgs11.com/api";
+        const LiquidityRate = 35;
+        const SsocketUrl = "https://orders-ws2.mgs11.com/signalr";
+        const uwsUrl = "https://orders-ws2.mgs11.com/usershub";
+        const genSck = 1;
+        const CasSck = 1;
+        const casinoUrl = "https://casino-ws.mgs11.com/signalr";
+        // var SsocketEnable = 0;
+    </script>
+</head>
+<body class="bg-gray d-flex flex-column">
+    <div class="main-page">
+        <div class="row no-gutters">
+            <div class="col-md-3 col-lg-2" id="sidebar">
+                <div class="logo-bar">
+                    <a href="/Common/Dashboard">
+                        <span class="green-logo-text">BetPro</span>
+                    </a>
+                </div>
+                <div class="divider"></div>
+                <div class="sidebar-menu" style="height:100%;">
+                    <ul>
+                        
+
+<ul class="nav">
+
+
+
+<style>
+
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+            moz-transform: rotateY(0deg);
+            ms-transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+            moz-transform: rotateY(360deg);
+            ms-transform: rotateY(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotateY(0deg);
+        }
+
+        to {
+            -webkit-transform: rotateY(360deg);
+        }
+    }
+
+    .imageSpin {
+        transition-delay: 5s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: inherit;
+        -webkit-animation-name: spin;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: initial;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-delay: 2s;
+    }
+
+    .imageSpin2 {
+        transition-delay: 3s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: inherit;
+        -webkit-animation-name: spin;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: initial;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-delay: 2s;
+    }
+   
+
+    /*for spin2*/
+    #spinning-circle {
+        animation-name: spinning-circle;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes spinning-circle {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    #invertcolor {
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        animation-name: spinning-circle;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    #invertcolor2{
+         filter: invert(100%);
+        -webkit-filter: invert(100%);
+       animation-name: spin;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        max-height:30px;
+    }
+
+    #invertcolor3 {
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        animation-name: spin;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        max-height: 30px;
+    }
+
+
+ .exgameblinker{
+   animation: animate 8s linear infinite;
+ } 
+  
+ @keyframes animate{
+   0%{
+     background-color:red;
+   }
+   25%{
+     background-color:inherit;
+   }
+   50%{
+     background-color:inherit;
+   }
+   75%{
+     background-color:inherit;
+   }
+   100%{
+     background-color:red;
+   }
+ }
+
+    .Galaxyblinker {
+        position: relative;
+        z-index: 0;
+    }
+
+        .Galaxyblinker::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(90deg, #8a47ff 0%, #c36eff 100%);
+            opacity: 1;
+            animation: animateGradient 12s linear infinite;
+            transition: opacity 0.5s ease;
+        }
+
+    @keyframes animateGradient {
+        0%, 100%
+
+    {
+        opacity: 1;
+    }
+
+    25%, 50%, 75% {
+        opacity: 0;
+    }
+
+    }
+
+
+</style>
+
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-soccer svg-soccer-dims svg-span" role="img"></span>
+                <span>Soccer</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Soccer</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244845708">
+America MG v Criciuma                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244792967">
+Bayern Munich v Boca Juniors                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244804786">
+Jamaica v Guadeloupe                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244840397">
+Kansas City (W) v Angel City FC (W)                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244793536">
+Los Angeles FC v Sportive De Tunis                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244840487">
+Racing Louisville FC (W) v Orlando Pride SC (W)                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244939610">
+USM Khenchela v MC El Bayadh                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-tennis svg-tennis-dims svg-span" role="img"></span>
+                <span>Tennis</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Tennis</strong></a></li>
+                    <li class="divider"></li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-cricket svg-cricket-dims svg-span" role="img"></span>
+                <span>Cricket</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Cricket</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244792514">
+England v India                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244951813">
+MI New York v Washington Freedom                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244952103">
+Seattle Orcas v Los Angeles Knight Riders                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244867013">
+Sri Lanka v Bangladesh                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244896900">
+Texas Super Kings v San Francisco Unicorns                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-horse svg-horse-dims svg-span" role="img"></span>
+                <span>Horse Race</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Horse Race</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959998">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:25:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Penn National (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960002">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:30:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Evangeline Downs (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959991">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:40:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Los Alamitos (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959999">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:54:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Penn National (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960003">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:57:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Evangeline Downs (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960011">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:00:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Charles Town (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959992">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:10:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Los Alamitos (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960000">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:22:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Penn National (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960004">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:24:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Evangeline Downs (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960012">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:32:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Charles Town (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960020">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:35:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Lone Star Park (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959993">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:40:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Los Alamitos (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960001">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:50:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Penn National (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960005">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:51:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Evangeline Downs (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960013">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:02:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Charles Town (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960021">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:02:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Lone Star Park (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960006">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:18:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Evangeline Downs (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960022">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:29:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Lone Star Park (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960014">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:32:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Charles Town (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960007">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:46:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Evangeline Downs (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960023">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:56:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Lone Star Park (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244913038">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T01:00:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Randwick (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960015">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T01:02:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Charles Town (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960008">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T01:13:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Evangeline Downs (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244944927">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T01:22:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Roma (AU)</span>
+                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-greyhound-racing svg-greyhound-racing-dims svg-span" role="img"></span>
+                <span>Greyhound</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Greyhound</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964249">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:20:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964199">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:30:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964254">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:35:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964204">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:45:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964259">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:50:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964209">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:00:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964264">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:06:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964214">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:15:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964269">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:22:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964219">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:30:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964274">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:38:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964224">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:45:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964279">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:55:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964229">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:00:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964284">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:10:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964234">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:15:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964289">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:26:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964239">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:30:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964294">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:42:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964244">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:45:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+
+
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/sap" class="dropdown-toggle" role="button">
+                <span class="svg-Casino svg-Casino-dims imageSpin2" role="img"></span>
+                <span>Sports Book</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/RSC" class="dropdown-toggle" role="button">
+                <i style="font-size:17px;" class='fas fa-star fa-2x fa-spin fa-lg'></i>
+                <span>RoyalStar Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/Games" class="dropdown-toggle" role="button">
+                <img id="spinning-circle" src="/img/v2/livegameing.png" onerror="this.onerror = null; this.src= null" alt="G">
+                <span>Star Casino</span>
+            </a>
+
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/WorldCasino">
+                <img id="invertcolor" style="background:invert(100%)" src="/img/v2/worldcasinosvg.png" alt="WC" />
+                <span>World Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/Dream">
+                <span class="svg-Casino svg-Casino-dims imageSpin2" role="img"></span>
+                <span>Royal Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/ExGames">
+                <img id="invertcolor2" src="/img/v2/BLogo.png" />
+                <span>BetFairGames</span>
+            </a>
+         </li>
+        <li class="nav-item exgameblinker" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/BetProGames">
+                <img id="invertcolor3" src="/img/v2/TPS.png" />
+                <span>TeenPatti Studio</span>
+            </a>
+        </li>
+        <li class="nav-item Galaxyblinker" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/Galaxy">
+                <img src="/img/v2/Glogo.png" />
+                <span>Galaxy Casino</span>
+            </a>
+        </li>
+
+    <li class="divider"></li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Customer/Liable">
+                <span class="svg-colossus svg-colossus-dims svg-span" role="img"></span> 
+                Current Position
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Common/Dashboard">
+                <span class="svg-soccer svg-soccer-dims svg-span" role="img"></span> 
+                All Sports
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Common/Result">
+                <span class="svg-clipboard svg-clipboard-dims svg-span" role="img"></span> 
+                Results
+            </a>
+        </li>
+    <li class="nav-item" style="width:100%;">
+        <a class="nav-link" href="#" onclick="ShowExchangeRules(); return false;">
+            <i class="fa fa-info-circle"></i>Market Rules
+        </a>
+    </li>
+    <li class="nav-item" style="width:100%;">
+        <a class="nav-link" href="#" onclick="ShowTos(); return false;">
+            <i class="fa fa-info-circle"></i>Terms &amp; Conditions
+        </a>
+    </li>
+</ul>
+<script>
+    function ShowExchangeRules() {
+        $("#modalMarketRules").modal('show');
+
+        $.get("/rules.html", function (data) {
+            $("#modalMarketRules .modal-body").html(data);
+        });
+    }
+
+    function ShowTos() {
+        $("#modalTos").modal('show');
+        $.get("/tos.html", function (data) {
+            $("#modalTos .modal-body").html(data);
+        });
+    }
+</script>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md" id="main-wrap">
+                <div class="header">
+                    <button class="burger-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <ul class="top-nav">
+                        <li><a href="/Common/Dashboard">Dashboard</a></li>
+                    </ul>
+
+                    <div id="sticky-footer" style="width:50vw; padding:0px; margin:0px; float:left; " class="py-1 bg-black text-white">
+                        <div class="container text-center" style="padding:0px; margin:0px;">
+                            <ul id="news-ticker-foot" style="padding:0px; margin:0px;">
+                                <li data-update="item1" style="padding:0px; margin:0px;">Welcome to BetPro</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown-wrap">
+                        <div class="dropdown">
+
+                            <div class="designation">
+                                <span class="wallet-balance">B: -</span>
+                                <span class="wallet-exposure"> | L: - |</span>
+                            </div>
+
+                            <button class="btn profile-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    alsBettor
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="/Customer/Ledger/">Statement</a>
+                                <a class="dropdown-item" href="/Common/Result/">Result</a>
+                                <a class="dropdown-item" href="/Customer/ProfitLoss/">Profit Loss</a>
+                                <a class="dropdown-item" href="/Customer/Bets">Bet History</a>
+                                <a class="dropdown-item" href="/Customer/Profile">Profile</a>
+                                <a class="dropdown-item" id="btn-logout" href="/Common/Logout">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-wrap body">
+                    
+<script>
+    var exgameid = '';
+    var ControllerName = 'ExGames';
+</script>
+
+<div class="card ExMainCardbundle">
+    <div class="card-header">
+        <div class="scrollmenu">
+            <a href="/Common/ExGames" class="tablink btn-sm btn btn-primary"><b>Lobby</b></a>
+                    <a href="/Common/ExGames?GameId=1444074" class="tablink btn-sm btn btn-primary">Hold&#x27;em</a>
+                    <a href="/Common/ExGames?GameId=1444080" class="tablink btn-sm btn btn-primary">Turbo Hold&#x27;em</a>
+                    <a href="/Common/ExGames?GameId=1444077" class="tablink btn-sm btn btn-primary">BlackJack</a>
+                    <a href="/Common/ExGames?GameId=1444082" class="tablink btn-sm btn btn-primary">Turbo BlackJack</a>
+                    <a href="/Common/ExGames?GameId=1444086" class="tablink btn-sm btn btn-primary">Baccarat</a>
+                    <a href="/Common/ExGames?GameId=1444089" class="tablink btn-sm btn btn-primary">Turbo Baccarat</a>
+                    <a href="/Common/ExGames?GameId=1444093" class="tablink btn-sm btn btn-primary">Hi Lo</a>
+                    <a href="/Common/ExGames?GameId=1444096" class="tablink btn-sm btn btn-primary">Turbo HiLo</a>
+                    <a href="/Common/ExGames?GameId=1444100" class="tablink btn-sm btn btn-primary">Omaha Hi</a>
+                    <a href="/Common/ExGames?GameId=1444116" class="tablink btn-sm btn btn-primary">Derby Race</a>
+                    <a href="/Common/ExGames?GameId=1444126" class="tablink btn-sm btn btn-primary">Derby Race Turbo</a>
+        </div>        
+    </div>
+
+
+        <div class="card-body exlobbybg">
+            <div>
+                    <div class="left">
+                        <a href="/Common/ExGames?GameId=1444074">
+                            <div class="card">
+                                <div>
+                                    <img src="/img/1444074.png" class="card-img-top" alt="Hold&#x27;em">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Hold&#x27;em</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="left">
+                        <a href="/Common/ExGames?GameId=1444080">
+                            <div class="card">
+                                <div>
+                                    <img src="/img/1444080.jpg" class="card-img-top" alt="Turbo Hold&#x27;em">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Turbo Hold&#x27;em</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="left">
+                        <a href="/Common/ExGames?GameId=1444077">
+                            <div class="card">
+                                <div>
+                                    <img src="/img/1444077.png" class="card-img-top" alt="BlackJack">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">BlackJack</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="left">
+                        <a href="/Common/ExGames?GameId=1444082">
+                            <div class="card">
+                                <div>
+                                    <img src="/img/1444082.jpg" class="card-img-top" alt="Turbo BlackJack">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Turbo BlackJack</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="left">
+                        <a href="/Common/ExGames?GameId=1444086">
+                            <div class="card">
+                                <div>
+                                    <img src="/img/1444086.jpg" class="card-img-top" alt="Baccarat">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Baccarat</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="left">
+                        <a href="/Common/ExGames?GameId=1444089">
+                            <div class="card">
+                                <div>
+                                    <img src="/img/1444089.jpg" class="card-img-top" alt="Turbo Baccarat">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Turbo Baccarat</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="left">
+                        <a href="/Common/ExGames?GameId=1444093">
+                            <div class="card">
+                                <div>
+                                    <img src="/img/1444093.png" class="card-img-top" alt="Hi Lo">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Hi Lo</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="left">
+                        <a href="/Common/ExGames?GameId=1444096">
+                            <div class="card">
+                                <div>
+                                    <img src="/img/1444096.png" class="card-img-top" alt="Turbo HiLo">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Turbo HiLo</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="left">
+                        <a href="/Common/ExGames?GameId=1444100">
+                            <div class="card">
+                                <div>
+                                    <img src="/img/1444100.jpg" class="card-img-top" alt="Omaha Hi">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Omaha Hi</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="left">
+                        <a href="/Common/ExGames?GameId=1444116">
+                            <div class="card">
+                                <div>
+                                    <img src="/img/1444116.jpg" class="card-img-top" alt="Derby Race">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Derby Race</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="left">
+                        <a href="/Common/ExGames?GameId=1444126">
+                            <div class="card">
+                                <div>
+                                    <img src="/img/1444126.jpg" class="card-img-top" alt="Derby Race Turbo">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Derby Race Turbo</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+        </div>
+
+    <div class="card-body mainexcard" id="Excardbody" style="display:none;">
+        <div id="ExgamesDiv" class="row">
+            <div class="col-lg-8 Exgamesbg">
+                <div class="x-game-header">
+    <div class="container text-center">
+        <center class="row">
+            <div class="col-md-4 ExRounds">
+                <div v-if="snapshot.channel.game.round != 0" class="round-counter-simple">
+                    <div class="round-counter-text"><span class="i18n">Round</span></div>
+                    <div v-if="snapshot.channel.game.round == 1" class="round-counter-item-simple active"></div><div v-else class="round-counter-item-simple"></div>
+                    <div v-if="snapshot.channel.game.round == 2" class="round-counter-item-simple active"></div> <div v-else class="round-counter-item-simple"></div>
+                    <div v-if="snapshot.channel.game.round == 3" class="round-counter-item-simple active"></div> <div v-else class="round-counter-item-simple"></div>
+                    <div v-if="snapshot.channel.game.round == 4" class="round-counter-item-simple active"></div> <div v-else class="round-counter-item-simple"></div>
+                    <div v-if="snapshot.channel.game.round == 5" class="round-counter-item-simple active"></div> <div v-else class="round-counter-item-simple"></div>
+                    <div v-if="snapshot.channel.game.round == 6" class="round-counter-item-simple active"></div> <div v-else class="round-counter-item-simple"></div>
+                    <div v-if="snapshot.channel.game.round == 7" class="round-counter-item-simple active"></div> <div v-else class="round-counter-item-simple"></div>
+                </div>
+            </div>
+
+            <div class="col-4 col-md-4">
+                <div class="col" id="demoTimer">
+                    <div class="base-timer">
+                        <svg class="base-timer__svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <g class="base-timer__circle">
+                                <circle class="base-timer__path-elapsed" cx="50" cy="50" r="45"></circle>
+
+                                <path id="base-timer-path-remaining"
+                                      stroke-dasharray="283"
+                                      class="base-timer__path-remaining ${remainingPathColor}"
+                                      d="
+                                                          M 50, 50
+                                                          m -45, 0
+                                                          a 45,45 0 1,0 90,0
+                                                          a 45,45 0 1,0 -90,0
+                                                        "></path>
+                            </g>
+                        </svg>
+                        <span id="base-timer-label" class="base-timer__label">{{ timeLeft }}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8  col-md-4 inline-block Gameidcol">
+                Game ID:{{snapshot.channel.game.id}}
+                <div class="btn-group btn-group-sm mr-2" role="group" aria-label="Second group">
+                    <button type="button" id="Alltab" style="background-color:black;" class="tablink btn btn-primary bbactive" v-on:click="MarketTab('All')">Game</button>
+                    <button type="button" id="RESULTStab" class="tablink btn btn-primary bbactive" v-on:click="MarketTab('RESULTS')">Results</button>
+                    <button type="button" class="tablink btn btn-primary bbactive" v-on:click="ShowMarketRules()">Rules</button>
+                </div>
+            </div>
+        </center>
+    </div>
+</div>
+                <div id="All" class="tabcontent" style="display:contents;">
+                    <div class="left-content">
+                        <div class="cards-layout blackjack">
+                                <div v-for="card in snapshot.channel.game.gameData" v-if="card.name =='Board'">
+                                    <div class="dealer">
+                                        <div class="player-item">
+                                            <span class="name">{{card.name}}</span>
+                                            <div class="player-card">
+                                                
+<div class="cards-layout" v-if="card.property.length == 0">
+	<ul class="first-row" style="margin-left:-32px;">
+		<li class="card-item">
+			<div class="card"><img src="https://ie1-gfebf.cdnppb.net/gfe-website-betfair-xgames-xgames/client/assets/images/card_simple_omaha_back.svg" class="hiloimg" alt="card"></div></li>
+		<li class="card-item">
+			<div class="card"><img class="hiloimg"  src="https://ie1-gfebf.cdnppb.net/gfe-website-betfair-xgames-xgames/client/assets/images/card_simple_omaha_back.svg" alt="card"></div></li>
+		<li class="card-item">
+			<div class="card"><img class="hiloimg"  src="https://ie1-gfebf.cdnppb.net/gfe-website-betfair-xgames-xgames/client/assets/images/card_simple_omaha_back.svg" alt="card"></div></li>
+	</ul>
+</div>
+<div class="cards-layout" v-if="card.property.length > 0">
+	<ul class="first-row" style="margin-left:-32px;">
+		<li v-if="card.property.length > 0" class="card-item">
+			<div class="card"><img :src="ImageUrl('/img/Cards/card_simple_' , card.property[0].value)" class="hiloimg" alt="card"></div><span class="card-name">Start</span></li>
+		<li v-if="card.property.length > 1" class="card-item">
+			<div class="card"><img class="hiloimg"  :src="ImageUrl('/img/Cards/card_simple_' , card.property[1].value)" alt="card"></div><span class="card-name">1</span></li>
+		<li class="card-item" v-if="card.property.length > 2">
+			<div class="card"><img class="hiloimg"  :src="ImageUrl('/img/Cards/card_simple_' , card.property[2].value)" alt="card"></div><span class="card-name">2</span></li>
+		<li class="card-item" v-if="card.property.length > 3">
+			<div class="card"><img class="hiloimg"  :src="ImageUrl('/img/Cards/card_simple_' , card.property[3].value)" alt="card"></div><span class="card-name">3</span></li>
+		<li class="card-item" v-if="card.property.length > 4">
+			<div class="card"><img class="hiloimg"  :src="ImageUrl('/img/Cards/card_simple_' , card.property[4].value)" alt="card"></div><span class="card-name">4</span></li>
+		<li class="card-item" v-if="card.property.length  > 5">
+			<div class="card"><img class="hiloimg"  :src="ImageUrl('/img/Cards/card_simple_' , card.property[5].value)" alt="card"></div><span class="card-name">5</span></li>
+		<li class="card-item" v-if="card.property.length > 6">
+			<div class="card"><img class="hiloimg"  :src="ImageUrl('/img/Cards/card_simple_' , card.property[6].value)" alt="card"></div><span class="card-name">6</span></li>
+		<li class="card-item" v-if="card.property.length > 7">
+			<div class="card"><img class="hiloimg"  :src="ImageUrl('/img/Cards/card_simple_' , card.property[7].value)" alt="card"></div><span class="card-name">7</span></li>
+		<li class="card-item" v-if="card.property.length > 8">
+			<div class="card"><img class="hiloimg"  :src="ImageUrl('/img/Cards/card_simple_' , card.property[8].value)" alt="card"></div><span class="card-name">8</span></li>
+		<li class="card-item" v-if="card.property.length > 9">
+			<div class="card" ><img class="hiloimg"  :src="ImageUrl('/img/Cards/card_simple_' , card.property[9].value)" alt="card"></div><span class="card-name">9</span></li>
+		<li class="card-item" v-if="card.property.length > 10">
+			<div class="card" ><img  class="hiloimg" :src="ImageUrl('/img/Cards/card_simple_' , card.property[10].value)" alt="card"></div><span class="card-name">10</span></li>
+		<li class="card-item" v-if="card.property.length > 11">
+			<div class="card" ><img class="hiloimg"  :src="ImageUrl('/img/Cards/card_simple_' , card.property[11].value)" alt="card"></div><span class="card-name">11</span></li>
+		<li class="card-item" v-if="card.property.length > 12">
+			<div class="card"><img  class="hiloimg" :src="ImageUrl('/img/Cards/card_simple_' , card.property[12].value)" alt="card"></div><span class="card-name">Last</span></li>
+	</ul>
+</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div v-for="card in snapshot.channel.game.gameData" v-if="card.name =='Community Cards' || card.name =='Dealer'">
+                                    <div class="dealer">
+                                        <div class="player-item">
+                                            <span class="name">{{card.name}}</span>
+                                            <div class="player-card">
+                                                
+<div id="BFBCardHandView" class="BFBCardHandViewDealer" v-if="card.property.length == 1">
+                                                               
+	                                                            <div  id="BFBCardFanView" class="BFBCardFanView" >
+		                                                            <div id="BFBCardView" class="card1">
+            <img class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , '/img/Cards/card_simple_' , card.property[0].value)">
+                                                                    </div>
+	                                                            </div>
+</div>
+
+<div id="BFBCardHandView" class="BFBCardHandViewDealer" v-if="card.property.length == 2">
+                                                                <div id="BFBCardFanView" class="BFBCardFanView" >
+		                                                            <div id="BFBCardView" class="card1in2">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[0].value)">
+                                                                    </div>
+		                                                            <div id="BFBCardView" class="card2in2">
+                                                                        <img id="RSMImageView" class="RSMImageView"  :src="ImageUrl('/img/Cards/card_simple_' , card.property[1].value)">
+                                                                    </div>
+	                                                            </div>
+</div>
+
+<div id="BFBCardHandView" class="BFBCardHandViewDealer" v-if="card.property.length == 3">
+                                                                <div id="BFBCardFanView" class="BFBCardFanView">
+	                                                                <div id="BFBCardView" class="card1in3">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[0].value)">
+                                                                    </div>
+	                                                                <div id="BFBCardView" class="card2in3">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[1].value)">
+                                                                    </div>
+	                                                                <div id="BFBCardView" class="card3in3">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[2].value)">
+                                                                    </div>
+                                                                </div>
+</div>
+
+<div id="BFBCardHandView" class="BFBCardHandViewDealer" v-if="card.property.length == 4">
+                                                                <div id="BFBCardFanView" class="BFBCardFanView">
+	                                                                <div id="BFBCardView" class="card1in4">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[0].value)">
+                                                                    </div>
+	                                                                <div id="BFBCardView" class="card2in4">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[1].value)">
+                                                                    </div>
+	                                                                <div id="BFBCardView" class="card3in4">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[2].value)">
+                                                                    </div>
+	                                                                <div id="BFBCardView" class="card4in4">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[3].value)">
+                                                                    </div>
+                                                                </div>
+</div>
+
+<div id="BFBCardHandView" class="BFBCardHandViewDealer" v-if="card.property.length == 5">
+                                                                <div id="BFBCardFanView" class="BFBCardFanView">
+	                                                                <div id="BFBCardView" class="card1in5">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[0].value)">
+                                                                    </div>
+	                                                                <div id="BFBCardView" class="card2in5">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[1].value)">
+                                                                    </div>
+	                                                                <div id="BFBCardView" class="card3in5">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[2].value)">
+                                                                    </div>
+	                                                                <div id="BFBCardView" class="card4in5">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[3].value)">
+                                                                    </div>
+                                                                    <div id="BFBCardView" class="card5in5">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[4].value)">
+                                                                    </div>
+                                                                </div>
+</div>
+
+<div id="BFBCardHandView" class="BFBCardHandViewDealer BFBCardHandViewForSix" v-if="card.property.length == 6">
+                                                               
+	                                                           <div id="BFBCardFanView" class="BFBCardFanView">
+	                                                                <div id="BFBCardView" class="card1in6">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[0].value)">
+                                                                    </div>
+	                                                                <div id="BFBCardView" class="card2in6">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[1].value)">
+                                                                    </div>
+	                                                                <div id="BFBCardView" class="card3in6">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[2].value)">
+                                                                    </div>
+	                                                                <div id="BFBCardView" class="card4in6">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[3].value)">
+                                                                    </div>
+                                                                    <div id="BFBCardView" class="card5in6">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[4].value)">
+                                                                    </div>
+                                                                    <div id="BFBCardView" class="card6in6">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[5].value)">
+                                                                    </div>
+                                                                </div>
+</div>
+
+<div id="BFBCardHandView" class="BFBCardHandViewDealer BFBCardHandViewForSeven" v-if="card.property.length == 7">
+                                                               
+	                                                             <div id="BFBCardFanView" class="BFBCardFanView">
+	                                                                <div id="BFBCardView" class="card1in7">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[0].value)">
+                                                                    </div>
+	                                                                <div id="BFBCardView" class="card2in7">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[1].value)">
+                                                                    </div>
+	                                                                <div id="BFBCardView" class="card3in7">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[2].value)">
+                                                                    </div>
+	                                                                <div id="BFBCardView" class="card4in7">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[3].value)">
+                                                                    </div>
+                                                                    <div id="BFBCardView" class="card5in7">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[4].value)">
+                                                                    </div>
+                                                                    <div id="BFBCardView" class="card6in7">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[5].value)">
+                                                                    </div>
+                                                                    <div id="BFBCardView" class="card7in7">
+                                                                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[6].value)">
+                                                                    </div>
+                                                                </div>
+</div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="player" v-for="card in snapshot.channel.game.gameData" v-if="card.name !=='Dealer' && card.name !=='Community Cards'  && card.name !=='Shoe' && card.name !=='Scorecard' &&  card.name !=='Board'">
+    <div class="player-item">
+        <span class="name">{{card.name}}</span>
+        <div class="player-card  stood">
+            <div id="BFBCardHandView" class="BFBCardHandView">
+                <div v-if="card.property.length == 1" id="BFBCardFanView" class="BFBCardFanView">
+                    <div id="BFBCardView" class="card1">
+                        <img class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[0].value)">
+                    </div>
+                </div>
+                <div v-if="card.property.length == 2" id="BFBCardFanView" class="BFBCardFanView">
+                    <div id="BFBCardView" class="card1in2">
+                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[0].value)">
+                    </div>
+                    <div id="BFBCardView" class="card2in2">
+                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[1].value)">
+                    </div>
+                </div>
+                <div v-if="card.property.length == 3" id="BFBCardFanView" class="BFBCardFanView">
+                    <div id="BFBCardView" class="card1in3">
+                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[0].value)">
+                    </div>
+                    <div id="BFBCardView" class="card2in3">
+                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[1].value)">
+                    </div>
+                    <div id="BFBCardView" class="card3in3">
+                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[2].value)">
+                    </div>
+                </div>
+                <div v-if="card.property.length == 4" id="BFBCardFanView" class="BFBCardFanView">
+                    <div id="BFBCardView" class="card1in4">
+                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[0].value)">
+                    </div>
+                    <div id="BFBCardView" class="card2in4">
+                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[1].value)">
+                    </div>
+                    <div id="BFBCardView" class="card3in4">
+                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[2].value)">
+                    </div>
+                    <div id="BFBCardView" class="card4in4">
+                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[3].value)">
+                    </div>
+                </div>
+                <div v-if="card.property.length == 5" id="BFBCardFanView" class="BFBCardFanView">
+                    <div id="BFBCardView" class="card1in5">
+                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[0].value)">
+                    </div>
+                    <div id="BFBCardView" class="card2in5">
+                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[1].value)">
+                    </div>
+                    <div id="BFBCardView" class="card3in5">
+                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[2].value)">
+                    </div>
+                    <div id="BFBCardView" class="card4in5">
+                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[3].value)">
+                    </div>
+                    <div id="BFBCardView" class="card5in5">
+                        <img id="RSMImageView" class="RSMImageView" :src="ImageUrl('/img/Cards/card_simple_' , card.property[4].value)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                                </div>
+
+                        </div>
+
+                                    <center>
+                                        <div class="progress" style="height: 3px; max-width:50%; margin-bottom:8px;">
+                                          <div id="Exgamesprogress" class="progress-bar bg-danger" role="progressbar"  aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </center>
+                                    
+<div class="section-blur" v-for="MMarket in snapshot.channel.game.markets.market">
+    <div class="market-titlebar">
+    <p class="market-name">
+    </p>
+    <div class="market-overarround"><span></span><strong>Back</strong></div>
+    <div class="market-overarround market-overarround-lay"><strong>Lay</strong></div>
+</div>
+
+    <div class="market-runners" v-for="Runner in MMarket.selections.selection">
+        <div class="runner-runner"
+             v-bind:class="{ 'winner': Runner.runnerStatus == 'WINNER' }">
+            <h3 class="runner-name">
+                <div class="runner-info">
+                    <span class="clippable runner-display-name">
+                        <h4 class="clippable-spacer"
+                            data-toggle="tooltip"
+                            data-placement="top"
+                            data-html="true">
+                            {{Runner.name}}
+                        </h4>
+                    </span>
+                </div>
+                <div class="runner-position">
+                    <span>
+                        <span v-bind:class="{ 'runner-position-pos': Runner.position > 0, 'position-minus': Runner.position < 0 }">
+                            <strong>{{Runner.position | format}} <span v-if="Runner.lose != 0" style="color:red;"> / {{Runner.lose | format}}</span></strong>
+                        </span>
+                    </span>
+                </div>
+            </h3>
+
+            <template v-if="Runner.status != 0">
+                <div class="runner-disabled">
+                    {{Runner.runnerStatus}}
+                </div>
+            </template>
+            <template v-else-if="MMarket.status == 2">
+                <div class="runner-disabled">
+                    Suspended !
+                </div>
+            </template>
+            <template v-else-if="MMarket.status == 3">
+                <div class="runner-disabled">
+                    Round Over !
+                </div>
+            </template>
+            <template v-else>
+                <a v-if="Runner.bestAvailableToBackPrices.length > 2 && Runner.bestAvailableToBackPrices[2].value != 0" class="price-price price-back" v-on:click="ShowBetSlip(Runner, 'B', snapshot.channel.game.id, 3 ,MMarket.id)">
+                    <span class="price-odd">{{Runner.bestAvailableToBackPrices[2].value}}</span>
+                    <span class="price-amount">{{Runner.bestAvailableToBackPrices[2].amountUnmatched | format}}</span>
+                </a>
+                <a v-else class="price-price price-back">
+                    <span class="price-odd"></span>
+                    <span class="price-amount"></span>
+                </a>
+
+
+                <a v-if="Runner.bestAvailableToBackPrices.length > 1 && Runner.bestAvailableToBackPrices[1].value != 0" class="price-price price-back" v-on:click="ShowBetSlip(Runner, 'B', snapshot.channel.game.id, 2 ,MMarket.id)">
+                    <span class="price-odd">{{Runner.bestAvailableToBackPrices[1].value}}</span>
+                    <span class="price-amount">{{Runner.bestAvailableToBackPrices[1].amountUnmatched | format}}</span>
+                </a>
+                <a v-else class="price-price price-back">
+                    <span class="price-odd"></span>
+                    <span class="price-amount"></span>
+                </a>
+
+
+
+                <a v-if="Runner.bestAvailableToBackPrices.length > 0 && Runner.bestAvailableToBackPrices[0].value != 0" class="price-price price-back mb-show" v-on:click="ShowBetSlip(Runner, 'B',snapshot.channel.game.id, 1 ,MMarket.id)">
+                    <span class="price-odd">{{Runner.bestAvailableToBackPrices[0].value}}</span>
+                    <span class="price-amount">{{Runner.bestAvailableToBackPrices[0].amountUnmatched | format}}</span>
+                </a>
+                <a v-else class="price-price price-back">
+                    <span class="price-odd"></span>
+                    <span class="price-amount"></span>
+                </a>
+
+
+                <a class="price-price price-lay mb-show" v-if="Runner.bestAvailableToLayPrices.length > 0 && Runner.bestAvailableToLayPrices[0].value != 0" v-on:click="ShowBetSlip(Runner, 'L', snapshot.channel.game.id, 1 ,MMarket.id)">
+                    <span class="price-odd">{{Runner.bestAvailableToLayPrices[0].value}}</span>
+                    <span class="price-amount">{{Runner.bestAvailableToLayPrices[0].amountUnmatched | format}}</span>
+                </a>
+                <a class="price-price price-lay mb-show" v-else>
+                    <span class="price-odd"></span>
+                    <span class="price-amount"></span>
+                </a>
+                <a class="price-price price-lay" v-if="Runner.bestAvailableToLayPrices.length > 1  && Runner.bestAvailableToLayPrices[1].value != 0" v-on:click="ShowBetSlip(Runner, 'L', snapshot.channel.game.id, 2 ,MMarket.id)">
+                    <span class="price-odd">{{Runner.bestAvailableToLayPrices[1].value}}</span>
+                    <span class="price-amount">{{Runner.bestAvailableToLayPrices[1].amountUnmatched | format}}</span>
+                </a>
+                <a class="price-price price-lay" v-else>
+                    <span class="price-odd"></span>
+                    <span class="price-amount"></span>
+                </a>
+                <a class="price-price price-lay" v-if="Runner.bestAvailableToLayPrices.length > 2  && Runner.bestAvailableToLayPrices[2].value != 0" v-on:click="ShowBetSlip(Runner, 'L', snapshot.channel.game.id, 3 ,MMarket.id)">
+                    <span class="price-odd">{{Runner.bestAvailableToLayPrices[2].value}}</span>
+                    <span class="price-amount">{{Runner.bestAvailableToLayPrices[2].amountUnmatched | format}}</span>
+                </a>
+                <a class="price-price price-lay" v-else>
+                    <span class="price-odd"></span>
+                    <span class="price-amount"></span>
+                </a>
+            </template>
+        </div>
+    </div>
+</div>
+                    </div>
+                            </div>
+                            <div id="RESULTS" class="tabcontent" style="display:none;">
+                                     <div class="left-content" v-for="result in results" :key="result.id">
+        <div class="card" style="border: 1px solid #ccc; border-radius: 8px; padding: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-bottom: 5px; background: linear-gradient(180deg, #0f0f0f ,#fbfbfb); color:white;">
+            <div class="card-header" style="font-weight: bold; font-size: 16px; margin-bottom: 5px;">
+                {{ formatDate(result.startDate) }} - <b>ID= </b> {{ result.id }}
+            </div>
+            <div class="card-body" style="display: flex; justify-content: center; align-items: center; padding:0px;">
+
+                <div class="dicegame" v-if="result.gameId == 9015">
+                    <div class="container">
+                        <div class="diceofresults" v-for="player in result.players[0].cards">
+                            {{player}}
+                        </div>
+                    </div>
+                </div>
+
+                <div v-else class="players-table" style="text-align: center; width: 100%;">
+                    <table style="width: 100%; border-collapse: collapse;">
+                        <tbody>
+                            <tr style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+                                <td v-for="player in result.players" v-if="player.name == 'Community Cards' || player.name == 'Dealer' || player.name == 'Board'" class="TdResults" v-bind:class="{'TdResultsWin': player.status == 'WINNER'}">
+                                    <div class="player-cards" style="display: flex; flex-direction: column; align-items: center; word-wrap: break-word; overflow-wrap: break-word;">
+                                        <div class="player-name" style="font-weight: bold; text-align: center;">
+                                            {{ player.name }}
+                                        </div>
+                                        <div class="card-images" style="display: flex; justify-content: center; gap: 3px; flex-wrap: wrap;">
+                                            <img v-for="Img in player.cards" :src="ImageUrl('/img/Cards/card_simple_', Img)" loading="lazy" alt="Card Image" style="width: 40px; height: 60px; object-fit: cover; border-radius: 5px;">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr style="display: flex; flex-wrap: wrap; justify-content: space-evenly;">
+                                <td v-for="player in result.players" class="TdResults" v-bind:class="{'TdResultsWin': player.status == 'WINNER'}" v-if="player.name !== 'Community Cards' && player.name !== 'Dealer' && player.name !== 'Board' && player.name !== 'Cards'">
+                                    <div class="player-cards" style="display: flex; flex-direction: column; align-items: center; word-wrap: break-word; overflow-wrap: break-word;">
+                                        <div class="player-name" style="font-weight: bold; text-align: center; width:100%;">
+                                            {{ player.name }}
+                                        </div>
+                                        <div class="card-images" style="display: flex; justify-content: center; gap: 3px; flex-wrap: wrap;  width:100%;">
+                                            <img  v-for="Img in player.cards" :src="ImageUrl('/img/Cards/card_simple_', Img)" loading="lazy" alt="Card Image" style="width: 40px; height: 60px; object-fit: cover; border-radius: 5px;">
+                                        </div>
+                                        <div class="player-status" v-bind:class="{'bgwinner': player.status == 'WINNER'  , 'bgLoser': player.status !== 'WINNER'}" :style="{ color: player.status === 'STOOD' ? 'green' : '#000', marginTop: '5px', fontSize: '14px', fontWeight: 'bold', textAlign: 'center' ,  width: '100%'}">
+                                            {{ player.status }}
+                                        </div>
+                                    </div>
+                                </td>
+                                <td v-if="player.name !== 'Community Cards' && player.name !== 'Dealer' && player.name !== 'Board'" v-for="player in result.selections" class="TdResults" v-bind:class="{'TdResultsWin': player.status == 'WINNER'}">
+                                    <div class="player-cards" style="display: flex; flex-direction: column; align-items: center; word-wrap: break-word; overflow-wrap: break-word;">
+                                        <div class="player-name" style="font-weight: bold; text-align: center; width:100%;">
+                                            {{ player.name }}
+                                        </div>
+                                        <div class="card-images" style="display: flex; justify-content: center; gap: 3px; flex-wrap: wrap;  width:100%;">
+                                            <img :src="ImageUrl('/img/Cards/card_simple_', 'NOT AVAILABLE')" alt="Card Image" loading="lazy" style="width: 40px; height: 60px; object-fit: cover; border-radius: 5px;">
+                                        </div>
+                                        <div class="player-status" v-bind:class="{'bgwinner': player.status == 'WINNER' , 'bgLoser': player.status !== 'WINNER'}" :style="{ color: player.status === 'STOOD' ? 'green' : '#000', marginTop: '5px', fontSize: '14px', fontWeight: 'bold', textAlign: 'center' ,  width: '100%'}">
+                                            {{ player.status }}
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+                            </div>
+                     </div>
+
+
+
+                       <div class="col-lg-4">
+                            <div class="right-content">
+                                <div>
+                                    <div class="table-box-body">
+                                        <div class="bets" id="betSlip" v-show="Order.render">
+                                            <strong>Bet Slip <a target="_blank" style="color:white; float:right" class="button" href="/Customer/Profile">Edit Bet Sizes</a></strong>
+    
+                                            <div class="betting-table">
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Bet for</th>
+                                                            <th>Odds</th>
+                                                            <th>Stake</th>
+                                                            <th>Profit</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr v-bind:class="{ 'back': Order.side.toLowerCase() == 'b', 'lay': Order.side.toLowerCase() == 'l' }">
+                                                            <td>{{ Order.runnerName }}</td>
+                                                            <td width="10%">
+                                                                <div class="quantity">
+                                                                    <input type="text" id="bet-price" 
+                                                                           v-model="Order.price"
+                                                                           v-on:keyup.enter="PlaceOrder()"/>
+                                                                    <div class="quantity-nav">
+                                                                        <div class="quantity-button quantity-up" v-on:click="PriceUp()">
+                                                                            <span class="fa fa-caret-up" />
+                                                                        </div>
+                                                                        <div class="quantity-button quantity-down" v-on:click="PriceDown()">
+                                                                            <span class="fa fa-caret-down" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                            <td width="10%">
+                                                                <div class="stake">
+                                                                    <input type="text"
+                                                                           id="bet-size"
+                                                                           v-model="Order.size"
+                                                                           v-on:change="CalcPL()"
+                                                                           v-on:keyup.enter="PlaceOrder()" />
+                                                                </div>
+                                                            </td>
+                                                            <td>{{ Order.profit }} / -{{ Order.liable }}</td>
+                                                        </tr>
+                                                        <tr v-bind:class="{ 'back': Order.side.toLowerCase() == 'b', 'lay': Order.side.toLowerCase() == 'l' }">
+                                                            <td colspan="5">
+                                                                <table class="table">
+                                                                    <tbody>
+                                                                        <tr class="checknow">
+                                                                            <td><span class="points" data-amount="2000" v-on:click="SetOrderSize(2000)">2,000</span></td>
+                                                                            <td><span class="points" v-on:click="SetOrderSize(5000)">5,000</span></td>
+                                                                            <td><span class="points" v-on:click="SetOrderSize(10000)">10,000</span></td>
+                                                                            <td><span class="points" v-on:click="SetOrderSize(25000)">25,000</span></td>
+                                                                        </tr>
+                                                                        <tr class="checknow">
+                                                                            <td><span class="points" v-on:click="IncreaseOrderSize(1000)">+ 1,000</span></td>
+                                                                            <td><span class="points" v-on:click="IncreaseOrderSize(5000)">+ 5,000</span></td>
+                                                                            <td><span class="points" v-on:click="IncreaseOrderSize(10000)">+ 10,000</span></td>
+                                                                            <td><span class="points" v-on:click="IncreaseOrderSize(25000)">+ 25,000</span></td>
+                                                                        </tr>
+                                                                        <tr v-if="Order.error != ''">
+                                                                            <td class="alert-danger pr-5" colspan="4">{{ Order.error }}</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <button class="align-left btn btn-danger" type="reset" v-on:click="CloseBetSlip()"><b>Close</b></button>
+                                                                            </td>
+                                                                            <td>
+                                                                                <button class="align-left btn btn-warning" type="reset" v-on:click="ClearBetSlip()"><b>Clear</b></button>
+                                                                            </td>
+                                                                            <td colspan="1"></td>
+                                                                            <td>
+                                                                                <div class="btn btn-primary ld-over" 
+                                                                                     v-bind:class="{ 'running': Order.working }"
+                                                                                     v-on:click="PlaceOrder()"
+                                                                                     style="cursor: pointer;">
+                                                                                    <b>Submit</b>
+                                                                                    <div class="ld ld-ball ld-flip"></div>
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="modal fade" id="betSlipMobile" tabindex="-1" role="dialog" aria-labelledby="fancyPosition" aria-hidden="true">
+                                            <div class="modal-dialog modal-md" role="document">
+                                                <div class="modal-content" v-bind:class="{ 'back': Order.side.toLowerCase() == 'b', 'lay': Order.side.toLowerCase() == 'l' }">
+                                                    <div class="modal-body">
+                                                        <table>
+                                                            <tr>
+                                                                <td>&nbsp;</td>
+                                                                <th colspan="3">{{ Order.runnerName }}</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>ODDS</td>
+                                                                <td colspan="2">
+                                                                    <div class="input-group mt-2">
+                                                                        <div class="input-group-prepend">
+                                                                            <button type="button" class="btn btn-outline-secondary" v-on:click="PriceDown()">
+                                                                                <strong>-</strong>
+                                                                            </button>
+                                                                        </div>
+                                                                        <input type="number" id="bet-price"
+                                                                               class="form-control"
+                                                                               v-model="Order.price"
+                                                                               v-on:keyup.enter="PlaceOrder()"
+                                                                               v-on:keyup.up="PriceUp()"
+                                                                               v-on:keyup.down="PriceDown()"
+                                                                               step="0.01"
+                                                                               min="1.01"
+                                                                               max="1000" />
+                                                                        <div class="input-group-append">
+                                                                            <button class="btn btn-outline-secondary" type="button" v-on:click="PriceUp()">
+                                                                                <strong>+</strong>
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Amount</td>
+                                                                <td colspan="2">
+                                                                    <input type="number" id="bet-size-m" v-on:change="CalcPL()" class="form-control mt-2" v-model="Order.size">
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="width: 25%">
+                                                                    <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" data-amount="2000" v-on:click="SetOrderSize(2000)">
+                                                                        2,000
+                                                                    </button>
+                                                                </td>
+                                                                <td style="width: 25%">
+                                                                    <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" v-on:click="SetOrderSize(5000)">
+                                                                        5,000
+                                                                    </button>
+                                                                </td>
+                                                                <td style="width: 25%">
+                                                                    <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" v-on:click="SetOrderSize(10000)">
+                                                                        10,000
+                                                                    </button>
+                                                                </td>
+                                                                <td style="width: 25%">
+                                                                    <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" v-on:click="SetOrderSize(25000)">
+                                                                        25,000
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" v-on:click="IncreaseOrderSize(1000)">
+                                                                        +1,000
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" v-on:click="IncreaseOrderSize(5000)">
+                                                                        +5,000
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" v-on:click="IncreaseOrderSize(10000)">
+                                                                        +10,000
+                                                                    </button>
+                                                                </td>
+                                                                <td>
+                                                                    <button style="touch-action:manipulation;" type="button" class="btn btn-secondary btn-block mt-2" v-on:click="IncreaseOrderSize(25000)">
+                                                                        +25,000
+                                                                    </button>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <button style="touch-action:manipulation;" type="button" data-dismiss="modal" class="btn btn-danger mt-2">
+                                                                        Close
+                                                                    </button>
+                                                                </td>
+                                                                <td colspan="2">
+                                                                    <div class="btn btn-primary ld-over mt-2"
+                                                                         v-bind:class="{ 'running': Order.working }"
+                                                                         v-on:click="PlaceOrder()"
+                                                                         style="cursor: pointer;">
+                                                                        <b>Submit</b>
+                                                                        <div class="ld ld-ball ld-flip"></div>
+                                                                    </div>
+                                                                    <span>{{ Order.profit }} / -{{ Order.liable }}</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr v-show="Order.error !== '' && Order.error !== undefined">
+                                                                <td class="alert-danger pr-5" colspan="4">{{ Order.error }}</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div>
+                                        <div class="bets">
+                                                        <strong>Matched Bets ({{ ExMatched.length }})
+                                                            <img class="rounded disconnected" src="/img/reconnecting.gif" alt="dc" v-show="!isConnected" />
+                                                            <span v-if="!isConnected">DISCONNECTED</span>
+                                                        </strong>
+                                                        <div class="betting-table">
+                                                            <table class="table">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Runner</th>
+                                                                        <th>Price</th>
+                                                                        <th>Size</th>
+                                                                        <th></th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr v-bind:class="{ 'back': order.side === 'Back', 'lay': order.side === 'Lay' }" v-for="order in ExMatched">
+                                                                        <td>{{ order.runnerName }} - {{order.roundId}}</td>
+                                                                        <td>{{ order.rate }}</td>
+                                                                        <td>{{ order.stake | format }}</td>
+                                                                        <td></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                        </div>
+                                </div>
+                                
+                            </div>
+                       </div>
+      </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market Rules -->
+    <div class="modal fade" id="modalMarketRules" tabindex="-1" role="dialog" aria-labelledby="modalMarketRules" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Market Rules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="market-rules-text" class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ToS -->
+    <div class="modal fade" id="
+         " tabindex="-1" role="dialog" aria-labelledby="modalTos" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Terms and conditions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <b>Protection of minors</b>
+                    <br />
+                    <p> It is illegal for anybody under the age of 18 to gamble. </p>
+                    <br />
+                    <p>Our site has strict policies and verification measures to prevent access to minors.</p>
+                    <br />
+                    <p>We encourage parents consider the use of internet use protection tools. You may find the following links useful. </p>
+                    <br />
+                    <a href="https://www.cyberpatrol.com/" target="_blank" style="color:mediumspringgreen">  Cyberpatrol</a>
+                    <br />
+                    <a href="https://www.cybersitter.com/" target="_blank" style="color:mediumspringgreen">  Cybersitter </a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="sticky-footer" class="py-1 bg-dark text-white-50 Bl_NT_SF">
+        <div class="col-12 container" style="background-color:#4dbd74; height:6px; margin-top:-4px;">
+        </div>
+        <div class="container text-center">
+            <center>
+                    
+<style>
+    p{
+        font-size:12px;
+        color:white;
+    }
+    .caoimg{
+        max-width:60px;
+    }
+    .bffooter{
+                    width: 135px;
+                    height: 30px;
+            }
+            .curasaoLinks {
+               pointer-events: none;
+               cursor: default;
+               margin-top:10px;
+            }
+@media screen and (max-width: 635px) {
+            .caoimg {
+                max-width:40px;
+            }
+            .bffooter{
+                    width: 100px;
+                    height: 30px;
+            }
+        }
+</style>
+
+
+<div class="curasaoLinks row" style="display:inline-flex;" id="curacaodiv">
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelector('#curacaodiv').insertAdjacentHTML(
+            'afterbegin',
+            `<hr>
+                <div class="col-sm-12 col-md-4"></div>
+                <div class="col-md-4"></div>`);
+    });
+</script>
+
+            </center>
+           
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+    <script type="text/javascript" src="/dist/bundle0a.js?62000"></script>
+
+    <script>
+        const token = getCookie('wexscktoken');
+        const sess = getCookie('wex3authtoken');
+        const reft = getCookie('wex3reftoken');
+    </script>
+
+    
+    
+    
+        <script src="/js/cwsck.min.js?62000"></script>
+    
+
+
+    <script>
+        $(document).ready(function () {
+            pollRefreshToken();
+        });
+
+        if (genSck === 1) {
+            const signalRConnection = new UWS(uwsUrl, token, sess);
+            signalRConnection.connect();
+        }
+        else {
+            pollUserData();
+        }
+    </script>  
+</body>
+</html>

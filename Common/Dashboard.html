@@ -1,0 +1,1505 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google" content="notranslate" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sports Trading Platform">
+    <meta name="keyword" content="sports trading, bet, betfair">
+    <meta name="robots" content="noindex" />
+
+    <link rel="shortcut icon" href="/img/favicon/BetPro.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/img/sprites/css/sprite.css" />
+    <link rel="stylesheet" href="/dist/site.css" />
+    <link href="/css/BetPro-style.css" rel="stylesheet" />
+
+    <title>Dashboard | BetPro</title>
+    <style>
+        .body {
+            min-height: 91.7vh;
+        }
+
+        center a {
+            color: white;
+        }
+
+        center a {
+            font-size: 13px;
+        }
+    </style>
+
+    <script>
+        const pricesUrl = "https://prices9.bfexch.com/api";
+        const ordersUrl = "https://orders.bfexch.com/api";
+        const LiquidityRate = 35;
+        const SsocketUrl = "https://orders-ws2.bfexch.com/signalr";
+        const uwsUrl = "https://orders-ws2.bfexch.com/usershub";
+        const genSck = 1;
+        const CasSck = 1;
+        const casinoUrl = "https://casino-ws.bfexch.com/signalr";
+        // var SsocketEnable = 0;
+    </script>
+</head>
+<body class="bg-gray d-flex flex-column">
+    <div class="main-page">
+        <div class="row no-gutters">
+            <div class="col-md-3 col-lg-2" id="sidebar">
+                <div class="logo-bar">
+                    <a href="/Common/Dashboard">
+                        <span class="green-logo-text">BetPro</span>
+                    </a>
+                </div>
+                <div class="divider"></div>
+                <div class="sidebar-menu" style="height:100%;">
+                    <ul>
+                        
+
+<ul class="nav">
+
+
+
+<style>
+
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+            moz-transform: rotateY(0deg);
+            ms-transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+            moz-transform: rotateY(360deg);
+            ms-transform: rotateY(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotateY(0deg);
+        }
+
+        to {
+            -webkit-transform: rotateY(360deg);
+        }
+    }
+
+    .imageSpin {
+        transition-delay: 5s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: inherit;
+        -webkit-animation-name: spin;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: initial;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-delay: 2s;
+    }
+
+    .imageSpin2 {
+        transition-delay: 3s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: inherit;
+        -webkit-animation-name: spin;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: initial;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-delay: 2s;
+    }
+   
+
+    /*for spin2*/
+    #spinning-circle {
+        animation-name: spinning-circle;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes spinning-circle {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    #invertcolor {
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        animation-name: spinning-circle;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    #invertcolor2{
+         filter: invert(100%);
+        -webkit-filter: invert(100%);
+       animation-name: spin;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        max-height:30px;
+    }
+
+    #invertcolor3 {
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        animation-name: spin;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        max-height: 30px;
+    }
+
+
+ .exgameblinker{
+   animation: animate 8s linear infinite;
+ } 
+  
+ @keyframes animate{
+   0%{
+     background-color:red;
+   }
+   25%{
+     background-color:inherit;
+   }
+   50%{
+     background-color:inherit;
+   }
+   75%{
+     background-color:inherit;
+   }
+   100%{
+     background-color:red;
+   }
+ }
+
+    .Galaxyblinker {
+        position: relative;
+        z-index: 0;
+    }
+
+        .Galaxyblinker::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(90deg, #8a47ff 0%, #c36eff 100%);
+            opacity: 1;
+            animation: animateGradient 12s linear infinite;
+            transition: opacity 0.5s ease;
+        }
+
+    @keyframes animateGradient {
+        0%, 100%
+
+    {
+        opacity: 1;
+    }
+
+    25%, 50%, 75% {
+        opacity: 0;
+    }
+
+    }
+
+
+</style>
+
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-soccer svg-soccer-dims svg-span" role="img"></span>
+                <span>Soccer</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Soccer</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245243942">
+AEK Larnaca v Partizan Belgrade                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245402344">
+Vllaznia Shkoder v BFC Daugavpils                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-tennis svg-tennis-dims svg-span" role="img"></span>
+                <span>Tennis</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Tennis</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245467047">
+A Sabalenka v A Anisimova                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245484745">
+M Sherif v Dar Semenistaja                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-cricket svg-cricket-dims svg-span" role="img"></span>
+                <span>Cricket</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Cricket</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245405948">
+England v India                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245410884">
+West Indies v Australia                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-horse svg-horse-dims svg-span" role="img"></span>
+                <span>Horse Race</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Horse Race</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245481913">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T11:50:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Turffontein (ZA)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245462863">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:10:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Kenilworth (ZA)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245481915">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:25:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Turffontein (ZA)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245456338">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:30:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Doncaster (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245456340">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:30:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Doncaster (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245462896">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:45:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Kenilworth (ZA)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245455944">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:50:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Newmarket (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245455946">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:50:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Newmarket (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245456345">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T13:00:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Doncaster (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245456346">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T13:00:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Doncaster (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245481917">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T13:05:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Turffontein (ZA)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245456013">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T13:10:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Carlisle (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245456014">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T13:10:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Carlisle (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245462988">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T13:20:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Kenilworth (ZA)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245455949">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T13:25:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Newmarket (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245455951">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T13:25:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Newmarket (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245456352">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T13:35:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Doncaster (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245456354">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T13:35:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Doncaster (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245481919">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T13:40:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Turffontein (ZA)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245456020">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T13:45:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Carlisle (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245456021">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T13:45:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Carlisle (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245462990">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T13:55:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Kenilworth (ZA)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245455956">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T14:00:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Newmarket (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245455958">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T14:00:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Newmarket (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245456359">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T14:10:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Doncaster (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245456360">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T14:10:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Doncaster (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-greyhound-racing svg-greyhound-racing-dims svg-span" role="img"></span>
+                <span>Greyhound</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Greyhound</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245475078">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:05:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Q1 Lakeside (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245472822">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:08:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Sandown Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245487616">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:08:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Nottingham (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245474660">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:11:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Hobart (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245472381">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:14:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Wentworth Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245479058">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:17:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Mandurah (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245490523">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:17:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Sheffield (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245475133">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:20:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245471489">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:23:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Dapto (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245475083">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:26:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Q1 Lakeside (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245487618">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:26:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Nottingham (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245472827">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:29:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Sandown Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245474665">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:32:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Hobart (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245490525">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:33:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Sheffield (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245479063">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:36:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Mandurah (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245475138">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:40:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245487620">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:42:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Nottingham (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245471494">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:44:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Dapto (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245474670">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:47:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Hobart (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245490527">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-10T12:51:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Sheffield (GB)</span>
+                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+
+
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/sap" class="dropdown-toggle" role="button">
+                <span class="svg-Casino svg-Casino-dims imageSpin2" role="img"></span>
+                <span>Sports Book</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/RSC" class="dropdown-toggle" role="button">
+                <i style="font-size:17px;" class='fas fa-star fa-2x fa-spin fa-lg'></i>
+                <span>RoyalStar Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/Games" class="dropdown-toggle" role="button">
+                <img id="spinning-circle" src="/img/v2/livegameing.png" onerror="this.onerror = null; this.src= null" alt="G">
+                <span>Star Casino</span>
+            </a>
+
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/WorldCasino">
+                <img id="invertcolor" style="background:invert(100%)" src="/img/v2/worldcasinosvg.png" alt="WC" />
+                <span>World Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/Dream">
+                <span class="svg-Casino svg-Casino-dims imageSpin2" role="img"></span>
+                <span>Royal Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/ExGames">
+                <img id="invertcolor2" src="/img/v2/BLogo.png" />
+                <span>BetFairGames</span>
+            </a>
+         </li>
+        <li class="nav-item exgameblinker" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/BetProGames">
+                <img id="invertcolor3" src="/img/v2/TPS.png" />
+                <span>TeenPatti Studio</span>
+            </a>
+        </li>
+        <li class="nav-item Galaxyblinker" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/Galaxy">
+                <img src="/img/v2/Glogo.png" />
+                <span>Galaxy Casino</span>
+            </a>
+        </li>
+
+    <li class="divider"></li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Customer/Liable">
+                <span class="svg-colossus svg-colossus-dims svg-span" role="img"></span> 
+                Current Position
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Common/Dashboard">
+                <span class="svg-soccer svg-soccer-dims svg-span" role="img"></span> 
+                All Sports
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Common/Result">
+                <span class="svg-clipboard svg-clipboard-dims svg-span" role="img"></span> 
+                Results
+            </a>
+        </li>
+    <li class="nav-item" style="width:100%;">
+        <a class="nav-link" href="#" onclick="ShowExchangeRules(); return false;">
+            <i class="fa fa-info-circle"></i>Market Rules
+        </a>
+    </li>
+    <li class="nav-item" style="width:100%;">
+        <a class="nav-link" href="#" onclick="ShowTos(); return false;">
+            <i class="fa fa-info-circle"></i>Terms &amp; Conditions
+        </a>
+    </li>
+</ul>
+<script>
+    function ShowExchangeRules() {
+        $("#modalMarketRules").modal('show');
+
+        $.get("/rules.html", function (data) {
+            $("#modalMarketRules .modal-body").html(data);
+        });
+    }
+
+    function ShowTos() {
+        $("#modalTos").modal('show');
+        $.get("/tos.html", function (data) {
+            $("#modalTos .modal-body").html(data);
+        });
+    }
+</script>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md" id="main-wrap">
+                <div class="header">
+                    <button class="burger-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <ul class="top-nav">
+                        <li><a href="/Common/Dashboard">Dashboard</a></li>
+                    </ul>
+
+                    <div id="sticky-footer" style="width:50vw; padding:0px; margin:0px; float:left; " class="py-1 bg-black text-white">
+                        <div class="container text-center" style="padding:0px; margin:0px;">
+                            <ul id="news-ticker-foot" style="padding:0px; margin:0px;">
+                                <li data-update="item1" style="padding:0px; margin:0px;">Welcome to BetPro</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown-wrap">
+                        <div class="dropdown">
+
+                            <div class="designation">
+                                <span class="wallet-balance">B: -</span>
+                                <span class="wallet-exposure"> | L: - |</span>
+                            </div>
+
+                            <button class="btn profile-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    alsBettor
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="/Customer/Ledger/">Statement</a>
+                                <a class="dropdown-item" href="/Common/Result/">Result</a>
+                                <a class="dropdown-item" href="/Customer/ProfitLoss/">Profit Loss</a>
+                                <a class="dropdown-item" href="/Customer/Bets">Bet History</a>
+                                <a class="dropdown-item" href="/Customer/Profile">Profile</a>
+                                <a class="dropdown-item" id="btn-logout" href="/Common/Logout">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-wrap body">
+                    <div id="Highlights" class="row">
+    <div class="modal fade modalCasinoToS" data-backdrop="static" data-keyboard="false" id="modalPasswordChange" tabindex="-10" role="dialog" aria-labelledby="modalPasswordChange" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Change Your Password</h5>
+                </div>
+                <div id="casino-tos-text" class="modal-body">
+                    <p>
+                        <center>
+                            <h3 class="text-danger blink_me">
+                                Change Your Password 
+                                <i class='fa fa-warning'></i>
+                            </h3>
+                        </center>
+                    </p>
+                    <p>Password Checkup Detected that your password is no longer <b>safe!</b>.</p>
+                    <p>You should change your password now to use the Exchange .</p>
+                </div>
+
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fa fa-key" aria-hidden="true"></i>
+                        <input type="email" id="Newpasswordmodal" class="form-control validate">
+                        <label for="defaultForm-email">Enter Your New Password Here!</label>
+                    </div>
+                </div>
+                <h5 id="alertmodaltitle" style="color: red;background-color: black;" class="modal-title"></h5>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger ml-4" onclick="AcceptPassword();">
+                        <strong>Change Now</strong>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade modalCasinoToS" data-backdrop="static" data-keyboard="false" id="modalRedirectToLogout" tabindex="-11" role="dialog" aria-labelledby="modalPasswordChange" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Password Changed Successfully</h5>
+                </div>
+                <div id="casino-tos-text" class="modal-body">
+                    <p>
+                        <center>
+                            <h3 class="text-danger blink_me">
+                                Password Changed Successfully
+                                <i class="fa fa-check" style="font-size:48px;color:forestgreen"></i>
+                            </h3>
+                        </center>
+                    </p>
+                    <p>Your password is changed successfully. <b>Kindly Login Again </b>.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger ml-4" onclick="ReLogin();">
+                        <strong>Login Again</strong>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-lg" id="modalCasinoToS" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="padding:0px 15px;">
+                    <button type="button" class="close btn-sm" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a href="/Common/BetProGames">
+                        <img class="img-responsive img-fluid" src="/img/favicon/BannerDefault.jpeg" />
+                    </a>
+                </div>
+                <div class="modal-footer" style="padding:5px 15px;">
+                    <button type="button" class="btn btn-sm btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link rel="stylesheet" href="/lib/ckeditor/ckeditor5.css">
+<style>
+    #news-flash p {
+        color: black;
+    }
+    .ck-content p {
+        font-size: 16px;
+    }
+</style>
+<div class="modal fade bd-example-modal-lg" id="news-flash" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content ck-content">
+            <!--<div class="modal-header" style="padding:0px 15px;">
+                <button type="button" class="close btn-sm" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>-->
+            <div class="modal-body">
+                
+            </div>
+            <div class="modal-footer" style="padding:5px 15px;">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function showNewsFlash()
+    {
+        let isFlash = localStorage.getItem('news-flash');
+
+        let hasContent = document.querySelector("#news-flash .modal-body").innerText.trim() !== '';
+
+        if (isFlash && hasContent) {
+            $('#news-flash').modal('show');
+        }
+
+        localStorage.removeItem('news-flash');
+    }
+</script>
+
+    <div class="col-lg-12 Bl_NT_DB_LITE">
+        <div class="left-content" id="cust-wallet"></div>
+        <div class="right-content">
+            <div class="table-wrap">
+                <div class="table-box-body">
+                    <div class="bets">
+                        <!--<strong>Sport Highlights</strong>-->
+                        <div class="text-center page_loader">
+                            <img src="/img/loadinggif.gif" alt="Loading...">
+                        </div>
+                        <div id="horsenhound" class="d-none">
+                            
+<div class="row games_slider_container">
+    <div class="games_slider">
+        <div class="image">
+            <a href="/Common/BetProGames?GameId=9022">
+                <img data-lazy="/img/casino/Aviator.png" class="img-fluid img-thumbnail" />
+            </a>
+        </div>
+        <div class="image">
+            <a href="/Common/Sap">
+                <img data-lazy="/img/casino/sportsbook.jpeg" class="img-fluid img-thumbnail" />
+            </a>
+        </div>
+        <div class="image">
+            <a href="/Common/BetProGames?GameId=9040">
+                <img data-lazy="/img/casino/AviatorNew.png" class="img-fluid img-thumbnail" />
+            </a>
+        </div>
+        <div class="image">
+            <a href="/Common/RSC?id=900002&amp;d=d">
+                <img data-lazy="/img/casino/casino1.jpeg" class="img-fluid img-thumbnail" />
+            </a>
+        </div>
+        <div class="image">
+            <a href="/Common/RSC?id=900003&amp;d=d">
+                <img data-lazy="/img/casino/casino2.jpeg" class="img-fluid img-thumbnail" />
+            </a>
+        </div>
+        <div class="image">
+            <a href="/Common/RSC?id=900003&amp;d=d">
+                <img data-lazy="/img/casino/casino3.jpeg" class="img-fluid img-thumbnail" />
+            </a>
+        </div>
+        <div class="image">
+            <a href="/Common/RSC?id=900003&amp;d=d">
+                <img data-lazy="/img/casino/casino4.jpeg" class="img-fluid img-thumbnail" />
+            </a>
+        </div>
+        <div class="image">
+            <a href="/Common/WorldCasino">
+                <img data-lazy="/img/casino/casino5.jpeg" class="img-fluid img-thumbnail" />
+            </a>
+        </div>
+        <div class="image">
+            <a href="/Common/WorldCasino">
+                <img data-lazy="/img/casino/casino6.jpeg" class="img-fluid img-thumbnail" />
+            </a>
+        </div>
+        <div class="image">
+            <a href="/Common/RSC?id=900002&amp;d=d">
+                <img data-lazy="/img/casino/casino7.jpeg" class="img-fluid img-thumbnail" />
+            </a>
+        </div>
+        <div class="image">
+            <a href="/Common/RSC?id=900002&amp;d=d">
+                <img data-lazy="/img/casino/casino8.jpeg" class="img-fluid img-thumbnail" />
+            </a>
+        </div>
+        <div class="image">
+            <a href="/Common/RSC?id=900001&amp;d=d">
+                <img data-lazy="/img/casino/casino9.jpeg" class="img-fluid img-thumbnail" />
+            </a>
+        </div>
+        <div class="image">
+            <a href="/Common/RSC?id=900014&amp;d=d">
+                <img data-lazy="/img/casino/casino10.jpeg" class="img-fluid img-thumbnail" />
+            </a>
+        </div>
+        <div class="image">
+            <a href="/Common/WorldCasino">
+                <img data-lazy="/img/casino/casino11.jpeg" class="img-fluid img-thumbnail" />
+            </a>
+        </div>
+    </div>
+</div>
+                        </div>
+
+                        <div id="Dashboardmarkets">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p id="mids" class="invisible invisible col-6"></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market Rules -->
+    <div class="modal fade" id="modalMarketRules" tabindex="-1" role="dialog" aria-labelledby="modalMarketRules" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Market Rules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="market-rules-text" class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ToS -->
+    <div class="modal fade" id="modalTos" tabindex="-1" role="dialog" aria-labelledby="modalTos" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Terms and conditions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <b>Protection of minors</b>
+                    <br />
+                    <p> It is illegal for anybody under the age of 18 to gamble. </p>
+                    <br />
+                    <p>Our site has strict policies and verification measures to prevent access to minors.</p>
+                    <br />
+                    <p>We encourage parents consider the use of internet use protection tools. You may find the following links useful. </p>
+                    <br />
+                    <a href="https://www.cyberpatrol.com/" target="_blank" style="color:mediumspringgreen">  Cyberpatrol</a>
+                    <br />
+                    <a href="https://www.cybersitter.com/" target="_blank" style="color:mediumspringgreen">  Cybersitter </a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="sticky-footer" class="py-1 bg-dark text-white-50 Bl_NT_SF">
+        <div class="col-12 container" style="background-color:#4dbd74; height:6px; margin-top:-4px;">
+        </div>
+        <div class="container text-center">
+            <center>
+                    
+<style>
+    p{
+        font-size:12px;
+        color:white;
+    }
+    .caoimg{
+        max-width:60px;
+    }
+    .bffooter{
+                    width: 135px;
+                    height: 30px;
+            }
+            .curasaoLinks {
+               pointer-events: none;
+               cursor: default;
+               margin-top:10px;
+            }
+@media screen and (max-width: 635px) {
+            .caoimg {
+                max-width:40px;
+            }
+            .bffooter{
+                    width: 100px;
+                    height: 30px;
+            }
+        }
+</style>
+
+
+<div class="curasaoLinks row" style="display:inline-flex;" id="curacaodiv">
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelector('#curacaodiv').insertAdjacentHTML(
+            'afterbegin',
+            `<hr>
+                <div class="col-sm-12 col-md-4"></div>
+                <div class="col-md-4"></div>`);
+    });
+</script>
+
+            </center>
+           
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+    <script type="text/javascript" src="/dist/bundle0a.js"></script>
+
+    <script>
+        const token = getCookie('wexscktoken');
+        const sess = getCookie('wex3authtoken');
+        const reft = getCookie('wex3reftoken');
+    </script>
+
+    
+    <script type="text/javascript" src="/js/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () 
+        {
+            fetchWallet();
+            fetchHighlights();
+            setInterval(fetchHighlights, 60000);
+
+            isPWCRequired();
+            showWelcomeBanner();
+
+            $(".page_loader").hide();
+            document.getElementById("horsenhound").classList.remove("d-none");
+
+            $(".games_slider").slick({
+                arrows: false,
+                autoplay: true,
+                infinite: true,
+                slidesToShow: 8,
+                slidesToScroll: 1,
+                swipeToSlide: true,
+                touchThreshold: 100,
+                waitForAnimate: false,
+                responsive: [
+                    {
+                        breakpoint: 1800,
+                        settings: {
+                            slidesToShow: 6,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 1500,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 700,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+
+            $("#modalCasinoToS").on('hidden.bs.modal', function (event) {
+                showNewsFlash();
+            });
+        });
+
+        function AcceptPassword()
+        {
+            var newpass = document.getElementById("Newpasswordmodal").value;
+            $.ajax({
+                type: "GET",
+                url: "/Customer/Profile?handler=UpdatePassword&NewPassword=" + newpass,
+                success: function (result) {
+                    if(result == 'PCS')
+                    {
+                        $('#modalPasswordChange').modal('hide');;
+                        $('#modalRedirectToLogout').modal('show');;
+                    }else{
+                        $('#alertmodaltitle').html(result);
+                    }
+                },
+                error: function (exception) {
+                   location.reload();
+                }
+            });
+        }
+        
+        function ReLogin() {
+            location.href = "/Common/Logout";
+        }
+        
+        function fetchHighlights() {
+            $.ajax({
+                type: "GET",
+                url: "/Common/MarketHighlights",
+                headers: {
+                },
+                timeout: 12000,
+                success: function (result) {
+                    document.getElementById("Dashboardmarkets").innerHTML = result;
+                    ActivateTab(LastTab);
+                    convertAllToClientTime();
+                    $(".center").slick({
+                        infinite: false,
+                        slidesToShow: 8,
+                        slidesToScroll: 3,
+                        responsive: [
+                            {
+                                breakpoint: 1024,
+                                settings: {
+                                    slidesToShow: 3,
+                                    slidesToScroll: 3
+                                }
+                            },
+                            {
+                                breakpoint: 600,
+                                settings: {
+                                    slidesToShow: 2,
+                                    slidesToScroll: 2
+                                }
+                            },
+                            {
+                                breakpoint: 480,
+                                settings: {
+                                    slidesToShow: 3,
+                                    slidesToScroll: 2
+                                }
+                            }
+
+                        ]
+                    });
+                },
+                error: function (jqXhr, textStatus, errorThrown) {
+                    
+                }
+            });
+        };
+
+        function fetchWallet() {
+            $.ajax({
+                type: 'GET',
+                url: '/Customer/Wallet',
+                success: function (result) {
+                    $('#cust-wallet').html(result);
+                }
+            });
+        }
+
+        function convertAllToClientTime() {
+            $('.utctime').each(function (index, el) {
+                convertToClientTime(el);
+            });
+        }
+
+        function convertToClientTime(el) {
+            var reqFormat = $(el).data('format');
+            var isoDate = $(el).text().trim();
+
+            var clientDateTime = moment(isoDate).format(reqFormat);
+
+            $(el).prev('.market-time').text(clientDateTime);
+        }
+
+        var highlightLink = function () {
+            var active = null, colour = 'black';
+            if (this.attachEvent) this.attachEvent('onunload', function () {
+                active = null;
+            });
+            return function (element) {
+                if ((active != element) && element.style) {
+                    if (active) active.style.backgroundColor = '';
+                    element.style.backgroundColor = colour ;
+                    active = element;
+                }
+            };
+        }();
+
+        var LastTab = 0;
+
+        function ActivateTab(tab_index) {
+
+            tab_index = parseInt(tab_index);
+            LastTab = tab_index;
+
+            $(".tablinks").removeClass('active');
+            $(".tablinks:eq( " + tab_index + " )").addClass('active');
+
+            $(".tabcontent").hide();
+            $(".tabcontent:eq( " + tab_index + " )").show();
+        }
+
+        function showWelcomeBanner()
+        {
+            let isShowBanner = localStorage.getItem('welcome-banner');
+
+            if (isShowBanner) {
+                $('#modalCasinoToS').modal('show');
+
+                fetchProfile();
+            }
+
+            localStorage.removeItem('welcome-banner');
+        }
+
+        function isPWCRequired()
+        {
+            let isPWC = localStorage.getItem('pwc-req');
+
+            if (isPWC) {
+                $('#modalPasswordChange').modal('show');
+            }
+        }
+
+        function fetchProfile() {
+            $.ajax({
+                type: 'GET',
+                url: '/api/users/profile',
+                success: function (result) {
+                    localStorage.setItem('symbol', result.currencySymbol);
+                }
+            });
+        }
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            pollRefreshToken();
+        });
+
+        if (genSck === 1) {
+            const signalRConnection = new UWS(uwsUrl, token, sess);
+            signalRConnection.connect();
+        }
+        else {
+            pollUserData();
+        }
+    </script>  
+</body>
+</html>

@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="Sports Trading Platform">
+    <meta name="keyword" content="sports trading, bet, betfair">
+    <title>Market | BetPro</title>
+    <!-- Icons-->
+    <link rel="shortcut icon" href="/img/favicon/BetPro.ico">
+    <link rel="stylesheet" href="/css/all.css" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/site.min.css" rel="stylesheet" />
+    <link href="/css/BetPro-style.css" rel="stylesheet" />
+    <script>
+        var pricesUrl = "https://prices9.bfexch.com/api";
+        var ordersUrl = "https://orders.bfexch.com/api";
+        const SsocketUrl = "https://orders-ws.bfexch.com/signalr";
+        const LiquidityRate = 35;
+        let dealerSck = 1;
+    </script>
+</head>
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+    <header class="app-header navbar">
+        <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="logo-bar">
+            <a href="/index">
+                <span class="green-logo-text d-sm-down-none">
+                    BetPro
+                </span>
+            </a>
+        </div>
+
+        <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        
+
+<ul class="nav navbar-nav d-md-down-none">
+        <li class="nav-item px-3">
+            <a class="nav-link" href="/index">Dashboard</a>
+        </li>
+        <li class="nav-item px-3">
+            <a class="nav-link" href="/Accounts/Chart">Users</a>
+        </li>
+        <li class="nav-item px-3">
+            <a class="nav-link" href="/Reports/BookDetail">Reports</a>
+        </li>
+</ul>
+
+        <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item px-2">
+                <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    Chek10 (Admin) <i class="fas fa-caret-down"></i>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="/Common/Profile">
+                        <i class="fa fa-user"></i> Profile
+                    </a>
+                    <a class="dropdown-item" id="btn-logout" href="/Common/Logout">
+                        <i class="fa fa-sign-out"></i> Logout
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/" role="button" aria-haspopup="true" aria-expanded="false">
+                    <strong>B:</strong> <span class="wallet-balance"> </span>
+                    <strong>Exp:</strong> <span class="wallet-exposure"></span>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <div class="app-body">
+        <div class="sidebar">
+            <nav class="sidebar-nav">
+                
+
+<ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="/index">
+                <i class="nav-icon fas fa-tachometer-alt fa-inverse"></i> Dashboard
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Accounts/Chart">
+                <i class="nav-icon fas fa-users fa-inverse"></i> Users
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/Liables">
+                <i class="nav-icon fas fa-funnel-dollar fa-inverse"></i> Current Position
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Reports/BookDetail">
+                <i class="nav-icon fas fa-money-check fa-inverse"></i> Reports
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/BetLocker">
+                <i class="nav-icon fas fa-unlock-alt fa-inverse"></i> Bet Lock
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/Games">
+                <i class="nav-icon fas fa-star fa-inverse"></i> Star Casino
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/WorldCasino">
+                <i class="nav-icon fas fa-globe fa-inverse"></i> World Casino
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/Markets/ExGames">
+                <i class="nav-icon fas fa-globe fa-inverse"></i> BetFair Games
+            </a>
+        </li>
+
+
+
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/soccer.svg" alt="C">
+            Soccer
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245243942">
+AEK Larnaca v Partizan Belgrade                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/tennis.svg" alt="C">
+            Tennis
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245467047">
+A Sabalenka v A Anisimova                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/cricket.svg" alt="C">
+            Cricket
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245405948">
+England v India                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245410884">
+West Indies v Australia                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/horse.svg" alt="C">
+            Horse Race
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245481921">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:15:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Turffontein (ZA)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456027">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:20:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Carlisle (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456028">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:20:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Carlisle (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455964">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:35:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newmarket (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455966">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:35:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newmarket (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456366">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:45:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Doncaster (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456368">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:45:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Doncaster (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245481923">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:50:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Turffontein (ZA)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456040">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:55:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Carlisle (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456042">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:55:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Carlisle (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455970">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:10:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newmarket (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455972">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:10:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newmarket (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456373">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:20:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Doncaster (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456375">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:20:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Doncaster (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456067">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:32:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Carlisle (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456068">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:32:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Carlisle (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455977">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:45:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newmarket (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455979">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:45:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newmarket (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456380">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:55:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Doncaster (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456381">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:55:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Doncaster (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245457474">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T16:00:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Leopardstown (IE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245457475">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T16:00:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Leopardstown (IE) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456060">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T16:07:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Carlisle (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245456061">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T16:07:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Carlisle (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455984">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T16:20:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newmarket (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245455985">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T16:20:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Newmarket (GB) (PLACE)
+                                </span>
+                        </a>
+                    </li>
+        </ul>
+    </li>
+    <li class="nav-item nav-dropdown">
+        <a class="nav-link nav-dropdown-toggle" href="#">
+            <img src="/img/v2/greyhound-racing.svg" alt="C">
+            Greyhound
+        </a>
+
+        <ul class="nav-dropdown-items" href="#">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245479093">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:26:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Mandurah (AU)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245488292">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:26:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Perry Barr (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245489414">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:29:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Towcester (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245489862">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:32:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Kinsley (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245487776">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:38:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Central Park (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245488294">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:44:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Perry Barr (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245489416">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:49:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Towcester (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245489864">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:51:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Kinsley (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245487778">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T14:57:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Central Park (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245488296">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:03:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Perry Barr (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245489418">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:07:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Towcester (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245489866">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:09:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Kinsley (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245487780">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:16:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Central Park (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245488298">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:22:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Perry Barr (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245489420">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:26:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Towcester (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245489868">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:28:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Kinsley (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245487782">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:34:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Central Park (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245488300">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:41:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Perry Barr (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245489422">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:44:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Towcester (GB)
+                                </span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Markets/#!1.245489870">
+                                <span class="slidedate market-time">
+                                </span>
+                                <span class="d-none utctime" data-format="h:mm A">
+                                    2025-07-10T15:47:00.0000000Z
+                                </span>
+                                <span class='slidename'>
+                                    Kinsley (GB)
+                                </span>
+                        </a>
+                    </li>
+        </ul>
+    </li>
+</ul>
+            </nav>
+
+            <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+        </div>
+        <main class="main">
+            <div class="container-fluid">
+                <div class="animated fadeIn">
+                    <style>
+    .checknow {
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10+ and Edge */
+        user-select: none; /* Standard syntax */
+    }
+
+    .controls {
+        overflow: hidden;
+        background: #2b2f35;
+        /* height: 35px; */
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .scores {
+        background-color: white;
+        border: 1px solid black;
+        padding: 0.25rem;
+    }
+
+        .scores .runnername {
+            margin-top: 7px;
+            line-height: 0.2;
+            color: black;
+            font-size: 18px;
+        }
+
+        .scores .runner-score {
+            color: black;
+            font-size: 18px;
+            margin-top: 2px;
+            padding: 0px;
+        }
+
+        .scores .active {
+            color: #009069
+        }
+
+        .scores .col-divider {
+            border-left: 1px solid black;
+        }
+
+    .tablefoter {
+        font-size: 14px;
+        border: 1px solid black;
+        color: black;
+    }
+
+    .socindivs {
+        padding: 0px;
+    }
+
+    .timeshow {
+        color: black;
+        font-size: 18px;
+    }
+
+    .scoresocer {
+        color: black;
+        font-size: 18px
+    }
+
+    .tablefotercs {
+        font-size: 12px;
+        color: black;
+    }
+
+    .colwidthset {
+        width: 1vw;
+    }
+
+    .lasttrgt {
+        float: right;
+    }
+    #TVDIVIFRAME iframe {
+            height:330px;
+            width:100%;
+            border:none;
+            overflow:hidden;
+        }
+    @media screen and (max-width: 480px) {
+         #TVDIVIFRAME iframe {
+            height:230px;
+            width:100%;
+            border:none;
+            overflow:hidden;
+        }
+        .runnername {
+            margin-top: 10px;
+            line-height: 0.1;
+            color: black;
+            font-size: 10px;
+        }
+
+        .tableresp {
+            display: inline-table;
+        }
+
+        .lrhom {
+            display: none;
+        }
+
+        .sethourshow {
+            line-height: 0.3;
+            font-size: 15px;
+        }
+
+        .tablefoter {
+            font-size: 10px;
+        }
+
+        .runnersocer {
+            color: black;
+            font-size: 13px;
+            margin-top: 2px;
+            padding: 0px;
+            line-height: 1.2;
+        }
+
+        .socindivs {
+            padding: 0px;
+        }
+
+        .timeshow {
+            color: black;
+            font-size: 12px;
+        }
+
+        .scoresocer {
+            color: black;
+            font-size: 18px;
+            padding: 0px;
+            margin-bottom: 7px;
+        }
+
+        .tablefotercs {
+            font-size: 11px;
+            color: black;
+        }
+
+        .scores .runnername {
+            margin-top: 7px;
+            line-height: 0.2;
+            color: black;
+            font-size: 11px;
+        }
+
+        .colwidthset {
+            width: 50px;
+        }
+
+        .MBoxNopadding {
+            padding: 0px;
+        }
+
+        .firstspn {
+            float: right;
+        }
+
+        .secondspn {
+            margin-left: auto;
+            float: right;
+        }
+
+        .lasttrgt {
+            float: left;
+        }
+
+        .trgtspn {
+            margin-left: 45vw;
+        }
+
+        #MarketData {
+            padding-right: 16px;
+        }
+    }
+
+.fa-basketball-ball{
+    color:black;
+}
+@media only screen and (max-width: 600px) {
+    #MarketData .card-header {
+        padding: 0.3rem 0.5rem;
+    }
+    #MarketData .card-header h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0.1rem;
+    }
+}
+.timelineNS {
+    background: white;
+    height: 32px;
+    position: relative;
+}
+</style>
+<script>
+    const score_url = "https://bpexch.xyz/Common/LiveScoreCard?id=";
+    const video_url = "https://www.bpexch.xyz/Common/TvIframe?id=";
+</script>
+<script src="/js/unreal_html5_player_script_v2.js"></script>
+<div class="row d-none" id="loadedmarkettoshow">
+    <div class="content panel-group col-md-8" id="MarketData" role="tablist" aria-multiselectable="true">
+        <div class="card card-accent-primary" v-bind:class="{ 'panel-success': market.inPlay }">
+
+            <div class="card-header" :id="market.marketId" v-show="IsLoaded" style="display:none;">
+                <h4>
+                    <strong>{{ market.eventName}} - {{ market.marketName }}</strong>
+                    <span style="color: #e83e8c;">  <strong>{{ status }}</strong></span>
+                    <i class="fa fa-address-book" v-on:click="ShowFullPosition(market.marketId)"></i>
+                </h4>
+            </div>
+
+            <div class="scores" v-if="IsTennis && scores != null && scores.home != null">
+    <div class="row" style="margin:0px; padding:2px;">
+        <div class="col-4" style="line-height:0; padding:0px;">
+            <p class="runnername"><b>{{ scores.home }}</b></p>
+            <p class="runnername"><b>{{ scores.away }}</b></p>
+            <span style="line-height:0.4; color:#00B181">
+                Set {{ scores.currentSet }} |
+            </span>
+            <span class="sethourshow" style="color:#00B181">{{ scores.time }}</span>
+        </div>
+        <div class="col-8" style="text-align:center; line-height:1; padding:0px;">
+            <table class="col-12 table-responsive-sm tableresp" v-if="scores.homeGameSeq != null">
+                <tr>
+                    <td class="runner-score colwidthset" v-for="gs in scores.homeGameSeq">{{ gs }}</td>
+                    <td class="runner-score active colwidthset">{{ scores.games[0] }}</td>
+                    <td class="runner-score active col-divider colwidthset">{{ scores.score[0] }}</td>
+                    <td class="runner-score col-divider colwidthset" v-if="scores.aces != null">{{ scores.aces[0] }}</td>
+                    <td class="runner-score col-divider colwidthset" v-if="scores.faults != null">{{ scores.faults[0] }}</td>
+                    <td class="runner-score col-divider colwidthset">{{ scores.breaks[0] }}</td>
+                </tr>
+                <tr>
+                    <td class="runner-score colwidthset" v-for="gs in scores.awayGameSeq">{{ gs }}</td>
+                    <td class="runner-score active colwidthset">{{ scores.games[1] }}</td>
+                    <td class="runner-score active col-divider colwidthset">{{ scores.score[1] }}</td>
+                    <td class="runner-score col-divider colwidthset" v-if="scores.aces != null">{{ scores.aces[1] }}</td>
+                    <td class="runner-score col-divider colwidthset" v-if="scores.faults != null">{{ scores.faults[1] }}</td>
+                    <td class="runner-score col-divider colwidthset">{{ scores.breaks[1] }}</td>
+                </tr>
+                <tr class="col-12 tablefotercs">
+                    <td class="colwidthset">1</td>
+                    <td class="colwidthset" v-if="scores.homeGameSeq.length >= 1">2</td>
+                    <td class="colwidthset" v-if="scores.homeGameSeq.length >= 2">3</td>
+                    <td class="colwidthset" v-if="scores.homeGameSeq.length >= 3">4</td>
+                    <td class="colwidthset" v-if="scores.homeGameSeq.length >= 4">5</td>
+                    <td class="col-divider colwidthset">Points</td>
+                    <td class="col-divider lrhom colwidthset" v-if="scores.aces != null">Aces</td>
+                    <td class="col-divider lrhom colwidthset" v-if="scores.faults != null">D/Faults</td>
+                    <td class=" col-dividerlrhom col-divider colwidthset">ServBreak</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="scores" v-if="IsSoccer && scores != null && scores.home != null">
+      <div class="row" style="margin:0px;">
+        <div class="col-4 socindivs">
+            <div class="runnername">{{ scores.home }}</div>
+            <div class="runner-score mt-2"><b>{{ scores.score[0] }}</b></div>
+        </div>
+        <div class="col-4 socindivs" style="text-align:center">
+            <div class="runnername"><b>Time</b></div>
+            <div class="timeshow mt-2">{{ scores.time }}'</div>
+        </div>
+        <div class="col-4 socindivs" style="text-align:right;">
+            <div class="runnername">{{ scores.away }}</div>
+            <div class="runner-score mt-2"><b>{{ scores.score[1] }}</b></div>
+        </div>
+    </div>
+
+    <div class="timelineNS">
+        <div class="half firstHalf">
+            <div class="empty-bar">
+                <div class="bar":style="'width:'+ scores.firstpercent">
+                        <div v-for="RNR in scores.runners" v-if="RNR != 'undefined' &&  RNR.datalist != 'undefined' && RNR.half == false" :style="'left:'+ RNR.datalist.ourTime+'%'" class="tooltipNS"  :class="{  top: RNR.top == true ,  bottom: RNR.top == false}"><i v-if="RNR.datalist.type == 'YellowCard'" class="fa fa-square" style='color: #f3da35; font-size:x-small;'></i><i v-else-if="RNR.datalist.type == 'Goal'" class='fas fa-basketball-ball' style='font-size:x-small;'></i><i v-else-if="RNR.datalist.type == 'YellowRedCard'" class="fa fa-square" style='color: red; font-size:x-small;'></i>
+                          
+                            <div class="tooltiptextNS" :class="{toptt: RNR.top == true}">
+                                <p style="color:green">{{RNR.datalist.time}}'</p>
+                            <p style="color:black">{{RNR.runnerName}}</p>
+                            </div>
+                            
+                        </div>
+                        
+                </div>
+            </div>
+
+        </div>
+
+       
+
+        <div class="half secondHalf">
+            <div class="empty-bar">
+                <div class="bar"  :style="{width: scores.secondpercent }">
+                        <div v-for="RNR in scores.runners" v-if="RNR != 'undefined' &&  RNR.datalist != 'undefined' && RNR.half == true" :style="'left:'+ RNR.datalist.ourTime+'%'" class="tooltipNS"  :class="{  top: RNR.top == true ,  bottom: RNR.top == false}"> <i v-if="RNR.datalist.type == 'YellowCard'" class="fa fa-square" style='color: #f3da35; font-size:x-small;'></i> <i v-else-if="RNR.datalist.type == 'Goal'" class='fas fa-basketball-ball' style='font-size:x-small;'></i> <i v-else-if="RNR.datalist.type == 'YellowRedCard'" class="fa fa-square" style='color: red; font-size:x-small;'></i>
+                          <div class="tooltiptextNS" :class="{toptt: RNR.top == true}">
+                                <p style="color:green">{{RNR.datalist.time}}'</p>
+                                <p style="color:black">{{RNR.runnerName}}</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</div>
+
+            <div class="card-body market-box MBoxNopadding" v-show="IsLoaded" style="display:none;">
+                <div class="row bg-gray-100 market-head" v-if="score != null && score.commentry != null">
+    <div class="col-12 col-md-12 commentry">
+        <input type="checkbox" v-model="IsVoice" /> 
+        <strong>{{ score.commentry }}</strong>
+
+    </div>
+    <div class="col-12 col-lg-4" v-if="score.team1">
+        <strong>
+            {{ score.team1 }} &nbsp; {{ score.t1_runs }}-{{ score.t1_wickets }} ({{ score.t1_overs }})
+        </strong>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <span class="firstspn">RR <strong>{{ score.t1_crr }}</strong></span>
+    </div>
+    <div class="col-12 col-md-8" v-if="score.target > 0">
+        <strong>
+            {{ score.team2 }} &nbsp; {{ score.t2_runs }}-{{ score.t2_wickets }}
+        </strong>
+        &nbsp;&nbsp;&nbsp;
+        <span class="secondspn">({{ score.t2_overs }}) CRR <strong>{{ score.t2_crr }}</strong></span>
+        <span class="lasttrgt">
+            Target: <strong>{{ score.target }}</strong>
+            &nbsp;&nbsp;
+                    <span class="trgtspn">(RRR <b>{{ score.rrr }}</b>)</span>
+        </span>
+    </div>
+</div>
+<div class="row bg-gray-100 market-head">
+    <div class="col">
+        <strong>{{ prettyDate }}</strong>
+    </div>
+    <!--<div class="col-6 col-md-2 col-sm-6 col-6">
+        Winners: <strong>{{ winners }}</strong>
+    </div>
+    <div class="col-md-2 col-sm-6 col-6">
+        Bet Delay: <strong>{{ betDelay }}</strong>
+    </div>-->
+    <div class="col text-right">
+        <strong>{{ currentDateTime }}</strong>
+    </div>
+    <!--<div class="col-md-4 col-sm-6 col-6 text-right">
+        <strong>{{ market.totalMatched | formatForiegn }}</strong>
+    </div>-->
+</div>
+
+                <div v-bind:id="'runner-' + runner.selectionId" class="row runners" v-bind:class="{ lastItemBorder: runner.IsLast }" v-for="runner in market.runners">
+    
+    <div class="col-7 col-md-4 runner-name">
+        <img v-if="market.eventTypeId===7" :src="runner.silkColor" v-show="runner.silkColor !== null && runner.silkColor !== undefined" onerror="this.style.display='none'" />
+        <strong>{{ runner.runnerName }}</strong>
+        <br>
+        <span v-if="runner.ifWin >= 0">
+            <span class="position-plus">
+                <strong>{{ runner.ifWin | format }}</strong>
+            </span>
+            <span class="position-minus" v-if="runner.ifLose != ''">
+                / <strong>{{ runner.ifLose | format }}</strong>
+            </span>
+        </span>
+        <span v-else>
+            <span class="position-minus"><strong>{{ runner.ifWin | format }}</strong></span>
+        </span>
+
+        <button v-if="market.bettingType === 'LINE'" class="btn btn-link btn-fullBook" v-on:click="fullBook(market.marketId)">Full Book</button>
+    </div>
+
+    <div class="col-5 col-md-8 price">
+        <template v-if="runner.status!= null && runner.status!= '' && runner.status!='ACTIVE' && IsRunnerDisabled(runner.status) ">
+            <div style="width: 102%;line-height: 45px;color: red;text-align: center;background: #ececed;text-transform: uppercase; ">
+                {{ runner.status }}
+            </div>
+        </template>
+
+        <div class="row" v-else>
+            <div class="col-md-2 d-none d-md-block cta-back" v-on:click="place(runner, 'B', market.marketId, 3)">
+                <div class="col-12 price" v-bind:id="'b3-' + runner.selectionId">
+                    {{ runner.price3 }}
+                </div>
+                <div class="col-12 size" v-bind:id="'bs3-' + runner.selectionId">
+                    {{ runner.size3 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-back" v-on:click="place(runner, 'B', market.marketId, 2)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'b2-' + runner.selectionId">
+                    {{ runner.price2 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'bs2-' + runner.selectionId">
+                    {{ runner.size2 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-6 col-md-2 cta-back" v-on:click="place(runner, 'B', market.marketId, 1)">
+                <div class="col-12 price" v-bind:id="'b1-' + runner.selectionId">
+                    {{ runner.price1 }}
+                </div>
+                <div class="col-12 size" v-bind:id="'bs1-' + runner.selectionId">
+                    {{ runner.size1 | formatForiegn }}
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 cta-lay" v-on:click="place(runner, 'L', market.marketId, 1)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l1-' + runner.selectionId">
+                    {{ runner.lay1 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls1-' + runner.selectionId">
+                    {{ runner.ls1 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-lay" v-on:click="place(runner, 'L', market.marketId, 2)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l2-' + runner.selectionId">
+                    {{ runner.lay2 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls2-' + runner.selectionId">
+                    {{ runner.ls2 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-lay" v-on:click="place(runner, 'L', market.marketId, 3)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l3-' + runner.selectionId">
+                    {{ runner.lay3 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls3-' + runner.selectionId">
+                    {{ runner.ls3 | formatForiegn }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+
+            <div v-if="market.news!=null && market.news!=''">
+                <div style="border-top:1px solid lightgray; margin:0 5px; border-bottom:1px solid lightgray; padding:5px;">
+                    <p style="text-align:left;  margin:0px; padding:0px; font-size:16px; font-weight:inherit; color:red;"><b>{{market.news}}</b></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card card-accent-success" v-if="HasTossMarkets.length > 0">
+            <div class="col-12 row bg-gray-100 market-head">
+                <div class="col-12">
+                    <strong v-show="market.runners.length > 1">Toss Market</strong>
+                    &nbsp;
+                    <i class="fa fa-address-book" v-on:click="ShowFullPosition(HasTossMarkets[0].marketId)"></i>
+                </div>
+            </div>
+            <div class="tb-content" v-for="market in HasTossMarkets">
+                <div class="tb-content">
+                    <div v-bind:id="'runner-' + runner.selectionId" class="row runners" v-bind:class="{ lastItemBorder: runner.IsLast }" v-for="runner in market.runners">
+    
+    <div class="col-7 col-md-4 runner-name">
+        <img v-if="market.eventTypeId===7" :src="runner.silkColor" v-show="runner.silkColor !== null && runner.silkColor !== undefined" onerror="this.style.display='none'" />
+        <strong>{{ runner.runnerName }}</strong>
+        <br>
+        <span v-if="runner.ifWin >= 0">
+            <span class="position-plus">
+                <strong>{{ runner.ifWin | format }}</strong>
+            </span>
+            <span class="position-minus" v-if="runner.ifLose != ''">
+                / <strong>{{ runner.ifLose | format }}</strong>
+            </span>
+        </span>
+        <span v-else>
+            <span class="position-minus"><strong>{{ runner.ifWin | format }}</strong></span>
+        </span>
+
+        <button v-if="market.bettingType === 'LINE'" class="btn btn-link btn-fullBook" v-on:click="fullBook(market.marketId)">Full Book</button>
+    </div>
+
+    <div class="col-5 col-md-8 price">
+        <template v-if="runner.status!= null && runner.status!= '' && runner.status!='ACTIVE' && IsRunnerDisabled(runner.status) ">
+            <div style="width: 102%;line-height: 45px;color: red;text-align: center;background: #ececed;text-transform: uppercase; ">
+                {{ runner.status }}
+            </div>
+        </template>
+
+        <div class="row" v-else>
+            <div class="col-md-2 d-none d-md-block cta-back" v-on:click="place(runner, 'B', market.marketId, 3)">
+                <div class="col-12 price" v-bind:id="'b3-' + runner.selectionId">
+                    {{ runner.price3 }}
+                </div>
+                <div class="col-12 size" v-bind:id="'bs3-' + runner.selectionId">
+                    {{ runner.size3 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-back" v-on:click="place(runner, 'B', market.marketId, 2)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'b2-' + runner.selectionId">
+                    {{ runner.price2 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'bs2-' + runner.selectionId">
+                    {{ runner.size2 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-6 col-md-2 cta-back" v-on:click="place(runner, 'B', market.marketId, 1)">
+                <div class="col-12 price" v-bind:id="'b1-' + runner.selectionId">
+                    {{ runner.price1 }}
+                </div>
+                <div class="col-12 size" v-bind:id="'bs1-' + runner.selectionId">
+                    {{ runner.size1 | formatForiegn }}
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 cta-lay" v-on:click="place(runner, 'L', market.marketId, 1)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l1-' + runner.selectionId">
+                    {{ runner.lay1 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls1-' + runner.selectionId">
+                    {{ runner.ls1 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-lay" v-on:click="place(runner, 'L', market.marketId, 2)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l2-' + runner.selectionId">
+                    {{ runner.lay2 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls2-' + runner.selectionId">
+                    {{ runner.ls2 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-lay" v-on:click="place(runner, 'L', market.marketId, 3)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l3-' + runner.selectionId">
+                    {{ runner.lay3 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls3-' + runner.selectionId">
+                    {{ runner.ls3 | formatForiegn }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-accent-success" v-if="catalogues.length > 0 ">
+            <div v-bind:id="'market-' + market.marketId" v-for="market in catalogues" v-if="IsBookmakerMarket(market.marketId)">
+                <div class="row bg-gray-100 market-head">
+                    <div class="col-12">
+                        <strong v-show="market.runners.length > 1">{{ market.marketName }}</strong>
+                        &nbsp;
+                        <i class="fa fa-address-book" v-on:click="ShowFullPosition(market.marketId)"></i>
+                    </div>
+                </div>
+                <div v-bind:id="'runner-' + runner.selectionId" class="row runners" v-bind:class="{ lastItemBorder: runner.IsLast }" v-for="runner in market.runners">
+    
+    <div class="col-7 col-md-4 runner-name">
+        <img v-if="market.eventTypeId===7" :src="runner.silkColor" v-show="runner.silkColor !== null && runner.silkColor !== undefined" onerror="this.style.display='none'" />
+        <strong>{{ runner.runnerName }}</strong>
+        <br>
+        <span v-if="runner.ifWin >= 0">
+            <span class="position-plus">
+                <strong>{{ runner.ifWin | format }}</strong>
+            </span>
+            <span class="position-minus" v-if="runner.ifLose != ''">
+                / <strong>{{ runner.ifLose | format }}</strong>
+            </span>
+        </span>
+        <span v-else>
+            <span class="position-minus"><strong>{{ runner.ifWin | format }}</strong></span>
+        </span>
+
+        <button v-if="market.bettingType === 'LINE'" class="btn btn-link btn-fullBook" v-on:click="fullBook(market.marketId)">Full Book</button>
+    </div>
+
+    <div class="col-5 col-md-8 price">
+        <template v-if="runner.status!= null && runner.status!= '' && runner.status!='ACTIVE' && IsRunnerDisabled(runner.status) ">
+            <div style="width: 102%;line-height: 45px;color: red;text-align: center;background: #ececed;text-transform: uppercase; ">
+                {{ runner.status }}
+            </div>
+        </template>
+
+        <div class="row" v-else>
+            <div class="col-md-2 d-none d-md-block cta-back" v-on:click="place(runner, 'B', market.marketId, 3)">
+                <div class="col-12 price" v-bind:id="'b3-' + runner.selectionId">
+                    {{ runner.price3 }}
+                </div>
+                <div class="col-12 size" v-bind:id="'bs3-' + runner.selectionId">
+                    {{ runner.size3 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-back" v-on:click="place(runner, 'B', market.marketId, 2)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'b2-' + runner.selectionId">
+                    {{ runner.price2 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'bs2-' + runner.selectionId">
+                    {{ runner.size2 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-6 col-md-2 cta-back" v-on:click="place(runner, 'B', market.marketId, 1)">
+                <div class="col-12 price" v-bind:id="'b1-' + runner.selectionId">
+                    {{ runner.price1 }}
+                </div>
+                <div class="col-12 size" v-bind:id="'bs1-' + runner.selectionId">
+                    {{ runner.size1 | formatForiegn }}
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 cta-lay" v-on:click="place(runner, 'L', market.marketId, 1)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l1-' + runner.selectionId">
+                    {{ runner.lay1 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls1-' + runner.selectionId">
+                    {{ runner.ls1 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-lay" v-on:click="place(runner, 'L', market.marketId, 2)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l2-' + runner.selectionId">
+                    {{ runner.lay2 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls2-' + runner.selectionId">
+                    {{ runner.ls2 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-lay" v-on:click="place(runner, 'L', market.marketId, 3)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l3-' + runner.selectionId">
+                    {{ runner.lay3 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls3-' + runner.selectionId">
+                    {{ runner.ls3 | formatForiegn }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <div class="card card-accent-danger" v-if="catalogues.length > 0 && HasFancyMarket()">
+            <div class="row bg-gray-100 market-head">
+                <div class="col-12">
+                    <strong>BetFair Fancy</strong>
+                </div>
+            </div>
+            <div v-bind:id="'market-' + market.marketId" v-for="market in catalogues" v-if="IsLineMarket(market.marketId) && IsFancyMarket(market.marketId)">
+                <div v-bind:id="'runner-' + runner.selectionId" class="row runners" v-bind:class="{ lastItemBorder: runner.IsLast }" v-for="runner in market.runners">
+    
+    <div class="col-7 col-md-4 runner-name">
+        <img v-if="market.eventTypeId===7" :src="runner.silkColor" v-show="runner.silkColor !== null && runner.silkColor !== undefined" onerror="this.style.display='none'" />
+        <strong>{{ runner.runnerName }}</strong>
+        <br>
+        <span v-if="runner.ifWin >= 0">
+            <span class="position-plus">
+                <strong>{{ runner.ifWin | format }}</strong>
+            </span>
+            <span class="position-minus" v-if="runner.ifLose != ''">
+                / <strong>{{ runner.ifLose | format }}</strong>
+            </span>
+        </span>
+        <span v-else>
+            <span class="position-minus"><strong>{{ runner.ifWin | format }}</strong></span>
+        </span>
+
+        <button v-if="market.bettingType === 'LINE'" class="btn btn-link btn-fullBook" v-on:click="fullBook(market.marketId)">Full Book</button>
+    </div>
+
+    <div class="col-5 col-md-8 price">
+        <template v-if="runner.status!= null && runner.status!= '' && runner.status!='ACTIVE' && IsRunnerDisabled(runner.status) ">
+            <div style="width: 102%;line-height: 45px;color: red;text-align: center;background: #ececed;text-transform: uppercase; ">
+                {{ runner.status }}
+            </div>
+        </template>
+
+        <div class="row" v-else>
+            <div class="col-md-2 d-none d-md-block cta-back" v-on:click="place(runner, 'B', market.marketId, 3)">
+                <div class="col-12 price" v-bind:id="'b3-' + runner.selectionId">
+                    {{ runner.price3 }}
+                </div>
+                <div class="col-12 size" v-bind:id="'bs3-' + runner.selectionId">
+                    {{ runner.size3 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-back" v-on:click="place(runner, 'B', market.marketId, 2)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'b2-' + runner.selectionId">
+                    {{ runner.price2 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'bs2-' + runner.selectionId">
+                    {{ runner.size2 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-6 col-md-2 cta-back" v-on:click="place(runner, 'B', market.marketId, 1)">
+                <div class="col-12 price" v-bind:id="'b1-' + runner.selectionId">
+                    {{ runner.price1 }}
+                </div>
+                <div class="col-12 size" v-bind:id="'bs1-' + runner.selectionId">
+                    {{ runner.size1 | formatForiegn }}
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 cta-lay" v-on:click="place(runner, 'L', market.marketId, 1)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l1-' + runner.selectionId">
+                    {{ runner.lay1 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls1-' + runner.selectionId">
+                    {{ runner.ls1 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-lay" v-on:click="place(runner, 'L', market.marketId, 2)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l2-' + runner.selectionId">
+                    {{ runner.lay2 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls2-' + runner.selectionId">
+                    {{ runner.ls2 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-lay" v-on:click="place(runner, 'L', market.marketId, 3)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l3-' + runner.selectionId">
+                    {{ runner.lay3 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls3-' + runner.selectionId">
+                    {{ runner.ls3 | formatForiegn }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <div class="card card-accent-danger" v-if="catalogues.length > 0 && HasFancy2Market()">
+            <div class="row bg-gray-100 market-head">
+                <div class="col-12">
+                    <strong>Fancy 2</strong>
+                </div>
+            </div>
+            <div v-bind:id="'market-' + market.marketId" v-for="market in catalogues" v-if="IsLineMarket(market.marketId) && IsFancy2Market(market.marketId)">
+                <div v-bind:id="'runner-' + runner.selectionId" class="row runners" v-bind:class="{ lastItemBorder: runner.IsLast }" v-for="runner in market.runners">
+    
+    <div class="col-7 col-md-4 runner-name">
+        <img v-if="market.eventTypeId===7" :src="runner.silkColor" v-show="runner.silkColor !== null && runner.silkColor !== undefined" onerror="this.style.display='none'" />
+        <strong>{{ runner.runnerName }}</strong>
+        <br>
+        <span v-if="runner.ifWin >= 0">
+            <span class="position-plus">
+                <strong>{{ runner.ifWin | format }}</strong>
+            </span>
+            <span class="position-minus" v-if="runner.ifLose != ''">
+                / <strong>{{ runner.ifLose | format }}</strong>
+            </span>
+        </span>
+        <span v-else>
+            <span class="position-minus"><strong>{{ runner.ifWin | format }}</strong></span>
+        </span>
+
+        <button v-if="market.bettingType === 'LINE'" class="btn btn-link btn-fullBook" v-on:click="fullBook(market.marketId)">Full Book</button>
+    </div>
+
+    <div class="col-5 col-md-8 price">
+        <template v-if="runner.status!= null && runner.status!= '' && runner.status!='ACTIVE' && IsRunnerDisabled(runner.status) ">
+            <div style="width: 102%;line-height: 45px;color: red;text-align: center;background: #ececed;text-transform: uppercase; ">
+                {{ runner.status }}
+            </div>
+        </template>
+
+        <div class="row" v-else>
+            <div class="col-md-2 d-none d-md-block cta-back" v-on:click="place(runner, 'B', market.marketId, 3)">
+                <div class="col-12 price" v-bind:id="'b3-' + runner.selectionId">
+                    {{ runner.price3 }}
+                </div>
+                <div class="col-12 size" v-bind:id="'bs3-' + runner.selectionId">
+                    {{ runner.size3 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-back" v-on:click="place(runner, 'B', market.marketId, 2)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'b2-' + runner.selectionId">
+                    {{ runner.price2 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'bs2-' + runner.selectionId">
+                    {{ runner.size2 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-6 col-md-2 cta-back" v-on:click="place(runner, 'B', market.marketId, 1)">
+                <div class="col-12 price" v-bind:id="'b1-' + runner.selectionId">
+                    {{ runner.price1 }}
+                </div>
+                <div class="col-12 size" v-bind:id="'bs1-' + runner.selectionId">
+                    {{ runner.size1 | formatForiegn }}
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 cta-lay" v-on:click="place(runner, 'L', market.marketId, 1)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l1-' + runner.selectionId">
+                    {{ runner.lay1 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls1-' + runner.selectionId">
+                    {{ runner.ls1 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-lay" v-on:click="place(runner, 'L', market.marketId, 2)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l2-' + runner.selectionId">
+                    {{ runner.lay2 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls2-' + runner.selectionId">
+                    {{ runner.ls2 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-lay" v-on:click="place(runner, 'L', market.marketId, 3)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l3-' + runner.selectionId">
+                    {{ runner.lay3 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls3-' + runner.selectionId">
+                    {{ runner.ls3 | formatForiegn }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <div class="card card-accent-success" v-if="catalogues.length > 0">
+            <div v-bind:id="'market-' + market.marketId" v-for="market in catalogues" v-if="!IsBookmakerMarket(market.marketId) && market.marketType !== 'FIGURE' && market.bettingType == 'ODDS' && market.marketType !== 'ODD_FIGURE' && market.marketType !== 'TOSS'">
+                <div class="row bg-gray-100 market-head">
+                    <div class="col-12">
+                        <strong v-show="market.runners.length > 1">{{ market.marketName }}</strong>
+                        &nbsp;
+                        <i class="fa fa-address-book" v-on:click="ShowFullPosition(market.marketId)"></i>
+                    </div>
+                </div>
+                <div v-bind:id="'runner-' + runner.selectionId" class="row runners" v-bind:class="{ lastItemBorder: runner.IsLast }" v-for="runner in market.runners">
+    
+    <div class="col-7 col-md-4 runner-name">
+        <img v-if="market.eventTypeId===7" :src="runner.silkColor" v-show="runner.silkColor !== null && runner.silkColor !== undefined" onerror="this.style.display='none'" />
+        <strong>{{ runner.runnerName }}</strong>
+        <br>
+        <span v-if="runner.ifWin >= 0">
+            <span class="position-plus">
+                <strong>{{ runner.ifWin | format }}</strong>
+            </span>
+            <span class="position-minus" v-if="runner.ifLose != ''">
+                / <strong>{{ runner.ifLose | format }}</strong>
+            </span>
+        </span>
+        <span v-else>
+            <span class="position-minus"><strong>{{ runner.ifWin | format }}</strong></span>
+        </span>
+
+        <button v-if="market.bettingType === 'LINE'" class="btn btn-link btn-fullBook" v-on:click="fullBook(market.marketId)">Full Book</button>
+    </div>
+
+    <div class="col-5 col-md-8 price">
+        <template v-if="runner.status!= null && runner.status!= '' && runner.status!='ACTIVE' && IsRunnerDisabled(runner.status) ">
+            <div style="width: 102%;line-height: 45px;color: red;text-align: center;background: #ececed;text-transform: uppercase; ">
+                {{ runner.status }}
+            </div>
+        </template>
+
+        <div class="row" v-else>
+            <div class="col-md-2 d-none d-md-block cta-back" v-on:click="place(runner, 'B', market.marketId, 3)">
+                <div class="col-12 price" v-bind:id="'b3-' + runner.selectionId">
+                    {{ runner.price3 }}
+                </div>
+                <div class="col-12 size" v-bind:id="'bs3-' + runner.selectionId">
+                    {{ runner.size3 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-back" v-on:click="place(runner, 'B', market.marketId, 2)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'b2-' + runner.selectionId">
+                    {{ runner.price2 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'bs2-' + runner.selectionId">
+                    {{ runner.size2 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-6 col-md-2 cta-back" v-on:click="place(runner, 'B', market.marketId, 1)">
+                <div class="col-12 price" v-bind:id="'b1-' + runner.selectionId">
+                    {{ runner.price1 }}
+                </div>
+                <div class="col-12 size" v-bind:id="'bs1-' + runner.selectionId">
+                    {{ runner.size1 | formatForiegn }}
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 cta-lay" v-on:click="place(runner, 'L', market.marketId, 1)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l1-' + runner.selectionId">
+                    {{ runner.lay1 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls1-' + runner.selectionId">
+                    {{ runner.ls1 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-lay" v-on:click="place(runner, 'L', market.marketId, 2)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l2-' + runner.selectionId">
+                    {{ runner.lay2 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls2-' + runner.selectionId">
+                    {{ runner.ls2 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-lay" v-on:click="place(runner, 'L', market.marketId, 3)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l3-' + runner.selectionId">
+                    {{ runner.lay3 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls3-' + runner.selectionId">
+                    {{ runner.ls3 | formatForiegn }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <div class="tb-content" v-if="HasFigureMarket" v-for="Catalog in catalogues">
+            <div class="tb-content" v-if="Catalog.marketType == 'FIGURE'">
+                <div class="col-12 row bg-gray-100 market-head">
+                    <strong v-show="market.runners.length > 1" style="margin-left:15px;">{{ Catalog.marketName }}</strong>
+                    &nbsp;
+                    <i class="fa fa-address-book" v-on:click="ShowFullPosition(Catalog.marketId)"></i>
+                </div>
+                
+<div>
+    <div class="card" style="padding:1px 18px; ">
+        <div class="row">
+            <div class="col-3 col-lg-4 mobilehide"></div>
+            <div class="col customcheck" style="text-align:center; border:1px solid black"
+                 v-for="(single, index) in Catalog.runners"
+                 v-if="index < 5">
+                
+
+<div :id="single.selectionId" v-on:click="ShowBetSlip(single, 'B', single.marketId, 1)">
+    <b><span class="priceodd">{{single.runnerName}}</span><br /></b>
+    <span class="priceamount">{{single.price1}}</span><br /><hr style="margin:0px;" />
+    <div style="background-color:#e9f6fc">
+        <span class="positioncustom" v-if="single.ifWin > 0" style=" color:forestgreen" ><strong>{{single.ifWin | format}}</strong></span>
+        <span class="positioncustom" v-else style=" color:red" ><strong>{{single.ifWin | format}}</strong></span>
+    </div>
+</div>
+
+
+
+
+
+            </div>
+            <div class="col-3 col-lg-4 mobilehide"></div>
+        </div>
+        <div class="row">
+            <div class="col-3 col-lg-4 mobilehide"></div>
+            <div class="col customcheck" style="text-align:center; border:1px solid black"
+                 v-for="(single, index) in Catalog.runners"
+                 v-if="index >= 5">
+                
+
+<div :id="single.selectionId" v-on:click="ShowBetSlip(single, 'B', single.marketId, 1)">
+    <b><span class="priceodd">{{single.runnerName}}</span><br /></b>
+    <span class="priceamount">{{single.price1}}</span><br /><hr style="margin:0px;" />
+    <div style="background-color:#e9f6fc">
+        <span class="positioncustom" v-if="single.ifWin > 0" style=" color:forestgreen" ><strong>{{single.ifWin | format}}</strong></span>
+        <span class="positioncustom" v-else style=" color:red" ><strong>{{single.ifWin | format}}</strong></span>
+    </div>
+</div>
+
+
+
+
+
+            </div>
+            <div class="col-3 col-lg-4 mobilehide"></div>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <div class="card card-accent-success" v-if="HasOddFigureMarkets.length > 0">
+            <div class="col-12 row bg-gray-100 market-head">
+                <div class="col-12">
+                    <strong v-show="market.runners.length > 1">Even / Odd</strong>
+                </div>
+            </div>
+            <div class="tb-content" v-for="market in HasOddFigureMarkets">
+                <div class="tb-content">
+                    <div v-bind:id="'runner-' + runner.selectionId" class="row runners" v-bind:class="{ lastItemBorder: runner.IsLast }" v-for="runner in market.runners">
+    
+    <div class="col-7 col-md-4 runner-name">
+        <img v-if="market.eventTypeId===7" :src="runner.silkColor" v-show="runner.silkColor !== null && runner.silkColor !== undefined" onerror="this.style.display='none'" />
+        <strong>{{ runner.runnerName }}</strong>
+        <br>
+        <span v-if="runner.ifWin >= 0">
+            <span class="position-plus">
+                <strong>{{ runner.ifWin | format }}</strong>
+            </span>
+            <span class="position-minus" v-if="runner.ifLose != ''">
+                / <strong>{{ runner.ifLose | format }}</strong>
+            </span>
+        </span>
+        <span v-else>
+            <span class="position-minus"><strong>{{ runner.ifWin | format }}</strong></span>
+        </span>
+
+        <button v-if="market.bettingType === 'LINE'" class="btn btn-link btn-fullBook" v-on:click="fullBook(market.marketId)">Full Book</button>
+    </div>
+
+    <div class="col-5 col-md-8 price">
+        <template v-if="runner.status!= null && runner.status!= '' && runner.status!='ACTIVE' && IsRunnerDisabled(runner.status) ">
+            <div style="width: 102%;line-height: 45px;color: red;text-align: center;background: #ececed;text-transform: uppercase; ">
+                {{ runner.status }}
+            </div>
+        </template>
+
+        <div class="row" v-else>
+            <div class="col-md-2 d-none d-md-block cta-back" v-on:click="place(runner, 'B', market.marketId, 3)">
+                <div class="col-12 price" v-bind:id="'b3-' + runner.selectionId">
+                    {{ runner.price3 }}
+                </div>
+                <div class="col-12 size" v-bind:id="'bs3-' + runner.selectionId">
+                    {{ runner.size3 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-back" v-on:click="place(runner, 'B', market.marketId, 2)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'b2-' + runner.selectionId">
+                    {{ runner.price2 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'bs2-' + runner.selectionId">
+                    {{ runner.size2 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-6 col-md-2 cta-back" v-on:click="place(runner, 'B', market.marketId, 1)">
+                <div class="col-12 price" v-bind:id="'b1-' + runner.selectionId">
+                    {{ runner.price1 }}
+                </div>
+                <div class="col-12 size" v-bind:id="'bs1-' + runner.selectionId">
+                    {{ runner.size1 | formatForiegn }}
+                </div>
+            </div>
+
+            <div class="col-6 col-md-2 cta-lay" v-on:click="place(runner, 'L', market.marketId, 1)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l1-' + runner.selectionId">
+                    {{ runner.lay1 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls1-' + runner.selectionId">
+                    {{ runner.ls1 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-lay" v-on:click="place(runner, 'L', market.marketId, 2)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l2-' + runner.selectionId">
+                    {{ runner.lay2 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls2-' + runner.selectionId">
+                    {{ runner.ls2 | formatForiegn }}
+                </div>
+            </div>
+            <div class="col-md-2 d-none d-md-block cta-lay" v-on:click="place(runner, 'L', market.marketId, 3)">
+                <div class="col-md-12 col-sm-12 price" v-bind:id="'l3-' + runner.selectionId">
+                    {{ runner.lay3 }}
+                </div>
+                <div class="col-md-12 col-sm-12 size" v-bind:id="'ls3-' + runner.selectionId">
+                    {{ runner.ls3 | formatForiegn }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-md-4" id="Pnl-Orders">
+        <div class="card card-accent-primary right-content">
+            <div class="card-body pt-1 pb-1">
+                <div class="d-flex">
+                    <market-locker></market-locker>
+                    <button type="button" class="btn btn-primary" v-on:click="ShowFullPosition(marketId)">
+                        User Book
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-accent-primary right-content">
+
+            <div class="btn-group btn-group-xs" style="width:100%; height:30px; margin-bottom:2px;">
+                <button id="tvbackbtn" class="btn btn-primary btn-xs col" style="border-right:solid" onclick="SHOWTV()">Tv</button>
+                <button id="livebackbtn" class="btn btn-primary btn-xs col" onclick="SHOWLIVE()">Score Card</button>
+            </div>
+
+            <div id="TVDIV">
+                <div class="card-body video-container">
+                    <div class="bets">
+    <div id="VBox1" style="display:none;">
+        <UnrealHTML5VideoPlayer id="UnrealPlayer1"></UnrealHTML5VideoPlayer>
+        <video id="streamVideo1" width="465" autoplay playsinline controls onloadedmetadata="OnMetadata()"></video>
+    </div>
+</div>
+                </div>
+            </div>
+            <div id="TVDIVIFRAME">
+             </div>
+            <div id="LIVEDIV">
+                <iframe id="livesc" src="" style="width:100%"></iframe>
+            </div>
+        </div>
+
+        <div class="card card-accent-primary">
+            <div class="card-header">
+                <strong>Open Bets ({{ UnMatched.length }})</strong>
+                <img class="rounded disconnected" 
+                    src="/img/reconnecting.gif" 
+                    alt="dc"
+                    v-show="isSignalREnabled && !isSignalRConnected" />
+                <span v-if="isSignalREnabled && !isSignalRConnected">DISCONNECTED</span>
+            </div>
+
+            <div class="card-body  Orders-Widget">
+                <div class="row">
+                    <div class="col-4 no-pad"><strong>Runner</strong></div>
+                    <div class="col-2 no-pad"><strong>Price</strong></div>
+                    <div class="col-2 no-pad"><strong>Size</strong></div>
+                    <div class="col-2 no-pad"><strong>Better</strong></div>
+                    <div class="col-2 no-pad"><strong>Master</strong></div>
+                </div>
+                <div :id="order.orderId" class="row" v-for="order in UnMatched" v-bind:class="{ 'order-b': order.IsBack, 'order-l': order.IsLay }">
+                    <div class="col-4">{{ order.rn }}</div>
+                    <div class="col-2 no-pad">{{ order.up }}</div>
+                    <div class="col-2 no-pad">{{ order.us | format }}</div>
+                    <div class="col-2 no-pad">{{ order.bn }}</div>
+                    <div class="col-2 no-pad">{{ order.mn }}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card card-accent-primary">
+            <div class="card-header">
+                <strong>Matched Bets ({{ Matched.length }})</strong>
+                <button v-on:click="ShowAllOrders()" class="btn btn-sm btn-primary">Full Bet List</button>
+
+            </div>
+
+            <div class="card-body Orders-Widget">
+                <div class="row">
+                    <div class="col-4 no-pad"><strong>Runner</strong></div>
+                    <div class="col-2 no-pad"><strong>Price</strong></div>
+                    <div class="col-2 no-pad"><strong>Size</strong></div>
+                    <div class="col-2 no-pad"><strong>Better</strong></div>
+                    <div class="col-2 no-pad"><strong>Master</strong></div>
+                </div>
+                <div class="row" 
+                    v-for="order in Matched" 
+                    v-bind:key="order.id"
+                    v-bind:class="{ 'order-b': order.IsBack, 'order-l': order.IsLay }">
+                    <div class="col-4 no-pad">{{ order.rn }}</div>
+                    <div class="col-2 no-pad">{{ order.mp }}</div>
+                    <div class="col-2 no-pad">{{ order.ms | format }}</div>
+                    <div class="col-2 no-pad">{{ order.bn }}</div>
+                    <div class="col-2 no-pad">{{ order.mn }}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+     <div class="modal fade" id="modalMarketRules" tabindex="-1" role="dialog" aria-labelledby="modalMarketRules" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Market Rules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="market-rules-text" class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="app-footer">
+    <ul id="news-ticker-foot">
+        <li data-update="item1">Welcome to BetPro</li>
+    </ul>
+</footer>
+<!-- CoreUI and necessary plugins-->
+
+<script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+<script src="/js/signalr/dist/browser/signalr.js"></script>
+
+
+    <script src="/js/vue.min.js"></script>
+    <script src="https://unpkg.com/vuex@3.1.3/dist/vuex.min.js"></script>
+    <script src="/js/site.min.js"></script>
+    <script src="/js/bof.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1WVLP1K0K"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('set', { 'user_id': 'Chek10' });
+        gtag('config', 'G-C1WVLP1K0K');
+    </script>
+
+
+<script type="text/javascript" src="/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="/js/src/client-locales.js"></script>
+
+    
+
+    <script>
+        var show_tv_tab = false;
+
+        $(document).ready(function () {
+             marketStore.state.userId = 5202744;
+            if (show_tv_tab) {
+                SHOWTV();
+            } else {
+                SHOWLIVE(MarketId)
+            }
+            $("#LIVEDIV").show();
+            });
+
+        function show(v) {
+
+            if (show_tv_tab) {
+                return;
+            }
+
+            if (v != 0) {
+                $("#LIVEDIV").show();
+            } else {
+                $("#LIVEDIV").hide();
+            }
+        }
+
+        var lastheight = 0;
+
+        function setIframeHeight(h) {
+
+            if (Math.abs(lastheight - h) < 10) {
+                return;
+            }
+
+            lastheight = h + 45;
+
+
+            var obj = document.getElementById("LIVEDIV");
+            obj.style.height = lastheight + "px";
+
+            var obj = document.getElementById("livesc");
+            obj.style.height = lastheight + "px";
+        }
+
+        function onMessage(event) {
+            setIframeHeight(event.data['h']);
+            show(event.data['show']);
+        }
+
+        if (window.addEventListener) {
+            window.addEventListener("message", onMessage, false);
+        }
+        else if (window.attachEvent) {
+            window.attachEvent("onmessage", onMessage, false);
+        }
+
+        function SHOWTV() {
+            show_tv_tab = true;
+            if ($("#TVDIV").is(":visible")) {
+                $("#TVDIV").hide();
+                $("#LIVEDIV").hide();
+                $("#sr-widget").hide();
+                var element = document.getElementById("UnrealPlayer1_Video");
+                if (element != null) {
+                    element.parentNode.removeChild(element);
+                    streams.forEach(function (str) {
+                        if (str.player !== null) {
+                            str.player.Stop();
+                        }
+                        document.querySelector(str.container).style.display = 'none';
+                        document.querySelector(str.el).style.display = 'none';
+                        document.querySelector(str.unreal).style.display = 'none';
+                        document.querySelector(str.unreal).player = null;
+                    });
+                }
+            } else {
+                GetChannelData(MarketEVID);
+                $("#LIVEDIV").hide();
+                $("#sr-widget").hide();
+            }
+        }
+
+        function SHOWLIVE() {
+            show_tv_tab = false;
+            if ($("#LIVEDIV").is(":visible")) {
+                $("#TVDIV").hide();
+                $("#LIVEDIV").hide();
+                $("#sr-widget").hide();
+                var element = document.getElementById("UnrealPlayer1_Video");
+                if (element != null) {
+                    element.parentNode.removeChild(element);
+                    streams.forEach(function (str) {
+                        if (str.player !== null) {
+                            str.player.Stop();
+                        }
+                        document.querySelector(str.container).style.display = 'none';
+                        document.querySelector(str.el).style.display = 'none';
+                        document.querySelector(str.unreal).style.display = 'none';
+                        document.querySelector(str.unreal).player = null;
+                    });
+                }
+            } else {
+                var element = document.getElementById("UnrealPlayer1_Video");
+                if (element != null) {
+                    element.parentNode.removeChild(element);
+                    streams.forEach(function (str) {
+                        if (str.player !== null) {
+                            str.player.Stop();
+                        }
+                        document.querySelector(str.container).style.display = 'none';
+                        document.querySelector(str.el).style.display = 'none';
+                        document.querySelector(str.unreal).style.display = 'none';
+                        document.querySelector(str.unreal).player = null;
+                    });
+                }
+
+                $("#TVDIV").hide();
+                $("#LIVEDIV").show();
+                $("#sr-widget").show();
+            }
+        }
+
+
+
+    </script>
+
+
+    <script>
+        const token = getCookie('wexscktoken');
+        const sess = getCookie('wex3authtoken');
+        const reft = getCookie('wex3reftoken');
+
+        $(document).ready(function () {
+            pollUserData();
+
+            pollRefreshToken();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sports Trading Platform">
+    <meta name="keyword" content="sports trading, bet, betfair">
+    <meta name="robots" content="noindex" />
+
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/dist/lo2.min.css?62000" />
+    <link rel="stylesheet" href="/css/tempusdominus-bootstrap-4.min.css" />
+    <link href="/css/BetPro-style.css?62000" rel="stylesheet" />
+
+    <title>Casino | BetPro</title>
+
+    <script>
+        const uwsUrl = "https://orders-ws2.mgs11.com/usershub";
+        const casinoUrl = "https://casino-ws.mgs11.com/signalr";
+    </script>
+    <script src="/js/vue.min.js"></script>
+    <script src="/js/site.min.js?62000"></script>
+    <script src="/js/vue.min.js"></script>
+    <script src="https://unpkg.com/vuex@3.1.3/dist/vuex.js"></script>
+
+    <style>
+        
+
+        .bodyheight {
+            height: 90vh;
+        }
+
+        @media screen and (max-width: 480px) {
+            .bodyheight{
+                height:90vh;
+            }
+        }
+
+        .bg-dream {
+            background-image: url(/img/dreambg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+
+
+        .iframetemplate {
+            display: block; /* iframes are inline by default */
+            background: #000;
+            border: none; /* Reset default border */
+            height: 100%; /* Viewport-relative units */
+            width: 100%;
+            margin: 0px;
+        }
+
+        .blink_me {
+            animation: blinker 1s linear infinite;
+        }
+
+        @keyframes blinker {
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        .casinoimp {
+            animation: casinoimpblinker 1s linear infinite;
+        }
+
+        @Keyframes casinoimpblinker {
+            25% {
+                -webkit-transform: scale(1.10);
+                -ms-transform: scale(1.10);
+                transform: scale(1.10);
+            }
+
+            50% {
+                -webkit-transform: scale(1.15);
+                -ms-transform: scale(1.15);
+                transform: scale(1.15);
+            }
+
+            75% {
+                -webkit-transform: scale(1.10);
+                -ms-transform: scale(1.10);
+                transform: scale(1.10);
+            }
+        }
+            
+    </style>
+    
+</head>
+
+<body class="bg-dream d-flex flex-column">
+    <div class="main-page">
+        <div class="row no-gutters">
+            <div class="col-md">
+                <div class="header">
+                    <a href="/Common/Dashboard">
+                        <span class="green-logo-text">
+                            BetPro
+                        </span>
+                    </a>
+                   
+
+                </div>
+
+                <div class="bodyheight">
+                    
+<link rel="stylesheet" type="text/css" href="/css/RSC.css" />
+
+        <div class="center">
+            <div style="display:block">
+                <div id="serviceBox">
+                        <div class="container">
+                                <div class="square">
+                                    <img src="/img/royalstarlogo.png">
+                                </div>
+                        </div>
+                        <div class="container">
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900001)">
+                                        <img src="https://cdn.dreamcasino.live/rg_7up_7down.webp" class="card-img-top" alt="7 Up Down">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900002)">
+                                        <img src="https://cdn.dreamcasino.live/rg_roulette.webp" class="card-img-top" alt="Auto Roulette">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900003)">
+                                        <img src="https://cdn.dreamcasino.live/rg_teen_patti.webp" class="card-img-top" alt="Teen Patti">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900004)">
+                                        <img src="https://cdn.dreamcasino.live/rg_dragon_tiger.webp" class="card-img-top" alt="Dragon Tiger">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900005)">
+                                        <img src="https://cdn.dreamcasino.live/rg_cricket_war.webp" class="card-img-top" alt="Cricket War">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900006)">
+                                        <img src="https://cdn.dreamdelhi.com/rg/baccarat.webp" class="card-img-top" alt="Baccarat">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900007)">
+                                        <img src="https://cdn.dreamcasino.live/rg_a3.webp" class="card-img-top" alt="Amar Akbar Anthony">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900008)">
+                                        <img src="https://cdn.dreamcasino.live/rg_3cards_judgement.webp" class="card-img-top" alt="3 Cards Judgement">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900009)">
+                                        <img src="https://cdn.dreamcasino.live/rg_casino_war.webp" class="card-img-top" alt="Casino War">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900010)">
+                                        <img src="https://cdn.dreamcasino.live/rg_worli_matka.webp" class="card-img-top" alt="Worli Matka">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900011)">
+                                        <img src="https://cdn.dreamcasino.live/rg_bollywood_casino.webp" class="card-img-top" alt="Bollywood Casino">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900012)">
+                                        <img src="https://cdn.dreamcasino.live/rg_lottery.webp" class="card-img-top" alt="Lottery">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900013)">
+                                        <img src="https://cdn.dreamcasino.live/rg_book_cricket.webp" class="card-img-top" alt="Book Cricket">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900014)">
+                                        <img src="https://cdn.dreamcasino.live/rg_high_low.webp" class="card-img-top" alt="HighLow">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900015)">
+                                        <img src="https://cdn.dreamcasino.live/rg_muflis_teenpatti.webp" class="card-img-top" alt="Muflis Teen Patti">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900019)">
+                                        <img src="https://cdn.dreamdelhi.com/rg/teen_patti_one_day.webp" class="card-img-top" alt="One Day Teenpatti">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900021)">
+                                        <img src="https://cdn.dreamcasino.live/rg_lucky7.webp" class="card-img-top" alt="Lucky7">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900023)">
+                                        <img src="https://cdn.dreamcasino.live/rg_arw.webp" class="card-img-top" alt="Akbar Romeo Walter">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900025)">
+                                        <img src="https://cdn.dreamcasino.live/rg_2card_tp.webp" class="card-img-top" alt="2 Cards Teenpatti">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900027)">
+                                        <img src="https://cdn.dreamdelhi.com/rg/dragon_tiger_one_day.webp" class="card-img-top" alt="Dragon Tiger One day">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900031)">
+                                        <img src="https://cdn.dreamcasino.live/rg_dtl.webp" class="card-img-top" alt="Dragon Tiger Lion">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900034)">
+                                        <img src="https://cdn.dreamdelhi.com/rg/side_bet_city.webp" class="card-img-top" alt="Side Bet City">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900037)">
+                                        <img src="https://cdn.dreamdelhi.com/rg/trio.webp" class="card-img-top" alt="Trio">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900039)">
+                                        <img src="https://cdn.dreamdelhi.com/rg/2_card_teen_patti_one%20day.webp" class="card-img-top" alt="2 Card Teen Patti One Day ">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900046)">
+                                        <img src="https://cdn.dreamdelhi.com/rg/center_card.webp" class="card-img-top" alt="Center Card ">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(900075)">
+                                        <img src="https://cdn.dreamdelhi.com/rg/roulette.webp" class="card-img-top" alt="Roulette">
+                                    </a>
+                                </div>
+                                <div class="square zoom">
+                                    <a href="javascript:void()" onclick="launchGame(903002)">
+                                        <img src="https://cdn.dreamdelhi.com/rg/sicbo_exclusive.webp" class="card-img-top" alt="Sicbo Exclusive">
+                                    </a>
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+<script src="//wurfl.io/wurfl.js"></script>
+
+<script>
+    function launchGame(gameId) {
+        var wrfl = typeof WURFL === 'undefined' || WURFL === null ? WurflFallback() : WURFL;
+
+        var dv = wrfl.is_mobile ? 'm' : 'd';
+        document.location.href = document.location.href + '?id=' + gameId + '&d=' + dv;
+        return false;
+    }
+
+    var AnyGame = 1;
+
+    if (AnyGame > 0) {
+
+        function ActivateTab(tab_index) {
+            tab_index = parseInt(tab_index);
+
+            var forall = 1 + 1;
+            for (let i = 1; i <= 1; i++) {
+                document.querySelector('.tabcontent:nth-child(' + i + ')').style.display = 'none';
+            }
+            document.querySelector('.tabcontent:nth-child(' + forall + ')').style.display = 'none';
+            document.querySelector('.tabcontent:nth-child(' + tab_index + ')').style.display = 'block';
+
+        }
+    }
+</script>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market Rules -->
+    <div class="modal fade" id="modalMarketRules" tabindex="-1" role="dialog" aria-labelledby="modalMarketRules" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Market Rules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="market-rules-text" class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const token = getCookie('wexscktoken');
+        const sess = getCookie('wex3authtoken');
+        const reft = getCookie('wex3reftoken');
+        const CasSck = 1;
+    </script>
+
+    <script src="/js/signalr/dist/browser/signalr.js"></script>
+    
+    
+    
+        <script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+        <script src="/js/cwsck.min.js?62000"></script>
+    
+
+    
+    
+    <script>
+        const signalRConnection = new UWS(uwsUrl, token, sess);
+        signalRConnection.connect();
+
+        $(document).ready(function () {
+            pollRefreshToken();
+        });
+    </script>
+</body>
+</html>

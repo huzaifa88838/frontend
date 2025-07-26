@@ -1,0 +1,1330 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google" content="notranslate" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sports Trading Platform">
+    <meta name="keyword" content="sports trading, bet, betfair">
+    <meta name="robots" content="noindex" />
+
+    <link rel="shortcut icon" href="/img/favicon/BetPro.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/img/sprites/css/sprite.css" />
+    <link rel="stylesheet" href="/dist/site.css?7200" />
+    <link href="/css/BetPro-style.css?7200" rel="stylesheet" />
+
+    <title>Profit Loss | BetPro</title>
+    <style>
+        .body {
+            min-height: 91.7vh;
+        }
+
+        center a {
+            color: white;
+        }
+
+        center a {
+            font-size: 13px;
+        }
+    </style>
+
+    <script>
+        const pricesUrl = "https://prices9.mgs11.com/api";
+        const ordersUrl = "https://orders.mgs11.com/api";
+        const LiquidityRate = 35;
+        const SsocketUrl = "https://orders-ws2.mgs11.com/signalr";
+        const uwsUrl = "https://orders-ws2.mgs11.com/usershub";
+        const genSck = 1;
+        const CasSck = 1;
+        const casinoUrl = "https://casino-ws.mgs11.com/signalr";
+        // var SsocketEnable = 0;
+    </script>
+</head>
+<body class="bg-gray d-flex flex-column">
+    <div class="main-page">
+        <div class="row no-gutters">
+            <div class="col-md-3 col-lg-2" id="sidebar">
+                <div class="logo-bar">
+                    <a href="/Common/Dashboard">
+                        <span class="green-logo-text">BetPro</span>
+                    </a>
+                </div>
+                <div class="divider"></div>
+                <div class="sidebar-menu" style="height:100%;">
+                    <ul>
+                        
+
+<ul class="nav">
+
+
+
+<style>
+
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+            moz-transform: rotateY(0deg);
+            ms-transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+            moz-transform: rotateY(360deg);
+            ms-transform: rotateY(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotateY(0deg);
+        }
+
+        to {
+            -webkit-transform: rotateY(360deg);
+        }
+    }
+
+    .imageSpin {
+        transition-delay: 5s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: inherit;
+        -webkit-animation-name: spin;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: initial;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-delay: 2s;
+    }
+
+    .imageSpin2 {
+        transition-delay: 3s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: inherit;
+        -webkit-animation-name: spin;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: initial;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-delay: 2s;
+    }
+   
+
+    /*for spin2*/
+    #spinning-circle {
+        animation-name: spinning-circle;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes spinning-circle {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    #invertcolor {
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        animation-name: spinning-circle;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    #invertcolor2{
+         filter: invert(100%);
+        -webkit-filter: invert(100%);
+       animation-name: spin;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        max-height:30px;
+    }
+
+    #invertcolor3 {
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        animation-name: spin;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        max-height: 30px;
+    }
+
+
+ .exgameblinker{
+   animation: animate 8s linear infinite;
+ } 
+  
+ @keyframes animate{
+   0%{
+     background-color:red;
+   }
+   25%{
+     background-color:inherit;
+   }
+   50%{
+     background-color:inherit;
+   }
+   75%{
+     background-color:inherit;
+   }
+   100%{
+     background-color:red;
+   }
+ }
+
+    .Galaxyblinker {
+        position: relative;
+        z-index: 0;
+    }
+
+        .Galaxyblinker::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(90deg, #8a47ff 0%, #c36eff 100%);
+            opacity: 1;
+            animation: animateGradient 12s linear infinite;
+            transition: opacity 0.5s ease;
+        }
+
+    @keyframes animateGradient {
+        0%, 100%
+
+    {
+        opacity: 1;
+    }
+
+    25%, 50%, 75% {
+        opacity: 0;
+    }
+
+    }
+
+
+</style>
+
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-soccer svg-soccer-dims svg-span" role="img"></span>
+                <span>Soccer</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Soccer</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245232717">
+Birmingham Legion FC v Charleston Battery                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245277145">
+Independiente Juniors v 22 de Julio FC                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245219168">
+Juan Pablo II College v Melgar                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245214861">
+Mexico v Honduras                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244440451">
+Racing Club v San Martin de San Juan                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245128691">
+Switzerland (W) v Norway (W)                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245262771">
+USA (W) v Canada (W)                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245233325">
+USA v Guatemala                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-tennis svg-tennis-dims svg-span" role="img"></span>
+                <span>Tennis</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Tennis</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245251668">
+A Sabalenka v M Bouzkova                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245249024">
+A Sasnovich v Svitolina                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245249505">
+Ar Fery v Darderi                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245251836">
+As Krueger v Pavlyuchenkova                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245251135">
+B Haddad Maia v D Galfi                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245249497">
+Borges v B Harris                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245252168">
+Boulter v So Sierra                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245244232">
+Bucsa v Vekic                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245247950">
+Dia Shnaider v D Parry                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245245983">
+E Lys v L Noskova                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245250847">
+E Raducanu v Vondrousova                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245250433">
+F Auger-Aliassime v Struff                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245270569">
+Fritz v G Diallo                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245275402">
+Garin v Rinderknech                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245251579">
+J Paolini v Rakhimova                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245249282">
+Jarry v Le Tien                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245252173">
+Jo Fonseca v Brooksby                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245248599">
+L Fernandez v Siegemund                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245245989">
+Lehecka v Ma Bellucci                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245251839">
+Majchrzak v Et Quinn                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245246545">
+Mannarino v Royer                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245252298">
+Mertens v A Li                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245270568">
+N Osaka v K Siniakova                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245164971">
+Nakashima v Yu Bu                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245248047">
+Norrie v Tiafoe                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245249116">
+O Danilovic v Keys                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245251126">
+Rublev v L Harris                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245268869">
+Sh Mochizuki v Khachanov                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245250235">
+Tarvet v Carlos Alcaraz                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245246673">
+Thompson v Bonzi                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245244687">
+V Tomova v Kartal                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245266941">
+Van de Zandschulp v Davidovich Fokina                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245250936">
+Zarazua v A Anisimova                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-cricket svg-cricket-dims svg-span" role="img"></span>
+                <span>Cricket</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Cricket</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245273159">
+Dindigul Dragons v Ruby Trichy Warriors                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245074690">
+England v India                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245280812">
+England W v India W                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245222819">
+Los Angeles Knight Riders v MI New York                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245188153">
+Sri Lanka v Bangladesh                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245222742">
+Texas Super Kings v Washington Freedom                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245193098">
+West Indies v Australia                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-horse svg-horse-dims svg-span" role="img"></span>
+                <span>Horse Race</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Horse Race</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245262312">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:15:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Fairview (ZA)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245262314">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:50:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Fairview (ZA)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238239">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T13:03:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Thirsk (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238240">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T13:03:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Thirsk (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238426">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T13:15:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Worcester (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238427">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T13:15:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Worcester (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245262316">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T13:25:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Fairview (ZA)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238252">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T13:33:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Thirsk (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238254">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T13:33:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Thirsk (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238433">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T13:45:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Worcester (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238435">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T13:45:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Worcester (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245262318">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T14:00:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Fairview (ZA)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238259">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T14:03:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Thirsk (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238261">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T14:03:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Thirsk (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238440">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T14:15:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Worcester (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238442">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T14:15:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Worcester (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238285">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T14:33:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Thirsk (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238288">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T14:33:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Thirsk (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245262320">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T14:35:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Fairview (ZA)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238446">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T14:45:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Worcester (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238448">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T14:45:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Worcester (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238299">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T15:03:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Thirsk (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238301">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T15:03:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Thirsk (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238453">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T15:15:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Worcester (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245238454">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T15:15:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Worcester (GB) (PLACE)</span>
+                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-greyhound-racing svg-greyhound-racing-dims svg-span" role="img"></span>
+                <span>Greyhound</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Greyhound</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245256152">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:13:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Rockhampton (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245255113">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:16:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245268797">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:17:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Monmore (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245254360">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:19:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">The Meadows (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245268634">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:19:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Harlow (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245256187">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:22:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Cannington (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245255677">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:25:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Richmond (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245268598">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:26:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Nottingham (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245256157">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:28:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Rockhampton (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245268799">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:33:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Monmore (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245255248">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:35:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Ballarat (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245268636">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:37:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Harlow (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245255118">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:38:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245254365">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:41:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">The Meadows (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245268600">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:42:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Nottingham (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245256192">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:44:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Cannington (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245255682">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:47:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Richmond (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245268801">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:51:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Monmore (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245255253">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:54:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Ballarat (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.245268638">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-07-02T12:54:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Harlow (GB)</span>
+                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+
+
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/sap" class="dropdown-toggle" role="button">
+                <span class="svg-Casino svg-Casino-dims imageSpin2" role="img"></span>
+                <span>Sports Book</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/RSC" class="dropdown-toggle" role="button">
+                <i style="font-size:17px;" class='fas fa-star fa-2x fa-spin fa-lg'></i>
+                <span>RoyalStar Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/Games" class="dropdown-toggle" role="button">
+                <img id="spinning-circle" src="/img/v2/livegameing.png" onerror="this.onerror = null; this.src= null" alt="G">
+                <span>Star Casino</span>
+            </a>
+
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/WorldCasino">
+                <img id="invertcolor" style="background:invert(100%)" src="/img/v2/worldcasinosvg.png" alt="WC" />
+                <span>World Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/Dream">
+                <span class="svg-Casino svg-Casino-dims imageSpin2" role="img"></span>
+                <span>Royal Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/ExGames">
+                <img id="invertcolor2" src="/img/v2/BLogo.png" />
+                <span>BetFairGames</span>
+            </a>
+         </li>
+        <li class="nav-item exgameblinker" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/BetProGames">
+                <img id="invertcolor3" src="/img/v2/TPS.png" />
+                <span>TeenPatti Studio</span>
+            </a>
+        </li>
+        <li class="nav-item Galaxyblinker" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/Galaxy">
+                <img src="/img/v2/Glogo.png" />
+                <span>Galaxy Casino</span>
+            </a>
+        </li>
+
+    <li class="divider"></li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Customer/Liable">
+                <span class="svg-colossus svg-colossus-dims svg-span" role="img"></span> 
+                Current Position
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Common/Dashboard">
+                <span class="svg-soccer svg-soccer-dims svg-span" role="img"></span> 
+                All Sports
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Common/Result">
+                <span class="svg-clipboard svg-clipboard-dims svg-span" role="img"></span> 
+                Results
+            </a>
+        </li>
+    <li class="nav-item" style="width:100%;">
+        <a class="nav-link" href="#" onclick="ShowExchangeRules(); return false;">
+            <i class="fa fa-info-circle"></i>Market Rules
+        </a>
+    </li>
+    <li class="nav-item" style="width:100%;">
+        <a class="nav-link" href="#" onclick="ShowTos(); return false;">
+            <i class="fa fa-info-circle"></i>Terms &amp; Conditions
+        </a>
+    </li>
+</ul>
+<script>
+    function ShowExchangeRules() {
+        $("#modalMarketRules").modal('show');
+
+        $.get("/rules.html", function (data) {
+            $("#modalMarketRules .modal-body").html(data);
+        });
+    }
+
+    function ShowTos() {
+        $("#modalTos").modal('show');
+        $.get("/tos.html", function (data) {
+            $("#modalTos .modal-body").html(data);
+        });
+    }
+</script>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md" id="main-wrap">
+                <div class="header">
+                    <button class="burger-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <ul class="top-nav">
+                        <li><a href="/Common/Dashboard">Dashboard</a></li>
+                    </ul>
+
+                    <div id="sticky-footer" style="width:50vw; padding:0px; margin:0px; float:left; " class="py-1 bg-black text-white">
+                        <div class="container text-center" style="padding:0px; margin:0px;">
+                            <ul id="news-ticker-foot" style="padding:0px; margin:0px;">
+                                <li data-update="item1" style="padding:0px; margin:0px;">Welcome to BetPro</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown-wrap">
+                        <div class="dropdown">
+
+                            <div class="designation">
+                                <span class="wallet-balance">B: -</span>
+                                <span class="wallet-exposure"> | L: - |</span>
+                            </div>
+
+                            <button class="btn profile-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    bahriya
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="/Customer/Ledger/">Statement</a>
+                                <a class="dropdown-item" href="/Common/Result/">Result</a>
+                                <a class="dropdown-item" href="/Customer/ProfitLoss/">Profit Loss</a>
+                                <a class="dropdown-item" href="/Customer/Bets">Bet History</a>
+                                <a class="dropdown-item" href="/Customer/Profile">Profile</a>
+                                <a class="dropdown-item" id="btn-logout" href="/Common/Logout">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-wrap body">
+                    <link rel="stylesheet" href="/css/all.css" />
+<style>
+    .totalAmount {
+        float: right;
+        margin-top: -30px;
+    }
+    @media screen and (max-width: 635px) {
+        .totalAmount {
+            float: right;
+            margin-top:10px;
+        }
+    }
+</style>
+<div class="table-wrap">
+    
+<style>
+    .datee {
+        background-color: white;
+    }
+    @media screen and (max-width: 635px) {
+        .editsbmtbtn {
+            margin: auto;
+            margin-right: 15px;
+        }
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <i class="fa fa-align-justify"></i>
+                Report Filter
+            </div>
+            <div class="card-body">
+                <form id="ReportFilterForm" class="form-inline" method="get">
+                    <div class="row" style="text-align-last:justify;">
+                        <div class="col-12 col-md-5">
+                            <div class="form-group">
+                                <div class="input-group date" id="ReportFrom" data-target-input="nearest">
+                                    <input type="text"
+                                           class="form-control datetimepicker-input"
+                                           data-target="#ReportFrom"
+                                           id="DisplayFrom" />
+                                    <div class="input-group-append" data-target="#ReportFrom" data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+                                <span class="market-time d-none"></span>
+                                <span class="d-none utctime" data-nofirst="0" data-format="M/D/YYYY h:mm A">
+                                    2025-07-01T19:00:00.0000000Z
+                                </span>
+                                <input type="hidden" name="From" id="From" value="2025-07-01T19:00:00.0000000Z" />
+                            </div>
+                        </div>
+
+                        <strong style="margin:auto">&nbsp;-&nbsp;</strong>
+                        <div class="col-12 col-md-5">
+                            <div class="form-group">
+                                <div class="input-group date" id="ReportTo" data-target-input="nearest">
+                                    <input type="text"
+                                           class="form-control datetimepicker-input"
+                                           data-target="#ReportTo"
+                                           id="DisplayTo" />
+                                    <div class="input-group-append" data-target="#ReportTo" data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+                                <span class="market-time d-none"></span>
+                                <span class="d-none utctime" data-nofirst="0" data-format="M/D/YYYY h:mm A">
+                                    2025-07-02T18:59:59.0000000Z
+                                </span>
+                                <input type="hidden" name="To" id="To" value="2025-07-02T18:59:59.0000000Z" />
+                            </div>
+                        </div>
+
+                        <div class="form-group editsbmtbtn">
+                            <label class="mx-1"> </label>
+                            <button class="btn btn-primary" type="submit" onclick="return updateDates();">
+                                <strong>Submit</strong>
+                            </button>
+                        </div>
+                        <input type="hidden" data-val="true" data-val-required="The ClientId field is required." id="ClientId" name="ClientId" value="4200079" />
+                        <input type="hidden" data-val="true" data-val-required="The EventTypeId field is required." id="EventTypeId" name="EventTypeId" value="0" />
+                        <input type="hidden" data-val="true" data-val-required="The IsFirstVisit field is required." id="IsFirstVisit" name="IsFirstVisit" value="True" />
+                    </div>
+                    <div class="row col-12">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="table-wrap">
+    <div class="">
+        <div class="card">
+            <div class="card-header">
+                <i class="fa fa-align-justify"></i> Sports ProfitLoss <b>  </b>
+            </div>
+            <div class="card-body">
+                <ul class="nav nav-pills">
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function popup_report(vid, aid) {
+        var url = "/Customer/Statements?VID=" + vid + "&AID=" + aid;
+        newwindow = window.open(url, "Market Repo", 'height=500,width=700,titlebar=0,menubar=0');
+        if (window.focus) { newwindow.focus() }
+        return false;
+    }
+</script>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market Rules -->
+    <div class="modal fade" id="modalMarketRules" tabindex="-1" role="dialog" aria-labelledby="modalMarketRules" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Market Rules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="market-rules-text" class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ToS -->
+    <div class="modal fade" id="modalTos" tabindex="-1" role="dialog" aria-labelledby="modalTos" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Terms and conditions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <b>Protection of minors</b>
+                    <br />
+                    <p> It is illegal for anybody under the age of 18 to gamble. </p>
+                    <br />
+                    <p>Our site has strict policies and verification measures to prevent access to minors.</p>
+                    <br />
+                    <p>We encourage parents consider the use of internet use protection tools. You may find the following links useful. </p>
+                    <br />
+                    <a href="https://www.cyberpatrol.com/" target="_blank" style="color:mediumspringgreen">  Cyberpatrol</a>
+                    <br />
+                    <a href="https://www.cybersitter.com/" target="_blank" style="color:mediumspringgreen">  Cybersitter </a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="sticky-footer" class="py-1 bg-dark text-white-50 Bl_NT_SF">
+        <div class="col-12 container" style="background-color:#4dbd74; height:6px; margin-top:-4px;">
+        </div>
+        <div class="container text-center">
+            <center>
+                    
+<style>
+    p{
+        font-size:12px;
+        color:white;
+    }
+    .caoimg{
+        max-width:60px;
+    }
+    .bffooter{
+                    width: 135px;
+                    height: 30px;
+            }
+            .curasaoLinks {
+               pointer-events: none;
+               cursor: default;
+               margin-top:10px;
+            }
+@media screen and (max-width: 635px) {
+            .caoimg {
+                max-width:40px;
+            }
+            .bffooter{
+                    width: 100px;
+                    height: 30px;
+            }
+        }
+</style>
+
+
+<div class="curasaoLinks row" style="display:inline-flex;" id="curacaodiv">
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelector('#curacaodiv').insertAdjacentHTML(
+            'afterbegin',
+            `<hr>
+                <div class="col-sm-12 col-md-4"></div>
+                <div class="col-md-4"></div>`);
+    });
+</script>
+
+            </center>
+           
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+    <script type="text/javascript" src="/dist/bundle0a.js?7200"></script>
+
+    <script>
+        const token = getCookie('wexscktoken');
+        const sess = getCookie('wex3authtoken');
+        const reft = getCookie('wex3reftoken');
+    </script>
+
+    
+
+    <script>
+        $(document).ready(function () {
+            pollRefreshToken();
+        });
+
+        if (genSck === 1) {
+            const signalRConnection = new UWS(uwsUrl, token, sess);
+            signalRConnection.connect();
+        }
+        else {
+            pollUserData();
+        }
+    </script>  
+</body>
+</html>

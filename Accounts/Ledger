@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="./">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="BetPro Exchange">
+    <meta name="author" content="BetPro">
+    <meta name="keyword" content="BetPro,Exchange,BetFair,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+      <title>Account Ledger | BetPro</title>
+    <!-- Icons-->
+     <link rel="stylesheet" href="/dist/lo2.min.css" />
+        <link href="/css/BetPro-style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/css/tempusdominus-bootstrap-4.min.css" />
+</head>
+<body class="app">
+    <div>
+        <main class="main">
+            <div class="container-fluid" style="padding:0px 15px;">
+                <div class="animated fadeIn">
+                    
+<style>
+    .datee {
+        background-color: white;
+    }
+    @media screen and (max-width: 635px) {
+        .editsbmtbtn {
+            margin: auto;
+            margin-right: 15px;
+        }
+    }
+</style>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <i class="fa fa-align-justify"></i>
+                Report Filter
+            </div>
+            <div class="card-body">
+                <form id="ReportFilterForm" class="form-inline" method="get">
+                    <div class="row" style="text-align-last:justify;">
+                        <div class="col-12 col-md-5">
+                            <div class="form-group">
+                                <div class="input-group date" id="ReportFrom" data-target-input="nearest">
+                                    <input type="text"
+                                           class="form-control datetimepicker-input"
+                                           data-target="#ReportFrom"
+                                           id="DisplayFrom" />
+                                    <div class="input-group-append" data-target="#ReportFrom" data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+                                <span class="market-time d-none"></span>
+                                <span class="d-none utctime" data-nofirst="0" data-format="M/D/YYYY h:mm A">
+                                    2025-06-18T19:00:00.0000000Z
+                                </span>
+                                <input type="hidden" name="From" id="From" value="2025-06-18T19:00:00.0000000Z" />
+                            </div>
+                        </div>
+
+                        <strong style="margin:auto">&nbsp;-&nbsp;</strong>
+                        <div class="col-12 col-md-5">
+                            <div class="form-group">
+                                <div class="input-group date" id="ReportTo" data-target-input="nearest">
+                                    <input type="text"
+                                           class="form-control datetimepicker-input"
+                                           data-target="#ReportTo"
+                                           id="DisplayTo" />
+                                    <div class="input-group-append" data-target="#ReportTo" data-toggle="datetimepicker">
+                                        <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                                    </div>
+                                </div>
+                                <span class="market-time d-none"></span>
+                                <span class="d-none utctime" data-nofirst="0" data-format="M/D/YYYY h:mm A">
+                                    2025-06-19T18:59:59.0000000Z
+                                </span>
+                                <input type="hidden" name="To" id="To" value="2025-06-19T18:59:59.0000000Z" />
+                            </div>
+                        </div>
+
+                        <div class="form-group editsbmtbtn">
+                            <label class="mx-1"> </label>
+                            <button class="btn btn-primary" type="submit" onclick="return updateDates();">
+                                <strong>Submit</strong>
+                            </button>
+                        </div>
+                        <input type="hidden" data-val="true" data-val-required="The ClientId field is required." id="ClientId" name="ClientId" value="5736735" />
+                        <input type="hidden" data-val="true" data-val-required="The EventTypeId field is required." id="EventTypeId" name="EventTypeId" value="0" />
+                        <input type="hidden" data-val="true" data-val-required="The IsFirstVisit field is required." id="IsFirstVisit" name="IsFirstVisit" value="True" />
+                    </div>
+                    <div class="row col-12">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<link rel="stylesheet" href="/css/all.css" />
+<link rel="stylesheet" type="text/css" href="/lib/datatables/datatables.min.css" />
+<link rel="stylesheet" type="text/css" href="/css/ledger.css" />
+<style>
+    button.dt-button, div.dt-button, a.dt-button {
+        padding:5px;
+    }
+</style>
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+                    <strong>Chek10</strong>
+                - Account Ledger
+            </div>
+            <div class="card-body">
+                <table id="tableLedger" class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Date</th>
+                            <th>Description</th>
+                            <th>Amount</th>
+                            <th>Balance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        
+<span class="market-time"></span>
+<span class="d-none utctime" data-format="M/D/YYYY hh:mm:ss a" data-target="time">
+    2025-06-18T19:00:00.0000000Z
+</span>
+
+                                    </td>
+                                    <td>
+                                        <a href="#" onclick="return popup_report(0, 5736735);">
+                                            Opening Balance
+                                        </a>
+                                    </td>
+                                    <td>0</td>
+                                    <td>15,569</td>
+                                </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function popup_report(vid, aid) {
+        var url = "/Accounts/Statements?VID=" + vid + "&AID=" + aid;
+        newwindow = window.open(url, "Market Statements", 'height=500,width=700,titlebar=0,menubar=0');
+        if (window.focus) { newwindow.focus() }
+        return false;
+    }
+</script>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="/js/vue.min.js"></script>
+    <script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+    <script src="/js/site.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="/js/src/client-locales.js"></script>
+    
+    <script src="/lib/datatables/datatables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var tblLed = $("#tableLedger").DataTable({
+                "order": [[0, "asc"]],
+                "lengthMenu": [100, 250, 500, 1000],
+                dom: "<'row'<'col-sm-2'l><'col-sm-5'B><'col-sm-5'f>>" +
+                    "<'row'<'col-sm-12'tr>>" +
+                    "<'row'<'col-sm-5'i><'col-sm-7'p>>",
+
+                columnDefs: [
+                { responsivePriority: 1, targets: 0 },
+                { responsivePriority: 2, targets: 2 },
+                { "type": "date", "targets": [1] }
+                ],
+                        buttons: [
+                            {
+                                extend: 'print',
+                                text: '<i class=""> Print</i>',
+                                title: 'Chek10&#x27;s  Account Ledger',
+                                titleAttr: 'Copy'
+                            },
+                            {
+                                extend: 'excelHtml5',
+                                text: '<i class=""> Excel</i>',
+                                title: 'Chek10&#x27;s  Account Ledger',
+                                titleAttr: 'Excel'
+                            },
+                            {
+                                extend: 'pdfHtml5',
+                                text: '<i class=""> PDF</i>',
+                                title: 'Chek10&#x27;s  Account Ledger',
+                                titleAttr: 'PDF'
+                            }
+                        ]
+
+            });
+
+            if (IsMobile()) {
+            new $.fn.dataTable.Responsive( tblLed, {
+                details: {
+                    display: $.fn.dataTable.Responsive.display.childRowImmediate
+                }
+            });
+        }
+        });
+    </script>
+
+</body>
+</html>

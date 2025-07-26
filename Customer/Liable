@@ -1,0 +1,1095 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="google" content="notranslate" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Sports Trading Platform">
+    <meta name="keyword" content="sports trading, bet, betfair">
+    <meta name="robots" content="noindex" />
+
+    <link rel="shortcut icon" href="/img/favicon/BetPro.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="/img/sprites/css/sprite.css" />
+    <link rel="stylesheet" href="/dist/site.css?62000" />
+    <link href="/css/BetPro-style.css?62000" rel="stylesheet" />
+
+    <title>Liabilities | BetPro</title>
+    <style>
+        .body {
+            min-height: 91.7vh;
+        }
+
+        center a {
+            color: white;
+        }
+
+        center a {
+            font-size: 13px;
+        }
+    </style>
+
+    <script>
+        const pricesUrl = "https://prices9.mgs11.com/api";
+        const ordersUrl = "https://orders.mgs11.com/api";
+        const LiquidityRate = 35;
+        const SsocketUrl = "https://orders-ws2.mgs11.com/signalr";
+        const uwsUrl = "https://orders-ws2.mgs11.com/usershub";
+        const genSck = 1;
+        const CasSck = 1;
+        const casinoUrl = "https://casino-ws.mgs11.com/signalr";
+        // var SsocketEnable = 0;
+    </script>
+</head>
+<body class="bg-gray d-flex flex-column">
+    <div class="main-page">
+        <div class="row no-gutters">
+            <div class="col-md-3 col-lg-2" id="sidebar">
+                <div class="logo-bar">
+                    <a href="/Common/Dashboard">
+                        <span class="green-logo-text">BetPro</span>
+                    </a>
+                </div>
+                <div class="divider"></div>
+                <div class="sidebar-menu" style="height:100%;">
+                    <ul>
+                        
+
+<ul class="nav">
+
+
+
+<style>
+
+    @keyframes spin {
+        from {
+            transform: rotateY(0deg);
+            moz-transform: rotateY(0deg);
+            ms-transform: rotateY(0deg);
+        }
+
+        to {
+            transform: rotateY(360deg);
+            moz-transform: rotateY(360deg);
+            ms-transform: rotateY(360deg);
+        }
+    }
+
+    @-webkit-keyframes spin {
+        from {
+            -webkit-transform: rotateY(0deg);
+        }
+
+        to {
+            -webkit-transform: rotateY(360deg);
+        }
+    }
+
+    .imageSpin {
+        transition-delay: 5s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: inherit;
+        -webkit-animation-name: spin;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: initial;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-delay: 2s;
+    }
+
+    .imageSpin2 {
+        transition-delay: 3s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-duration: inherit;
+        -webkit-animation-name: spin;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: initial;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-delay: 2s;
+    }
+   
+
+    /*for spin2*/
+    #spinning-circle {
+        animation-name: spinning-circle;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @-webkit-keyframes spinning-circle {
+        0% {
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }
+
+        100% {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+        }
+    }
+
+    #invertcolor {
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        animation-name: spinning-circle;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+    #invertcolor2{
+         filter: invert(100%);
+        -webkit-filter: invert(100%);
+       animation-name: spin;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        max-height:30px;
+    }
+
+    #invertcolor3 {
+        filter: invert(100%);
+        -webkit-filter: invert(100%);
+        animation-name: spin;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        max-height: 30px;
+    }
+
+
+ .exgameblinker{
+   animation: animate 8s linear infinite;
+ } 
+  
+ @keyframes animate{
+   0%{
+     background-color:red;
+   }
+   25%{
+     background-color:inherit;
+   }
+   50%{
+     background-color:inherit;
+   }
+   75%{
+     background-color:inherit;
+   }
+   100%{
+     background-color:red;
+   }
+ }
+
+    .Galaxyblinker {
+        position: relative;
+        z-index: 0;
+    }
+
+        .Galaxyblinker::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: linear-gradient(90deg, #8a47ff 0%, #c36eff 100%);
+            opacity: 1;
+            animation: animateGradient 12s linear infinite;
+            transition: opacity 0.5s ease;
+        }
+
+    @keyframes animateGradient {
+        0%, 100%
+
+    {
+        opacity: 1;
+    }
+
+    25%, 50%, 75% {
+        opacity: 0;
+    }
+
+    }
+
+
+</style>
+
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-soccer svg-soccer-dims svg-span" role="img"></span>
+                <span>Soccer</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Soccer</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244845708">
+America MG v Criciuma                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244792967">
+Bayern Munich v Boca Juniors                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244804582">
+Guatemala v Panama                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244804786">
+Jamaica v Guadeloupe                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244840397">
+Kansas City (W) v Angel City FC (W)                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244793536">
+Los Angeles FC v Sportive De Tunis                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244840487">
+Racing Louisville FC (W) v Orlando Pride SC (W)                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244857727">
+Universitario de Deport v Asociacion Deportiva Ta                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244939610">
+USM Khenchela v MC El Bayadh                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-tennis svg-tennis-dims svg-span" role="img"></span>
+                <span>Tennis</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Tennis</strong></a></li>
+                    <li class="divider"></li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-cricket svg-cricket-dims svg-span" role="img"></span>
+                <span>Cricket</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Cricket</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244792514">
+England v India                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244951813">
+MI New York v Washington Freedom                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244952103">
+Seattle Orcas v Los Angeles Knight Riders                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244867013">
+Sri Lanka v Bangladesh                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244896900">
+Texas Super Kings v San Francisco Unicorns                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-horse svg-horse-dims svg-span" role="img"></span>
+                <span>Horse Race</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Horse Race</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959983">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T21:16:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Monmouth Park (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959996">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T21:30:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Penn National (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959989">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T21:40:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Los Alamitos (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959997">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T21:58:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Penn National (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959990">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:10:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Los Alamitos (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959998">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:25:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Penn National (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960002">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:30:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Evangeline Downs (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959991">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:40:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Los Alamitos (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959999">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:54:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Penn National (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960003">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:57:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Evangeline Downs (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960011">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:00:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Charles Town (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959992">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:10:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Los Alamitos (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960000">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:22:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Penn National (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960004">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:24:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Evangeline Downs (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960012">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:32:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Charles Town (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960020">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:35:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Lone Star Park (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244959993">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:40:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Los Alamitos (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960001">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:50:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Penn National (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960005">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:51:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Evangeline Downs (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960013">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:02:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Charles Town (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960021">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:02:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Lone Star Park (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960006">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:18:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Evangeline Downs (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960022">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:29:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Lone Star Park (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960014">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:32:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Charles Town (US)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244960007">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:46:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Evangeline Downs (US)</span>
+                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+        <li style="width:100%;">
+
+            <a href="#" class="dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="svg-greyhound-racing svg-greyhound-racing-dims svg-span" role="img"></span>
+                <span>Greyhound</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="nav">
+                <ul class="sub-menu" href="#">
+
+                    <li><a href="#"><strong>All Greyhound</strong></a></li>
+                    <li class="divider"></li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244958554">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T21:22:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Sunderland (GB)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964189">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:00:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964194">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:15:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964249">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:20:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964199">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:30:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964254">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:35:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964204">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:45:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964259">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T22:50:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964209">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:00:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964264">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:06:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964214">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:15:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964269">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:22:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964219">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:30:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964274">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:38:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964224">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:45:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964279">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-20T23:55:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964229">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:00:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964284">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:10:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964234">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:15:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Taree (AU)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/Common/market/?id=1.244964289">
+                                        <span class="market-time">
+                                        </span>
+                                        <span class="d-none utctime" data-format="h:mm A">
+                                            2025-06-21T00:26:00.0000000Z
+                                        </span>
+                                        <span class="race-venue">Angle Park (AU)</span>
+                                </a>
+                            </li>
+                </ul>
+            </div>
+        </li>
+
+
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/sap" class="dropdown-toggle" role="button">
+                <span class="svg-Casino svg-Casino-dims imageSpin2" role="img"></span>
+                <span>Sports Book</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/RSC" class="dropdown-toggle" role="button">
+                <i style="font-size:17px;" class='fas fa-star fa-2x fa-spin fa-lg'></i>
+                <span>RoyalStar Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a href="/Common/Games" class="dropdown-toggle" role="button">
+                <img id="spinning-circle" src="/img/v2/livegameing.png" onerror="this.onerror = null; this.src= null" alt="G">
+                <span>Star Casino</span>
+            </a>
+
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/WorldCasino">
+                <img id="invertcolor" style="background:invert(100%)" src="/img/v2/worldcasinosvg.png" alt="WC" />
+                <span>World Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/Dream">
+                <span class="svg-Casino svg-Casino-dims imageSpin2" role="img"></span>
+                <span>Royal Casino</span>
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/ExGames">
+                <img id="invertcolor2" src="/img/v2/BLogo.png" />
+                <span>BetFairGames</span>
+            </a>
+         </li>
+        <li class="nav-item exgameblinker" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/BetProGames">
+                <img id="invertcolor3" src="/img/v2/TPS.png" />
+                <span>TeenPatti Studio</span>
+            </a>
+        </li>
+        <li class="nav-item Galaxyblinker" style="width:100%;">
+            <a class="dropdown-toggle" role="button" href="/Common/Galaxy">
+                <img src="/img/v2/Glogo.png" />
+                <span>Galaxy Casino</span>
+            </a>
+        </li>
+
+    <li class="divider"></li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Customer/Liable">
+                <span class="svg-colossus svg-colossus-dims svg-span" role="img"></span> 
+                Current Position
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Common/Dashboard">
+                <span class="svg-soccer svg-soccer-dims svg-span" role="img"></span> 
+                All Sports
+            </a>
+        </li>
+        <li class="nav-item" style="width:100%;">
+            <a class="nav-link" href="/Common/Result">
+                <span class="svg-clipboard svg-clipboard-dims svg-span" role="img"></span> 
+                Results
+            </a>
+        </li>
+    <li class="nav-item" style="width:100%;">
+        <a class="nav-link" href="#" onclick="ShowExchangeRules(); return false;">
+            <i class="fa fa-info-circle"></i>Market Rules
+        </a>
+    </li>
+    <li class="nav-item" style="width:100%;">
+        <a class="nav-link" href="#" onclick="ShowTos(); return false;">
+            <i class="fa fa-info-circle"></i>Terms &amp; Conditions
+        </a>
+    </li>
+</ul>
+<script>
+    function ShowExchangeRules() {
+        $("#modalMarketRules").modal('show');
+
+        $.get("/rules.html", function (data) {
+            $("#modalMarketRules .modal-body").html(data);
+        });
+    }
+
+    function ShowTos() {
+        $("#modalTos").modal('show');
+        $.get("/tos.html", function (data) {
+            $("#modalTos .modal-body").html(data);
+        });
+    }
+</script>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md" id="main-wrap">
+                <div class="header">
+                    <button class="burger-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <ul class="top-nav">
+                        <li><a href="/Common/Dashboard">Dashboard</a></li>
+                    </ul>
+
+                    <div id="sticky-footer" style="width:50vw; padding:0px; margin:0px; float:left; " class="py-1 bg-black text-white">
+                        <div class="container text-center" style="padding:0px; margin:0px;">
+                            <ul id="news-ticker-foot" style="padding:0px; margin:0px;">
+                                <li data-update="item1" style="padding:0px; margin:0px;">Welcome to BetPro</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown-wrap">
+                        <div class="dropdown">
+
+                            <div class="designation">
+                                <span class="wallet-balance">B: -</span>
+                                <span class="wallet-exposure"> | L: - |</span>
+                            </div>
+
+                            <button class="btn profile-dropdown dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    alsBettor
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="/Customer/Ledger/">Statement</a>
+                                <a class="dropdown-item" href="/Common/Result/">Result</a>
+                                <a class="dropdown-item" href="/Customer/ProfitLoss/">Profit Loss</a>
+                                <a class="dropdown-item" href="/Customer/Bets">Bet History</a>
+                                <a class="dropdown-item" href="/Customer/Profile">Profile</a>
+                                <a class="dropdown-item" id="btn-logout" href="/Common/Logout">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-wrap body">
+                    
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <strong>
+                    Market Position
+                </strong>
+                <a class="btn btn-sm btn-primary" href="/Customer/Liable">
+                    <strong>Refresh</strong>
+                </a>
+            </div>
+            <div class="card-body">
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Market Rules -->
+    <div class="modal fade" id="modalMarketRules" tabindex="-1" role="dialog" aria-labelledby="modalMarketRules" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Market Rules</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div id="market-rules-text" class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ToS -->
+    <div class="modal fade" id="
+         " tabindex="-1" role="dialog" aria-labelledby="modalTos" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Terms and conditions</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-body">
+                    <b>Protection of minors</b>
+                    <br />
+                    <p> It is illegal for anybody under the age of 18 to gamble. </p>
+                    <br />
+                    <p>Our site has strict policies and verification measures to prevent access to minors.</p>
+                    <br />
+                    <p>We encourage parents consider the use of internet use protection tools. You may find the following links useful. </p>
+                    <br />
+                    <a href="https://www.cyberpatrol.com/" target="_blank" style="color:mediumspringgreen">  Cyberpatrol</a>
+                    <br />
+                    <a href="https://www.cybersitter.com/" target="_blank" style="color:mediumspringgreen">  Cybersitter </a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="sticky-footer" class="py-1 bg-dark text-white-50 Bl_NT_SF">
+        <div class="col-12 container" style="background-color:#4dbd74; height:6px; margin-top:-4px;">
+        </div>
+        <div class="container text-center">
+            <center>
+                    
+<style>
+    p{
+        font-size:12px;
+        color:white;
+    }
+    .caoimg{
+        max-width:60px;
+    }
+    .bffooter{
+                    width: 135px;
+                    height: 30px;
+            }
+            .curasaoLinks {
+               pointer-events: none;
+               cursor: default;
+               margin-top:10px;
+            }
+@media screen and (max-width: 635px) {
+            .caoimg {
+                max-width:40px;
+            }
+            .bffooter{
+                    width: 100px;
+                    height: 30px;
+            }
+        }
+</style>
+
+
+<div class="curasaoLinks row" style="display:inline-flex;" id="curacaodiv">
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", (event) => {
+        document.querySelector('#curacaodiv').insertAdjacentHTML(
+            'afterbegin',
+            `<hr>
+                <div class="col-sm-12 col-md-4"></div>
+                <div class="col-md-4"></div>`);
+    });
+</script>
+
+            </center>
+           
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://wurfl.io/wurfl.js"></script>
+    <script type="text/javascript" src="/dist/bundle0a.js?62000"></script>
+
+    <script>
+        const token = getCookie('wexscktoken');
+        const sess = getCookie('wex3authtoken');
+        const reft = getCookie('wex3reftoken');
+    </script>
+
+    
+
+    <script>
+        $(document).ready(function () {
+            pollRefreshToken();
+        });
+
+        if (genSck === 1) {
+            const signalRConnection = new UWS(uwsUrl, token, sess);
+            signalRConnection.connect();
+        }
+        else {
+            pollUserData();
+        }
+    </script>  
+</body>
+</html>

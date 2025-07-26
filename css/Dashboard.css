@@ -1,0 +1,425 @@
+.maindiv {
+    width: auto;
+    height: 70px;
+    padding: 5px;
+    border-right: 1px solid black;
+}
+
+.horseheading {
+    background: #2B2F35;
+    font-size: 20px;
+    color: #ffff;
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 0px;
+}
+
+.mename {
+    font-size: 14px;
+}
+
+
+.RaceCards__header___M-uFV {
+    background-color: #DDDDDD;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    height: 35px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0 4px 0 0px;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    z-index: 1000
+}
+.TMFORDESK {
+    display: contents;
+}
+.TMFORMOB {
+    display: none;
+}
+.RaceCards__main___1LtHz {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+    -webkit-align-items: center;
+    align-items: center;
+    height: auto;
+    overflow: hidden;
+}
+
+.RaceCards__containerCards--visible___2dYzv {
+    height: auto
+}
+
+.RaceCards__containerCards___13Mow {
+    background-color: #FFFFFF;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    overflow-x: hidden;
+    position: relative;
+    transition: height .25s ease-in-out;
+    transition-delay: .7s;
+    will-change: height;
+    width: 100%
+}
+
+.RaceCards__containerCard___18XHk {
+    padding: 5px;
+    display: -webkit-flex;
+    display: inline-block;
+    height: 100%;
+    width: 20%;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 100;
+    -webkit-flex-grow: 0;
+    flex-grow: 0
+}
+
+.RaceCard__main___3BZd5 {
+    background-color: #FFFFFF;
+    border: 1px solid #808080;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+}
+
+.RaceCard__link___xaIHa {
+    font-size: 15px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: black;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    padding: 0 4px
+}
+
+    .RaceCard__link___xaIHa:hover {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        color: forestgreen;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        padding: 0 4px
+    }
+
+.imghorse {
+    width: 28px;
+    height: 30px;
+    color: black;
+    fill: #fff;
+    filter: invert(75%) sepia(5%) saturate(1257%) hue-rotate(177deg) brightness(95%) contrast(92%);
+}
+
+.inrow {
+    padding-top: 5px;
+}
+
+.anchorr {
+    padding-top: 1px;
+    margin: auto;
+    font-size: 14px;
+    border: 1px solid #808080;
+    width: auto;
+    color: black;
+}
+
+.incontainer {
+    padding: 0px;
+}
+
+.chk11 {
+    border-right: 1px solid #DDDDDD;
+    margin-right: 0px;
+    width: auto;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    line-height: 1;
+}
+
+.slick-slide {
+    margin: 0 2px;
+}
+
+.slick-list {
+    margin: 0 -2px;
+}
+
+@media screen and (min-width: 720px) {
+    .chkmobile {
+        font-size: 14px;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #raceslider {
+        margin-left: 3vw;
+    }
+}
+
+#raceslider {
+    margin-left: 4vw;
+}
+
+@media screen and (max-width: 480px) {
+    .TMFORDESK {
+        display: none;
+    }
+
+    .TMFORMOB {
+        display: contents;
+    }
+
+    #raceslider {
+        margin-left: 29px;
+    }
+
+    .chkmobile {
+        font-size: 11px;
+    }
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+        margin: 0px 2px;
+    }
+
+        .slick-slide a {
+            width: 100%;
+        }
+
+    .slick-prev:before,
+    .slick-next:before {
+        color: black;
+    }
+
+
+    .slick-slide {
+        transition: all ease-in-out .3s;
+        /*opacity: .2;*/
+    }
+    /*.slick-active {
+            opacity: .5;
+        }*/
+
+    .slick-current {
+        opacity: 1;
+    }
+
+    .mobilewidth {
+        min-width: 24vw;
+    }
+
+
+    #owlitemactive1 {
+        text-align: center;
+        background-color: rgb(0, 177, 129);
+        color: white;
+        margin: 1px;
+        min-height: 77px;
+        margin-left: 15px;
+        max-height: 77px;
+    }
+
+    #owlitemactive2 {
+        text-align: center;
+        background-color: grey;
+        color: white;
+        max-height: 77px;
+        min-height: 77px;
+        margin: 1px;
+    }
+
+    #owlitemactive3 {
+        text-align: center;
+        background-color: grey;
+        color: white;
+        margin: 1px;
+        max-height: 77px;
+        min-height: 77px;
+    }
+
+    #owlitemactive4 {
+        text-align: center;
+        background-color: grey;
+        color: white;
+        margin: 1px;
+        max-height: 77px;
+        min-height: 77px;
+    }
+
+
+
+    #owlitemactive1:hover {
+        background-color: rgb(0, 177, 131);
+    }
+
+    #owlitemactive2:hover {
+        background-color: #43444A;
+    }
+
+    #owlitemactive3:hover {
+        background-color: #43444A;
+    }
+
+    #owlitemactive4:hover {
+        background-color: #43444A;
+    }
+
+    .Tabsvgs {
+        min-width: 30px;
+        max-width: 30px;
+        min-height: 30px;
+        max-height: 30px;
+    }
+
+    .tabsvgdiv {
+        min-width: 30px;
+        max-width: 30px;
+        min-height: 30px;
+        max-height: 30px;
+        margin-left: 25px;
+    }
+    
+}
+
+
+.slidedate {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.slidename {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/*! CSS Used from: https://fonts.googleapis.com/icon?family=Material+Icons */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v97/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+#owlitemactive1 {
+    text-align: center;
+    /*background-color: rgb(0, 177, 129);*/
+    color: white;
+    margin: 1px;
+    min-height: 77px;
+    margin-left: 15px;
+    max-height: 77px;
+}
+
+#owlitemactive2 {
+    text-align: center;
+    background-color: var(--gray);
+    color: white;
+    max-height: 77px;
+    min-height: 77px;
+    margin: 1px;
+}
+
+#owlitemactive3 {
+    text-align: center;
+    background-color: var(--gray);
+    color: white;
+    margin: 1px;
+    max-height: 77px;
+    min-height: 77px;
+}
+
+#owlitemactive4 {
+    text-align: center;
+    background-color: var(--gray);
+    color: white;
+    margin: 1px;
+    max-height: 77px;
+    min-height: 77px;
+}
+
+
+
+#owlitemactive1:hover {
+    /*background-color: rgb(0, 177, 131);*/
+}
+
+#owlitemactive2:hover {
+    background-color: #43444A;
+}
+
+#owlitemactive3:hover {
+    background-color: #43444A;
+}
+
+#owlitemactive4:hover {
+    background-color: #43444A;
+}
+
+.Tabsvgs {
+    min-width: 30px;
+    max-width: 30px;
+    min-height: 30px;
+    max-height: 30px;
+}
+
+.tabsvgdiv {
+    min-width: 30px;
+    max-width: 30px;
+    min-height: 30px;
+    max-height: 30px;
+    margin-left: 25px;
+}
+
+.blink_me {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.3;
+    }
+}
+
+.imghorseb {
+    font-size: 16px;
+    font-weight: 700;
+    color: #2b2f35;
+}
