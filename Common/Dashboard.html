@@ -838,7 +838,7 @@
 <script>
   async function loadgreyhoundMatches() {
     try {
-      const response = await fetch('https://casinorealbackend-production.up.railway.app/api/markets/live/greyhound');
+      const response = await fetch('http://localhost:5000/api/markets/live/greyhound');
       const result = await response.json();
 
       const listContainer = document.querySelector('.greyhounditems');
@@ -878,7 +878,7 @@
 <script>
   async function loadhorseMatches() {
     try {
-      const response = await fetch('https://casinorealbackend-production.up.railway.app/api/markets/live/horse');
+      const response = await fetch('http://localhost:5000/api/markets/live/horse');
       const result = await response.json();
 
       const listContainer = document.querySelector('.horseEventList');
@@ -915,7 +915,7 @@
 <script>
   async function loadTennisMatches() {
     try {
-      const response = await fetch('https://casinorealbackend-production.up.railway.app/api/markets/live/tennis');
+      const response = await fetch('http://localhost:5000/api/markets/live/tennis');
       const result = await response.json();
 
       const listContainer = document.querySelector('.tennisEventList');
@@ -944,7 +944,7 @@
 
   async function loadFootballMatches() {
     try {
-      const response = await fetch('https://casinorealbackend-production.up.railway.app/markets/live/football');
+      const response = await fetch('http://localhost:5000/api/markets/live/football');
       const result = await response.json();
 
       const listContainer = document.querySelector('.footballEventList');
@@ -975,7 +975,7 @@
 
   async function loadCricketMatches() {
     try {
-      const response = await fetch('https://casinorealbackend-production.up.railway.app/api/markets/live/cricket');
+      const response = await fetch('http://localhost:5000/api/markets/live/cricket');
       const result = await response.json();
 
       const ul = document.querySelector('.cricketEventList');
