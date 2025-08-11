@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="/dist/site.css" />
     <link href="/css/BetPro-style.css" rel="stylesheet" />
 
-    <title>England v India | BetPro</title>
+    <!-- <title>England v India | BetPro</title> -->
     <style>
         .body {
             min-height: 91.7vh;
@@ -32,7 +32,7 @@
     </style>
 
     <script>
-        const pricesUrl = "https://prices9.bfexch.com/api";
+        const pricesUrl = "http://localhost:5000/api";
         const ordersUrl = "https://orders.bfexch.com/api";
         const LiquidityRate = 35;
         const SsocketUrl = "https://orders-ws2.bfexch.com/signalr";
@@ -210,7 +210,21 @@
     }
 
     }
+.match-card {
+  /* background-color: #1a1a1a; */
+  color: white;
+  margin-bottom: 12px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.05);
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
 
+.match-card:hover {
+  background-color: #2a2a2a;
+}
 
 </style>
 
@@ -225,14 +239,8 @@
 
                     <li><a href="#"><strong>All Soccer</strong></a></li>
                     <li class="divider"></li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245243942">
-AEK Larnaca v Partizan Belgrade                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245402344">
-Vllaznia Shkoder v BFC Daugavpils                                </a>
-                            </li>
+     <ul class="footballEventList">
+                                </ul>
                 </ul>
             </div>
         </li>
@@ -247,14 +255,8 @@ Vllaznia Shkoder v BFC Daugavpils                                </a>
 
                     <li><a href="#"><strong>All Tennis</strong></a></li>
                     <li class="divider"></li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245467047">
-A Sabalenka v A Anisimova                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245484745">
-M Sherif v Dar Semenistaja                                </a>
-                            </li>
+                       <ul class="tennisEventList">
+                            </ul>
                 </ul>
             </div>
         </li>
@@ -269,14 +271,11 @@ M Sherif v Dar Semenistaja                                </a>
 
                     <li><a href="#"><strong>All Cricket</strong></a></li>
                     <li class="divider"></li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245405948">
-England v India                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245410884">
-West Indies v Australia                                </a>
-                            </li>
+                        <ul class="cricketEventList ">
+                                <!-- <a class="nav-link" href="/Common/market/?id=1.245405948"> -->
+<!-- England v India                                </a> -->
+                                </ul>
+                            <!-- </li> -->
                 </ul>
             </div>
         </li>
@@ -291,256 +290,15 @@ West Indies v Australia                                </a>
 
                     <li><a href="#"><strong>All Horse Race</strong></a></li>
                     <li class="divider"></li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245462863">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:10:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Kenilworth (ZA)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245481915">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:25:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Turffontein (ZA)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245456338">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:30:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Doncaster (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245456340">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:30:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Doncaster (GB) (PLACE)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245462896">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:45:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Kenilworth (ZA)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245455944">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:50:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Newmarket (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245455946">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:50:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Newmarket (GB) (PLACE)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245456345">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T13:00:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Doncaster (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245456346">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T13:00:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Doncaster (GB) (PLACE)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245481917">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T13:05:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Turffontein (ZA)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245456013">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T13:10:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Carlisle (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245456014">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T13:10:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Carlisle (GB) (PLACE)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245462988">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T13:20:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Kenilworth (ZA)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245455949">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T13:25:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Newmarket (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245455951">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T13:25:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Newmarket (GB) (PLACE)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245456352">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T13:35:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Doncaster (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245456354">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T13:35:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Doncaster (GB) (PLACE)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245481919">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T13:40:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Turffontein (ZA)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245456020">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T13:45:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Carlisle (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245456021">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T13:45:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Carlisle (GB) (PLACE)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245462990">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T13:55:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Kenilworth (ZA)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245455956">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T14:00:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Newmarket (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245455958">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T14:00:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Newmarket (GB) (PLACE)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245456359">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T14:10:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Doncaster (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245456360">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T14:10:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Doncaster (GB) (PLACE)</span>
-                                </a>
-                            </li>
+                      <ul class="horseEventList">
+                                <!-- <a class="nav-link" href="/Common/market/?id=1.245481913"> -->
+                                        <!-- <span class="market-time"> -->
+                                        <!-- </span> -->
+                                        <!-- <span class="d-none utctime" data-format="h:mm A"> -->
+                                            <!-- 2025-07-10T11:50:00.0000000Z -->
+                                        <!-- </span> -->
+                                        <!-- <span class="race-venue">Turffontein (ZA)</span> -->
+                                        </ul>
                 </ul>
             </div>
         </li>
@@ -555,206 +313,16 @@ West Indies v Australia                                </a>
 
                     <li><a href="#"><strong>All Greyhound</strong></a></li>
                     <li class="divider"></li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245487616">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:08:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Nottingham (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245479058">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:17:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Mandurah (AU)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245490523">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:17:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Sheffield (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245475133">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:20:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Angle Park (AU)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245471489">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:23:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Dapto (AU)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245475083">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:26:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Q1 Lakeside (AU)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245487618">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:26:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Nottingham (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245472827">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:29:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Sandown Park (AU)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245474665">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:32:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Hobart (AU)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245490525">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:33:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Sheffield (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245479063">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:36:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Mandurah (AU)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245475138">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:40:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Angle Park (AU)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245487620">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:42:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Nottingham (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245471494">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:44:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Dapto (AU)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245474670">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:47:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Hobart (AU)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245490527">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:51:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Sheffield (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245479068">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:55:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Mandurah (AU)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245489404">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:57:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Towcester (GB)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245475143">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:58:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Angle Park (AU)</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/Common/market/?id=1.245487622">
-                                        <span class="market-time">
-                                        </span>
-                                        <span class="d-none utctime" data-format="h:mm A">
-                                            2025-07-10T12:59:00.0000000Z
-                                        </span>
-                                        <span class="race-venue">Nottingham (GB)</span>
-                                </a>
-                            </li>
+                          <ul class="greyhounditems">
+                                <!-- <a class="nav-link" href="/Common/market/?id=1.245475078"> -->
+                                        <!-- <span class="market-time"> -->
+                                        <!-- </span> -->
+                                        <!-- <span class="d-none utctime" data-format="h:mm A"> -->
+                                            <!-- 2025-07-10T12:05:00.0000000Z -->
+                                        <!-- </span> -->
+                                        <!-- <span class="race-venue">Q1 Lakeside (AU)</span> -->
+                                <!-- </a> -->
+                            </ul>
                 </ul>
             </div>
         </li>
@@ -1212,14 +780,564 @@ West Indies v Australia                                </a>
 </style>
 
 <script>
-    const marketId = '1.245405948';
-    const eventId = '34484327';
+  async function getSportByMarketId(marketId) {
+    try {
+      const res = await fetch(`https://casinorealbackend-production.up.railway.app/api/markets/catalog2?id=${marketId}`);
+      const data = await res.json();
+      console.log("Catalog2 API response:", data);
+      const matchName = data.eventName || data.match || 'Unknown Match';
+      document.title = `${matchName} | BetPro`; // <-- yaha title set ho jayega
+
+      // Backend response me 'sport.name' ya 'sportName' ya 'eventType' ho sakta hai
+      // Tumhare backend ke hisaab se adjust karo yeh line:
+      return data.sport?.name || data.sportName || data.eventType || 'Cricket';    } catch (error) {
+      console.error("Error fetching sport by marketId:", error);
+      return 'cricket';  // Default fallback sport
+    }
+  }
+
+  // 2. Us sport ke related 5 live matches fetch kar ke show karne wali function
+async function loadRelatedEventsBySport(sport) {
+  try {
+    const normalizedSport = sport.toLowerCase();
+
+    const res = await fetch(`https://casinorealbackend-production.up.railway.app/api/markets/live/${sport}`);
+    const result = await res.json();
+
+    const tbody = document.getElementById('relatedEventsBody');
+    tbody.innerHTML = '';  // Purane events clear karo
+
+    if (result.status === 'success' && Array.isArray(result.data) && result.data.length > 0) {
+      const events = result.data.slice(0, 5);  // Sirf 5 latest events
+
+      events.forEach(event => {
+        const startTime = new Date(event.marketStartTime || event.startTime);
+        const localTime = startTime.toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+
+        const today = new Date();
+        const eventDate = new Date(event.marketStartTime || event.startTime);
+
+        let dayLabel = 'Upcoming';
+        if (eventDate.toDateString() === today.toDateString()) {
+          dayLabel = 'Today';
+        } else {
+          const tomorrow = new Date();
+          tomorrow.setDate(today.getDate() + 1);
+          if (eventDate.toDateString() === tomorrow.toDateString()) {
+            dayLabel = 'Tomorrow';
+          }
+        }
+
+        const tr = document.createElement('tr');
+        tr.className = 'relatedtr';
+        tr.style.cursor = 'pointer';
+        tr.onclick = () => {
+          window.location.href = `/Common/market.html?id=${event.marketId}`;
+        };
+
+        tr.innerHTML = `
+          <td class="sport-date" style="font-size:14px; padding:0 20px;">
+            <div>
+              <span class="day">${dayLabel}</span>
+              <span class="market-time">${localTime}</span>
+              <span class="d-none utctime" data-format="H:mm" data-target="time">${event.marketStartTime || event.startTime}</span>
+            </div>
+          </td>
+          <td>
+            <div>${event.marketName || event.match || 'Unknown Match'}</div>
+          </td>
+        `;
+
+        tbody.appendChild(tr);
+      });
+
+    } else {
+      tbody.innerHTML = `<tr><td colspan="2" style="text-align:center; color:white;">No ${sport} matches found.</td></tr>`;
+    }
+  } catch (error) {
+    console.error(`Error loading ${sport} matches:`, error);
+  }
+}
+
+
+  // 3. Page load pe ye init hoga
+async function initRelatedEvents() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const marketId = urlParams.get('id');
+
+  if (!marketId) {
+    console.warn('No market ID found in URL');
+    return;
+  }
+
+  const sport = await getSportByMarketId(marketId);
+  console.log("Sport name:", sport); // Add this to verify
+  loadRelatedEventsBySport(sport);
+}
+
+initRelatedEvents();
+
+    const urlParams = new URLSearchParams(window.location.search);
+
+    const marketId = urlParams.get('id');
+    // const marketId = "3484884"
+
+    const eventId = '34567355';
     const timeCode = '';
 
     const CommentrySignalR = 1;
     const SsocketEnable = 1;
     const CatalogSignalR = 0; //1;
 </script>
+<script>
+  async function loadgreyhoundMatches() {
+    try {
+      const response = await fetch('https://casinorealbackend-production.up.railway.app/api/markets/live/greyhound');
+      const result = await response.json();
+
+      const listContainer = document.querySelector('.greyhounditems');
+      listContainer.innerHTML = ''; // Clear existing
+
+      if (result.status === 'success' && result.data.length > 0) {
+        result.data.forEach(match => {
+          const li = document.createElement('li');
+          li.classList.add('match-card'); // ✅ Custom style class
+
+          const startTime = new Date(match.startTime);
+          const timeStr = startTime.toLocaleTimeString('en-US', {
+            hour: 'numeric',
+            minute: '2-digit',
+            hour12: true
+          }).toLowerCase(); // e.g., "4:50 PM" → "4:50 pm"
+
+          li.textContent = `${timeStr} ${match.match}`;
+
+          // ✅ Redirect on click to market.html with marketId
+          li.style.cursor = 'pointer';
+          li.addEventListener('click', () => {
+            window.location.href = `/Common/market.html?id=${match.marketId}`;
+          });
+
+          listContainer.appendChild(li);
+        });
+      } else {
+        listContainer.innerHTML = '<li style="color:white;">No live horse matches found.</li>';
+      }
+    } catch (err) {
+      console.error('⚠️ Error loading horse matches:', err.message);
+    }
+  }
+
+  loadgreyhoundMatches(); // auto load on page load
+</script>
+<script>
+  async function loadhorseMatches() {
+    try {
+      const response = await fetch('https://casinorealbackend-production.up.railway.app/api/markets/live/horse');
+      const result = await response.json();
+
+      const listContainer = document.querySelector('.horseEventList');
+      listContainer.innerHTML = ''; // Clear existing
+
+      if (result.status === 'success' && result.data.length > 0) {
+        result.data.forEach(match => {
+          const li = document.createElement('li');
+          li.classList.add('match-card'); // ✅ Custom style class
+
+          const startTime = new Date(match.startTime);
+          const timeStr = startTime.toLocaleTimeString('en-US', {
+            hour: 'numeric',
+            minute: '2-digit',
+            hour12: true
+          }).toLowerCase(); // e.g., "4:50 PM" → "4:50 pm"
+
+          li.textContent = `${timeStr} ${match.match}`;
+
+          // Click handler: Redirect to market.html with marketId or match info
+          // Assuming match.marketId exists; agar nahi hai toh backend mein bhi bhejna hoga
+          li.style.cursor = 'pointer';  // Cursor pointer for UX
+          li.addEventListener('click', () => {
+            // MarketId ko query param mein bhej rahe hain
+            window.location.href = `market.html?id=${encodeURIComponent(match.marketId)}`;
+          });
+
+          listContainer.appendChild(li);
+        });
+      } else {
+        listContainer.innerHTML = '<li style="color:white;">No live horse matches found.</li>';
+      }
+    } catch (err) {
+      console.error('⚠️ Error loading horse matches:', err.message);
+    }
+  }
+
+  loadhorseMatches(); // auto load on page load
+</script>
+
+<script>
+  async function loadCricketMatches() {
+    try {
+      const response = await fetch('https://casinorealbackend-production.up.railway.app/api/markets/live/cricket');
+      const result = await response.json();
+
+      const tbody = document.getElementById('cricketMatchContainer');
+      tbody.innerHTML = ''; // Clear old rows
+
+      const matchCountElement = document.getElementById('cricketMatchCount');
+
+      if (result.status === 'success' && Array.isArray(result.data)) {
+        matchCountElement.textContent = result.data.length;
+
+        result.data.forEach(match => {
+          const startTime = new Date(match.startTime);
+          const localTime = startTime.toLocaleTimeString('en-GB', {
+            hour: '2-digit',
+            minute: '2-digit'
+          });
+
+          const today = new Date();
+          const matchDate = new Date(match.startTime);
+
+          let dayLabel = match.inPlay ? 'InPlay' : 'Upcoming';
+          if (!match.inPlay) {
+            if (matchDate.toDateString() === today.toDateString()) {
+              dayLabel = 'Today';
+            } else {
+              const tomorrow = new Date();
+              tomorrow.setDate(today.getDate() + 1);
+              if (matchDate.toDateString() === tomorrow.toDateString()) {
+                dayLabel = 'Tomorrow';
+              }
+            }
+          }
+
+          const bgClass = match.inPlay ? 'bg-primary' : 'bg-rgb(255, 255, 255)';
+          const textColor = match.inPlay ? 'white' : 'black';
+
+          const icons = `
+            <span class="svg-DBM svg-DBM-dims svg-span" role="img" aria-label="bm"></span>
+          `;
+
+        // ... [SAME CODE ABOVE]
+
+const row = document.createElement('tr');
+row.id = `m_${match.marketId}`;
+row.className = `m_${match.marketId} McomCustom`;
+
+row.innerHTML = `
+  <td class="sport-date ${bgClass}" style="color:${textColor};">
+    <div>
+      <span class="day">${dayLabel}</span>
+      <span class="market-time">${localTime}</span>
+      <span class="d-none utctime" data-format="H:mm">${match.startTime}</span>
+    </div>
+  </td>
+
+  <td>
+    <div class="teams">
+    <strong class="team-1 match-link" style="cursor: pointer;" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">
+        ${match.match}
+      </strong>
+      <strong class="team-2"><a href=""></a></strong>
+    </div>
+  </td>
+
+  <td>
+    <div class="matched">
+      ${icons}
+      <span class="TMFORDESK">${match.totalMatched}</span>
+    </div>
+    <span class="TMFORMOB">${match.totalMatched}</span>
+  </td>
+
+  <td><div class="box -blue"><strong>${match.odds.back1.price}</strong><span>${match.odds.back1.size}</span></div></td>
+  <td><div class="box -pink"><strong>${match.odds.lay1.price}</strong><span>${match.odds.lay1.size}</span></div></td>
+
+  <td><div class="box -blue m-left"><strong>${match.odds.back2.price}</strong><span>${match.odds.back2.size}</span></div></td>
+  <td><div class="box -pink m-right"><strong>${match.odds.lay2.price}</strong><span>${match.odds.lay2.size}</span></div></td>
+
+  <td><div class="box -blue"><strong>${match.odds.backX.price}</strong><span>${match.odds.backX.size}</span></div></td>
+  <td><div class="box -pink"><strong>${match.odds.layX.price}</strong><span>${match.odds.layX.size}</span></div></td>
+
+  <td class="action"><a href="#"><i class="fa fa-info-circle"></i></a></td>
+`;
+
+// ✅ Add click event ONLY on match name
+// Wait until it's in the DOM
+setTimeout(() => {
+  const matchLink = row.querySelector('.match-link');
+  if (matchLink) {
+    matchLink.addEventListener('click', (e) => {
+      e.stopPropagation(); // prevent parent events
+      window.location.href = `/Common/market.html?id=${match.marketId}`;
+    });
+  }
+}, 0);
+
+tbody.appendChild(row);
+
+        });
+      } else {
+        matchCountElement.textContent = '0';
+        tbody.innerHTML = `<tr><td colspan="10" style="text-align:center; color:white;">No live matches found.</td></tr>`;
+      }
+    } catch (err) {
+      console.error('Error loading cricket matches:', err);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    loadCricketMatches();
+    // setInterval(loadCricketMatches, 30000); // auto-refresh every 30 sec
+  });
+</script>
+<script>
+  async function loadInPlayCricketMatches() {
+    try {
+      const response = await fetch('https://casinorealbackend-production.up.railway.app/api/markets/live/cricket');
+      const result = await response.json();
+
+      const tbody = document.getElementById('inPlayMatchesContainer');
+      tbody.innerHTML = ''; // Clear previous rows
+
+      if (result.status === 'success' && Array.isArray(result.data)) {
+        const inPlayMatches = result.data.filter(match => match.inPlay === true);
+
+       if (inPlayMatches.length === 0) {
+          setTimeout(() => {
+            if (document.getElementById('inPlayMatchesContainer')) {
+              tbody.innerHTML = `<tr><td colspan="10" style="text-align:center; color:white;"></td></tr>`;
+            }
+          }, 100);
+          return;
+        }
+
+        inPlayMatches.forEach(match => {
+          const startTime = new Date(match.startTime);
+          const localTime = startTime.toLocaleTimeString('en-GB', {
+            hour: '2-digit',
+            minute: '2-digit'
+          });
+
+          const row = document.createElement('tr');
+          row.id = `m_${match.marketId}`;
+          row.className = `m_${match.marketId} McomCustom`;
+
+          row.innerHTML = `
+            <td class="sport-date bg-primary" style="color:white;">
+              <div>
+                <span class="day">InPlay</span>
+                <span class="market-time">${localTime}</span>
+                <span class="d-none utctime" data-format="H:mm">${match.startTime}</span>
+              </div>
+            </td>
+
+            <td>
+              <div class="teams">
+                <strong class="team-1">
+                  <a href="/Common/Market?id=${match.marketId}">
+                    ${match.match}
+                  </a>
+                </strong>
+                <strong class="team-2"><a href=""></a></strong>
+              </div>
+            </td>
+
+            <td>
+              <div class="matched">
+                <span class="svg-DBM svg-DBM-dims svg-span" role="img" aria-label="bm"></span>
+                <span class="TMFORDESK">${match.totalMatched}</span>
+              </div>
+              <span class="TMFORMOB">${match.totalMatched}</span>
+            </td>
+
+            <td><div class="box -blue"><strong>${match.odds.back1.price}</strong><span>${match.odds.back1.size}</span></div></td>
+            <td><div class="box -pink"><strong>${match.odds.lay1.price}</strong><span>${match.odds.lay1.size}</span></div></td>
+
+            <td><div class="box -blue m-left"><strong>${match.odds.backX.price}</strong><span>${match.odds.backX.size}</span></div></td>
+            <td><div class="box -pink m-right"><strong>${match.odds.layX.price}</strong><span>${match.odds.layX.size}</span></div></td>
+
+            <td><div class="box -blue"><strong>${match.odds.back2.price}</strong><span>${match.odds.back2.size}</span></div></td>
+            <td><div class="box -pink"><strong>${match.odds.lay2.price}</strong><span>${match.odds.lay2.size}</span></div></td>
+
+            <td class="action"><a href="#"><i class="fa fa-info-circle"></i></a></td>
+          `;
+           row.addEventListener('click', function() {
+              window.location.href = `market.html?id=${match.marketId}`;
+            });
+          tbody.appendChild(row);
+        });
+      } else {
+        tbody.innerHTML = `<tr><td colspan="10" style="text-align:center; color:white;">Error loading matches.</td></tr>`;
+      }
+    } catch (err) {
+      console.error('Error loading InPlay cricket matches:', err);
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    loadInPlayCricketMatches();
+    // setInterval(loadInPlayCricketMatches, 30000);
+  });
+</script>
+<script>
+  function slugify(text) {
+    return text
+      .toString()
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, '') // remove special chars
+      .replace(/\s+/g, '-')        // space to hyphen
+      .trim();
+  }
+
+  async function loadTennisMatches() {
+    try {
+      const response = await fetch('https://casinorealbackend-production.up.railway.app/api/markets/live/tennis');
+      const result = await response.json();
+
+      const listContainer = document.querySelector('.tennisEventList');
+      listContainer.innerHTML = ''; // Clear existing
+
+      if (result.status === 'success' && result.data.length > 0) {
+        result.data.forEach(match => {
+          const li = document.createElement('li');
+          li.classList.add('match-card');
+
+          const matchName = match.match || 'match';
+          const matchId = match.marketId || match.eventId || '0';
+          const slug = slugify(matchName);
+
+          li.textContent = matchName;
+          li.style.cursor = 'pointer';
+
+          // ✅ Underline on hover
+          // li.addEventListener('mouseover', () => {
+          //   li.style.textDecoration = 'underline';
+          // });
+          // li.addEventListener('mouseout', () => {
+          //   li.style.textDecoration = 'none';
+          // });
+
+          // ✅ Redirect on click
+          li.addEventListener('click', () => {
+            window.location.href = `/Common/market.html?id=${matchId}`;
+          });
+
+          listContainer.appendChild(li);
+        });
+      } else {
+        listContainer.innerHTML = '<li style="color:white;">No live tennis matches found.</li>';
+      }
+    } catch (err) {
+      console.error('⚠️ Error loading tennis matches:', err.message);
+    }
+  }
+
+  loadTennisMatches(); // auto load on page load
+</script>
+
+
+<script>
+  function slugify(text) {
+    return text
+      .toString()
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, '') // remove special chars
+      .replace(/\s+/g, '-')        // space to hyphen
+      .trim();
+  }
+
+  async function loadFootballMatches() {
+    try {
+      const response = await fetch('https://casinorealbackend-production.up.railway.app/api/markets/live/football');
+      const result = await response.json();
+
+      const listContainer = document.querySelector('.footballEventList');
+      listContainer.innerHTML = ''; // Clear existing
+
+      if (result.status === 'success' && result.data.length > 0) {
+        result.data.forEach(match => {
+          const li = document.createElement('li');
+          li.classList.add('match-card'); // ✅ Custom style class
+
+          const matchName = match.match || 'match';
+          const matchId = match.marketId || match.eventId || '0';
+          const slug = slugify(matchName);
+
+          li.textContent = matchName;
+          li.style.cursor = 'pointer';
+
+          // ✅ Redirect on click to market.html with id
+          li.addEventListener('click', () => {
+            window.location.href = `/Common/market.html?id=${matchId}`;
+          });
+
+          listContainer.appendChild(li);
+        });
+      } else {
+        listContainer.innerHTML = '<li style="color:white;">No live football matches found.</li>';
+      }
+    } catch (err) {
+      console.error('⚠️ Error loading football matches:', err.message);
+    }
+  }
+
+  loadFootballMatches(); // auto load on page load
+</script>
+<script>
+  function slugify(text) {
+    return text
+      .toString()
+      .toLowerCase()
+      .replace(/[^a-z0-9\s]/g, '') // remove special chars
+      .replace(/\s+/g, '-')        // space to hyphen
+      .trim();
+  }
+
+  async function loadCricketMatches() {
+    try {
+      const response = await fetch('https://casinorealbackend-production.up.railway.app/api/markets/live/cricket');
+      const result = await response.json();
+
+      const ul = document.querySelector('.cricketEventList');
+      ul.innerHTML = '';
+
+      if (result.status === 'success') {
+        if (result.data.length === 0) {
+          ul.innerHTML = '<li>No live or upcoming cricket matches found</li>';
+          return;
+        }
+
+        result.data.forEach(event => {
+          const li = document.createElement('li');
+          li.classList.add('match-card');
+
+          const matchName = event.match || 'match';
+          const matchId = event.marketId || event.eventId || '0'; // fallback if id not found
+          const slug = slugify(matchName);
+
+          li.textContent = matchName;
+          li.style.cursor = 'pointer';
+
+          li.addEventListener('click', () => {
+            window.location.href = `/Common/market.html?id=${matchId}`;
+          });
+
+          ul.appendChild(li);
+        });
+      } else {
+        ul.innerHTML = '<li>Error loading matches</li>';
+      }
+    } catch (error) {
+      console.error('API Error:', error);
+      document.querySelector('.cricketEventList').innerHTML =
+        '<li>API Error: ' + error.message + '</li>';
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', loadCricketMatches);
+</script>
+
 <script src="/js/unreal_html5_player_script_v2.js?00001"></script>
 
 <div id="MarketView">
@@ -3762,93 +3880,11 @@ West Indies v Australia                                </a>
 <div style="margin-top:7px;">
     <strong style="display: block; background: #2b2f35; color: #fff; padding:10px;" class="RM_In_Markets">Related Events</strong>
     <div >
-        <table class="table compact" style="margin-bottom:0px;">
+        <table  class="table compact" style="margin-bottom:0px;">
+              <tbody id="relatedEventsBody"></tbody>
 
-                <tr class="relatedtr" id="m_1_245441832" onclick="window.location='/Common/Market?id=1.245441832';" style="cursor: pointer;">
-                    <td class="sport-date" style="font-size:14px; padding:0 20px;">
-                        <div>
-                            <span class="day">Today</span>
-                            <span class="market-time">13:30</span>
-                                        <span class="d-none utctime" data-format="H:mm" data-target="time">
-                                            2025-07-10T13:30:00.0000000Z
-                                        </span>
-                            
-                        </div>
-                    </td>
-                    <td>
-                                <div>
-                                    Sri Lanka v Bangladesh
-                                </div>
-                    </td>
-                </tr>
-                <tr class="relatedtr" id="m_1_245455737" onclick="window.location='/Common/Market?id=1.245455737';" style="cursor: pointer;">
-                    <td class="sport-date" style="font-size:14px; padding:0 20px;">
-                        <div>
-                            <span class="day">Today</span>
-                            <span class="market-time">14:00</span>
-                                        <span class="d-none utctime" data-format="H:mm" data-target="time">
-                                            2025-07-10T14:00:00.0000000Z
-                                        </span>
-                            
-                        </div>
-                    </td>
-                    <td>
-                                <div>
-                                    Central Stags v Dubai Capitals
-                                </div>
-                    </td>
-                </tr>
-                <tr class="relatedtr" id="m_1_245395588" onclick="window.location='/Common/Market?id=1.245395588';" style="cursor: pointer;">
-                    <td class="sport-date" style="font-size:14px; padding:0 20px;">
-                        <div>
-                            <span class="day">Today</span>
-                            <span class="market-time">17:30</span>
-                                        <span class="d-none utctime" data-format="H:mm" data-target="time">
-                                            2025-07-10T17:30:00.0000000Z
-                                        </span>
-                            
-                        </div>
-                    </td>
-                    <td>
-                                <div>
-                                    Leicestershire v Northamptonshire
-                                </div>
-                    </td>
-                </tr>
-                <tr class="relatedtr" id="m_1_245396066" onclick="window.location='/Common/Market?id=1.245396066';" style="cursor: pointer;">
-                    <td class="sport-date" style="font-size:14px; padding:0 20px;">
-                        <div>
-                            <span class="day">Today</span>
-                            <span class="market-time">18:00</span>
-                                        <span class="d-none utctime" data-format="H:mm" data-target="time">
-                                            2025-07-10T18:00:00.0000000Z
-                                        </span>
-                            
-                        </div>
-                    </td>
-                    <td>
-                                <div>
-                                    Derbyshire v Worcestershire
-                                </div>
-                    </td>
-                </tr>
-                <tr class="relatedtr" id="m_1_245466278" onclick="window.location='/Common/Market?id=1.245466278';" style="cursor: pointer;">
-                    <td class="sport-date" style="font-size:14px; padding:0 20px;">
-                        <div>
-                            <span class="day">Today</span>
-                            <span class="market-time">23:00</span>
-                                        <span class="d-none utctime" data-format="H:mm" data-target="time">
-                                            2025-07-10T23:00:00.0000000Z
-                                        </span>
-                            
-                        </div>
-                    </td>
-                    <td>
-                                <div>
-                                    Guyana Amazon Warriors v Rangpur Riders
-                                </div>
-                    </td>
-                </tr>
+
+              
         </table>
     </div>
 </div>
@@ -4068,7 +4104,7 @@ West Indies v Australia                                </a>
             if (show_tv_tab) {
                 SHOWTV();
             } else {
-                SHOWLIVE("1.245405948")
+                SHOWLIVE(marketId)
             }
             $("#LIVEDIV").show();
 
@@ -4078,7 +4114,7 @@ West Indies v Australia                                </a>
             let ifrEl = document.querySelector("#livesc");
             if (ifrEl != null) {
                 setTimeout(function () { 
-                    ifrEl.src = "https://bpexch.xyz/Common/LiveScoreCard?id=1.245405948"; 
+                    ifrEl.src = `https://bpexch.xyz/Common/LiveScoreCard?id=${marketId}`; 
                 }, 2000);
             }
             setTimeout(function() { PremiumSportsIframeset()}, 2000);
